@@ -1,0 +1,12 @@
+body {
+	margin: 0px;
+}
+
+#content {
+	position: absolute;
+}
+
+#bg img {
+	position: fixed;
+	height:100%;
+}
