@@ -7,6 +7,7 @@ window.onload = function () {
 	var factory = new ElementFactory(scene)
 	factory.createElement('bg', document.getElementById('bg-img'))
 	factory.createElement('train', document.getElementById('bg-train-img'))
+	window.addEventListener("resize", scene.onResize.bind(scene));
 	document.addEventListener("keydown", scene.onKeyDown.bind(scene));
 	window.requestAnimationFrame(scene.animate.bind(scene));
 }
@@ -43,17 +44,18 @@ function ElementFactory(scene) {
 }
 
 function Scene() {
-	this.elements_list = []
-	this.last_time = 0
+	this.elements_list = [];
+	this.last_time = 0;
+	this.ratio = window.innerHeight / 1025;
 	this.addElement = function (element) {
 		this.elements_list.push(element);
 	}
 	this.animate = function(global_time) {
 		window.requestAnimationFrame(this.animate.bind(this));
-		var delta_time = global_time - this.last_time
-		this.last_time = global_time
+		var delta_time = global_time - this.last_time;
+		this.last_time = global_time;
 		for (var index in this.elements_list) {
-			this.elements_list[index].animate(delta_time)
+			this.elements_list[index].animate(delta_time);
 		}
 	}
 	this.onKeyDown = function(event) {
@@ -65,16 +67,20 @@ function Scene() {
 		} else if (event.code === "ArrowLeft") {
 			new_state = 2;
 		} else if (event.code === "ArrowRight") {
-			new_state = 0;;
+			new_state = 0;
 		}
 		if (new_state !== undefined) {
 			for (var index in this.elements_list) {
-				var to_pixel = this.elements_list[index].state_dict[new_state]['position']
-				var animation_duration = this.elements_list[index].state_dict[new_state]['duration']
-				this.elements_list[index].update_animation(to_pixel, animation_duration)
+				var to_pixel = this.elements_list[index].state_dict[new_state]['position'] * this.ratio;
+				var animation_duration = this.elements_list[index].state_dict[new_state]['duration'];
+				this.elements_list[index].update_animation(to_pixel, animation_duration);
 			}
 		}
 	}
+	this.onResize = function(event) {
+		this.ratio = window.innerHeight / 1025;
+		console.log(this.ratio);
+	} 
 }
 
 function SceneElements(image, state_dict) {
