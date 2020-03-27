@@ -17,14 +17,16 @@ function Scene() {
 	this.train_element = new SceneElements(1000)
 	this.bg_element = new SceneElements(1000)
 	this.last_time = 0
-	this.slideTo = function(object, position) {
-		object.image.style.transform = "translateX(-"+position+"px)";
-	}
 	this.animate = function(global_time) {
 		window.requestAnimationFrame(this.animate.bind(this));
 		var delta_time = global_time - this.last_time
 		this.last_time = global_time
-		this.bg_element.animation.animate(this.bg_element, delta_time)
+		if (this.bg_element.animation.isAnimationOver() == false) {
+			this.bg_element.animation.animate(this.bg_element, delta_time)
+		}
+		if (this.train_element.animation.isAnimationOver() == false) {
+			this.train_element.animation.animate(this.train_element, delta_time)
+		}
 	}
 	this.onKeyDown = function(event) {
 		var to_pixel = undefined
@@ -38,7 +40,8 @@ function Scene() {
 			to_pixel = 0;
 		}
 		if (to_pixel !== undefined) {
-			scene.bg_element.update_animation(to_pixel)
+			this.bg_element.update_animation(-to_pixel) // we want the background to move right to left, so "-"
+			this.train_element.update_animation(to_pixel)
 		}
 	}
 }
@@ -52,7 +55,7 @@ function SceneElements(animation_duration) {
 		this.animation = new Animation(this.current_position, to_pixel, this.animation_duration)
 	}
 	this.slideTo = function(position) {
-		this.image.style.transform = "translateX(-"+position+"px)";
+		this.image.style.transform = "translateX("+position+"px)";
 	}
 }
 
@@ -68,12 +71,18 @@ function Animation(from_pixel, to_pixel, animation_duration) {
   };
   this.animate = function(object, delta_time) {
   	this.time_elapsed += delta_time
-  	if (this.time_elapsed < this.animation_duration) {
+  	if (this.time_elapsed > this.animation_duration) {
+  		this.time_elapsed = this.animation_duration
+  	}
+  	if (this.time_elapsed <= this.animation_duration) {
   		var offset_pixels = this.offset_pixels()
   		object.slideTo(this.from_pixel + offset_pixels);
   		object.current_position = this.from_pixel + offset_pixels;
   	}
   }
+  this.isAnimationOver = function() {
+  	return this.time_elapsed >= this.animation_duration
+  } 
 }
 
 

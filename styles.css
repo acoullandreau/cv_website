@@ -12,8 +12,7 @@ body {
 }
 
 #bg-train img {
-	bottom: -77%;
-	right:80%;
+	top: 93%;
 	position: fixed;
 	height:100%;
 }
