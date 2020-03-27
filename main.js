@@ -3,86 +3,130 @@ window.onload = function () {
 	// button.addEventListener("click", onButtonClick)
 	// scene.background_image = document.getElementById('bg-img');
 	// scene.train_image = document.getElementById('bg-train-img');
-	scene.bg_element.image = document.getElementById('bg-img');
-	scene.train_element.image = document.getElementById('bg-train-img');
+	var scene = new Scene()
+	var factory = new ElementFactory(scene)
+	factory.createElement('bg', document.getElementById('bg-img'))
+	factory.createElement('train', document.getElementById('bg-train-img'))
 	document.addEventListener("keydown", scene.onKeyDown.bind(scene));
 	window.requestAnimationFrame(scene.animate.bind(scene));
 }
 
-var scene = new Scene()
+var train_state = {
+	AnimationDuration: 500,
+	MovingDirection: 1,
+	InitialPosition:0,
+	0: {position:0},
+	1: {position:400},
+	2: {position:1200},
+	3: {position:5000}
+}
+
+var bg_state = {
+	AnimationDuration: 1000,
+	MovingDirection: -1,
+	InitialPosition:0,
+	0: {position:0},
+	1: {position:500},
+	2: {position:1500},
+	3: {position:6000}
+}
+
+
+function ElementFactory(scene) {
+	this.scene = scene
+	this.createElement = function(element, image) {
+		if (element == 'train') {
+			var train_element = new SceneElements(image, train_state);
+			this.addElementToScene(train_element);
+		} else if (element == 'bg') {
+			var bg_element = new SceneElements(image, bg_state);
+			this.addElementToScene(bg_element);
+		}
+	}
+	this.addElementToScene = function(element) {
+		this.scene.addElement(element)
+	}
+}
 
 function Scene() {
-	this.background_image
-	this.train_image
-	this.train_element = new SceneElements(1000)
-	this.bg_element = new SceneElements(1000)
+	this.elements_list = []
 	this.last_time = 0
+	this.addElement = function (element) {
+		this.elements_list.push(element);
+	}
 	this.animate = function(global_time) {
 		window.requestAnimationFrame(this.animate.bind(this));
 		var delta_time = global_time - this.last_time
 		this.last_time = global_time
-		if (this.bg_element.animation.isAnimationOver() == false) {
-			this.bg_element.animation.animate(this.bg_element, delta_time)
-		}
-		if (this.train_element.animation.isAnimationOver() == false) {
-			this.train_element.animation.animate(this.train_element, delta_time)
+		for (var index in this.elements_list) {
+			this.elements_list[index].animate(delta_time)
 		}
 	}
 	this.onKeyDown = function(event) {
-		var to_pixel = undefined
+		var new_state = undefined
 		if (event.code === "ArrowDown") {
-			to_pixel = 500;
+			new_state = 1;
 		} else if (event.code === "ArrowUp") {
-			to_pixel = 6000;
+			new_state = 3;
 		} else if (event.code === "ArrowLeft") {
-			to_pixel = 1500;
+			new_state = 2;
 		} else if (event.code === "ArrowRight") {
-			to_pixel = 0;
+			new_state = 0;;
 		}
-		if (to_pixel !== undefined) {
-			this.bg_element.update_animation(-to_pixel) // we want the background to move right to left, so "-"
-			this.train_element.update_animation(to_pixel)
+		if (new_state !== undefined) {
+			for (var index in this.elements_list) {
+				var to_pixel = this.elements_list[index].state_dict[new_state]['position']
+				var moving_dir = this.elements_list[index].state_dict['MovingDirection']
+				this.elements_list[index].update_animation(moving_dir*to_pixel)
+			}
 		}
 	}
 }
 
-function SceneElements(animation_duration) {
-	this.animation_duration = animation_duration
-	this.image
-	this.current_position = 0
-	this.animation = new Animation(this.current_position, 0, this.animation_duration)
-	this.update_animation = function (to_pixel) {
-		this.animation = new Animation(this.current_position, to_pixel, this.animation_duration)
+function SceneElements(image, state_dict) {
+	this.image = image
+	this.state_dict = state_dict
+	this.animation_duration = this.state_dict['AnimationDuration']
+	this.current_position = this.state_dict['InitialPosition']
+	this.animation = new Animation(this, this.current_position, 0, this.animation_duration)
+	this.animate = function(delta_time) {
+		if (this.animation.isAnimationOver() == false) {
+			this.animation.animate(delta_time)
+		}
+	}
+	this.update_animation = function(to_pixel) {
+		this.animation = new Animation(this, this.current_position, to_pixel, this.animation_duration)
 	}
 	this.slideTo = function(position) {
 		this.image.style.transform = "translateX("+position+"px)";
 	}
 }
 
-function Animation(from_pixel, to_pixel, animation_duration) {
-  this.from_pixel = from_pixel;
-  this.to_pixel = to_pixel;
-  this.animation_duration = animation_duration;
-  this.time_elapsed = 0;
-  this.offset_pixels = function() {
-  	var dist_to_move = this.to_pixel - this.from_pixel;
-  	var next_position = (dist_to_move / this.animation_duration) * this.time_elapsed
-  	return next_position
-  };
-  this.animate = function(object, delta_time) {
-  	this.time_elapsed += delta_time
-  	if (this.time_elapsed > this.animation_duration) {
-  		this.time_elapsed = this.animation_duration
-  	}
-  	if (this.time_elapsed <= this.animation_duration) {
-  		var offset_pixels = this.offset_pixels()
-  		object.slideTo(this.from_pixel + offset_pixels);
-  		object.current_position = this.from_pixel + offset_pixels;
-  	}
-  }
-  this.isAnimationOver = function() {
-  	return this.time_elapsed >= this.animation_duration
-  } 
+function Animation(object, from_pixel, to_pixel, animation_duration) {
+	this.object = object
+	this.from_pixel = from_pixel;
+	this.to_pixel = to_pixel;
+	this.animation_duration = animation_duration;
+	this.time_elapsed = 0;
+	this.offset_pixels = function() {
+		var dist_to_move = this.to_pixel - this.from_pixel;
+		var next_position = (dist_to_move / this.animation_duration) * this.time_elapsed
+		return next_position
+	};
+	this.animate = function(delta_time) {
+		this.time_elapsed += delta_time
+		if (this.time_elapsed > this.animation_duration) {
+			this.time_elapsed = this.animation_duration
+		}
+		if (this.time_elapsed <= this.animation_duration) {
+			var offset_pixels = this.offset_pixels()
+			this.object.slideTo(this.from_pixel + offset_pixels);
+			this.object.current_position = this.from_pixel + offset_pixels;
+		}
+	}
+	this.isAnimationOver = function() {
+		return this.time_elapsed >= this.animation_duration
+	} 
 }
 
 
