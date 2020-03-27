@@ -10,3 +10,10 @@ body {
 	position: fixed;
 	height:100%;
 }
+
+#bg-train img {
+	bottom: -77%;
+	right:80%;
+	position: fixed;
+	height:100%;
+}
