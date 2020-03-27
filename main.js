@@ -12,23 +12,17 @@ window.onload = function () {
 }
 
 var train_state = {
-	AnimationDuration: 500,
-	MovingDirection: 1,
-	InitialPosition:0,
-	0: {position:0},
-	1: {position:400},
-	2: {position:1200},
-	3: {position:5000}
+	0: {position:0, duration:500},
+	1: {position:500, duration:500},
+	2: {position:700, duration:500},
+	3: {position:1000, duration:500}
 }
 
 var bg_state = {
-	AnimationDuration: 1000,
-	MovingDirection: -1,
-	InitialPosition:0,
-	0: {position:0},
-	1: {position:500},
-	2: {position:1500},
-	3: {position:6000}
+	0: {position:0, duration:1000},
+	1: {position:-500, duration:1000},
+	2: {position:-1500, duration:1000},
+	3: {position:-6000, duration:1000}
 }
 
 
@@ -76,8 +70,8 @@ function Scene() {
 		if (new_state !== undefined) {
 			for (var index in this.elements_list) {
 				var to_pixel = this.elements_list[index].state_dict[new_state]['position']
-				var moving_dir = this.elements_list[index].state_dict['MovingDirection']
-				this.elements_list[index].update_animation(moving_dir*to_pixel)
+				var animation_duration = this.elements_list[index].state_dict[new_state]['duration']
+				this.elements_list[index].update_animation(to_pixel, animation_duration)
 			}
 		}
 	}
@@ -86,15 +80,16 @@ function Scene() {
 function SceneElements(image, state_dict) {
 	this.image = image
 	this.state_dict = state_dict
-	this.animation_duration = this.state_dict['AnimationDuration']
-	this.current_position = this.state_dict['InitialPosition']
+	this.animation_duration = this.state_dict[0]['duration']
+	this.current_position = this.state_dict[0]['position']
 	this.animation = new Animation(this, this.current_position, 0, this.animation_duration)
 	this.animate = function(delta_time) {
 		if (this.animation.isAnimationOver() == false) {
 			this.animation.animate(delta_time)
 		}
 	}
-	this.update_animation = function(to_pixel) {
+	this.update_animation = function(to_pixel, duration) {
+		this.animation_duration = duration
 		this.animation = new Animation(this, this.current_position, to_pixel, this.animation_duration)
 	}
 	this.slideTo = function(position) {
