@@ -7,6 +7,7 @@ window.onload = function () {
 	var factory = new ElementFactory(scene)
 	factory.createElement('bg', document.getElementById('bg-img'))
 	factory.createElement('train', document.getElementById('bg-train-img'))
+	console.log(scene.elements_list[0].image.getBoundingClientRect())
 	window.addEventListener("resize", scene.onResize.bind(scene));
 	document.addEventListener("keydown", scene.onKeyDown.bind(scene));
 	window.requestAnimationFrame(scene.animate.bind(scene));
@@ -36,31 +37,39 @@ var bg_state = {
 	8: {position: -7700, duration: 1000}
 }
 
-// -(9100 - window.innerWidth)/(9*window.innerHeight / 1025)
-
 function ElementFactory(scene) {
 	this.scene = scene
 	this.createElement = function(element, image) {
 		if (element == 'train') {
 			var train_element = new SceneElements(image, train_state);
 			this.addElementToScene(train_element);
+			train_element.image.style.top = (0.93*this.scene.elements_list[0].image.getBoundingClientRect().height)+"px";
 		} else if (element == 'bg') {
 			var bg_element = new SceneElements(image, bg_state);
+			bg_element.is_background = true;
 			this.addElementToScene(bg_element);
+			this.addBackgroundToScene(bg_element);
 		}
 	}
 	this.addElementToScene = function(element) {
 		this.scene.addElement(element);
 		element.scene = this.scene;
 	}
+	this.addBackgroundToScene = function(element) {
+		this.addBackground = element;
+	}
 }
 
 function Scene() {
+	this.background;
 	this.elements_list = [];
 	this.last_time = 0;
 	this.ratio = window.innerHeight / 1025;
 	this.addElement = function (element) {
 		this.elements_list.push(element);
+	}
+	this.addBackground = function(element) {
+		this.background = element;
 	}
 	this.animate = function(global_time) {
 		window.requestAnimationFrame(this.animate.bind(this));
@@ -99,7 +108,7 @@ function Scene() {
 				if ((to_pixel + 1100)>9100) {
 					to_pixel = this.elements_list[index].state_dict[new_state]['position']
 				}
-				this.elements_list[index].update_animation(new_state, to_pixel, animation_duration);
+				this.elements_list[index].updateAnimation(new_state, to_pixel, animation_duration);
 			}
 		}
 	}
@@ -109,7 +118,7 @@ function Scene() {
 			this.ratio = 1;
 		}
 		for (var index in this.elements_list) {
-			this.elements_list[index].update_size();
+			this.elements_list[index].updateOnResize();
 		}
 	} 
 }
@@ -117,6 +126,7 @@ function Scene() {
 function SceneElements(image, state_dict) {
 	this.image = image
 	this.scene
+	this.is_background = false
 	this.state_dict = state_dict
 	this.current_state = 0
 	this.animation_duration = this.state_dict[this.current_state]['duration']
@@ -127,7 +137,7 @@ function SceneElements(image, state_dict) {
 			this.animation.animate(delta_time)
 		}
 	}
-	this.update_animation = function(state, to_pixel, duration) {
+	this.updateAnimation = function(state, to_pixel, duration) {
 		this.current_state = state;
 		this.animation_duration = duration;
 		this.animation = new Animation(this, this.current_position, to_pixel, this.animation_duration);
@@ -140,9 +150,15 @@ function SceneElements(image, state_dict) {
 		}
 		this.image.style.transform = "translateX("+target_position+"px)";
 	}
-	this.update_size = function() {
+	this.updateOnResize = function() {
 		var updated_position = this.state_dict[this.current_state]['position'];
 		this.slideTo(updated_position);
+		if (this.is_background == false) {
+			if (this.scene.ratio > 1) {
+				this.image.style.top = (0.93*this.scene.elements_list[0].image.getBoundingClientRect().height)+"px";
+			}
+		}
+		console.log(this.scene.elements_list[0].image.getBoundingClientRect().height);
 	}
 }
 
@@ -152,7 +168,7 @@ function Animation(object, from_pixel, to_pixel, animation_duration) {
 	this.to_pixel = to_pixel;
 	this.animation_duration = animation_duration;
 	this.time_elapsed = 0;
-	this.offset_pixels = function() {
+	this.offsetPixels = function() {
 		var dist_to_move = this.to_pixel - this.from_pixel;
 		var next_position = (dist_to_move / this.animation_duration) * this.time_elapsed
 		return next_position
@@ -163,7 +179,7 @@ function Animation(object, from_pixel, to_pixel, animation_duration) {
 			this.time_elapsed = this.animation_duration
 		}
 		if (this.time_elapsed <= this.animation_duration) {
-			var offset_pixels = this.offset_pixels()
+			var offset_pixels = this.offsetPixels()
 			this.object.slideTo(this.from_pixel + offset_pixels);
 			this.object.current_position = this.from_pixel + offset_pixels;
 		}
