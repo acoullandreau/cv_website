@@ -9,10 +9,12 @@ body {
 #bg img {
 	position: fixed;
 	height:100%;
+	min-height: 1025px;
 }
 
 #bg-train img {
 	top: 93%;
 	position: fixed;
 	height:100%;
+	min-height: 1025px;
 }

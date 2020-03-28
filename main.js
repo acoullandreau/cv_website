@@ -13,19 +13,30 @@ window.onload = function () {
 }
 
 var train_state = {
-	0: {position:0, duration:500},
-	1: {position:500, duration:500},
-	2: {position:700, duration:500},
-	3: {position:1000, duration:500}
+	0: {position: 0, duration: 500},
+	1: {position: 250, duration: 500},
+	2: {position: 500, duration: 500},
+	3: {position: 750, duration: 500},
+	4: {position: 1000, duration: 500},
+	5: {position: 1150, duration: 500},
+	6: {position: 1300, duration: 500},
+	7: {position: 1400, duration: 500},
+	8: {position: 1500, duration: 500}
 }
 
 var bg_state = {
-	0: {position:0, duration:1000},
-	1: {position:-500, duration:1000},
-	2: {position:-1500, duration:1000},
-	3: {position:-6000, duration:1000}
+	0: {position: 0, duration: 1000},
+	1: {position: -1000, duration: 1000},
+	2: {position: -1300, duration: 1000},
+	3: {position: -2100, duration: 1000},
+	4: {position: -3050, duration: 1000},
+	5: {position: -4000, duration: 1000},
+	6: {position: -5800, duration: 1000},
+	7: {position: -7000, duration: 1000},
+	8: {position: -7700, duration: 1000}
 }
 
+// -(9100 - window.innerWidth)/(9*window.innerHeight / 1025)
 
 function ElementFactory(scene) {
 	this.scene = scene
@@ -39,7 +50,8 @@ function ElementFactory(scene) {
 		}
 	}
 	this.addElementToScene = function(element) {
-		this.scene.addElement(element)
+		this.scene.addElement(element);
+		element.scene = this.scene;
 	}
 }
 
@@ -60,46 +72,77 @@ function Scene() {
 	}
 	this.onKeyDown = function(event) {
 		var new_state = undefined
-		if (event.code === "ArrowDown") {
+		if (event.code === "KeyW") {
 			new_state = 1;
-		} else if (event.code === "ArrowUp") {
-			new_state = 3;
-		} else if (event.code === "ArrowLeft") {
+		} else if (event.code === "KeyE") {
 			new_state = 2;
-		} else if (event.code === "ArrowRight") {
+		} else if (event.code === "KeyR") {
+			new_state = 3;
+		} else if (event.code === "KeyT") {
+			new_state = 4;
+		} else if (event.code === "KeyY") {
+			new_state = 5;
+		} else if (event.code === "KeyU") {
+			new_state = 6;
+		} else if (event.code === "KeyI") {
+			new_state = 7;
+		} else if (event.code === "KeyO") {
+			new_state = 8;
+		} else if (event.code === "KeyQ") {
 			new_state = 0;
 		}
+
 		if (new_state !== undefined) {
 			for (var index in this.elements_list) {
-				var to_pixel = this.elements_list[index].state_dict[new_state]['position'] * this.ratio;
+				var to_pixel = this.elements_list[index].state_dict[new_state]['position'];
 				var animation_duration = this.elements_list[index].state_dict[new_state]['duration'];
-				this.elements_list[index].update_animation(to_pixel, animation_duration);
+				if ((to_pixel + 1100)>9100) {
+					to_pixel = this.elements_list[index].state_dict[new_state]['position']
+				}
+				this.elements_list[index].update_animation(new_state, to_pixel, animation_duration);
 			}
 		}
 	}
 	this.onResize = function(event) {
 		this.ratio = window.innerHeight / 1025;
-		console.log(this.ratio);
+		if (this.ratio < 1) {
+			this.ratio = 1;
+		}
+		for (var index in this.elements_list) {
+			this.elements_list[index].update_size();
+		}
 	} 
 }
 
 function SceneElements(image, state_dict) {
 	this.image = image
+	this.scene
 	this.state_dict = state_dict
-	this.animation_duration = this.state_dict[0]['duration']
-	this.current_position = this.state_dict[0]['position']
+	this.current_state = 0
+	this.animation_duration = this.state_dict[this.current_state]['duration']
+	this.current_position = this.state_dict[this.current_state]['position']
 	this.animation = new Animation(this, this.current_position, 0, this.animation_duration)
 	this.animate = function(delta_time) {
 		if (this.animation.isAnimationOver() == false) {
 			this.animation.animate(delta_time)
 		}
 	}
-	this.update_animation = function(to_pixel, duration) {
-		this.animation_duration = duration
-		this.animation = new Animation(this, this.current_position, to_pixel, this.animation_duration)
+	this.update_animation = function(state, to_pixel, duration) {
+		this.current_state = state;
+		this.animation_duration = duration;
+		this.animation = new Animation(this, this.current_position, to_pixel, this.animation_duration);
 	}
 	this.slideTo = function(position) {
-		this.image.style.transform = "translateX("+position+"px)";
+		var scene_ratio = this.scene.ratio;
+		var target_position = position * scene_ratio;
+		if (Math.abs(target_position) > 9100 * this.scene.ratio - window.innerWidth) {
+			target_position = -9100 * this.scene.ratio + window.innerWidth;
+		}
+		this.image.style.transform = "translateX("+target_position+"px)";
+	}
+	this.update_size = function() {
+		var updated_position = this.state_dict[this.current_state]['position'];
+		this.slideTo(updated_position);
 	}
 }
 
