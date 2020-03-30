@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="51" viewBox="0 0 50 51">
+  <g id="Groupe_506" data-name="Groupe 506" transform="translate(-45 -313)">
+    <ellipse id="Ellipse_101" data-name="Ellipse 101" cx="25" cy="25.5" rx="25" ry="25.5" transform="translate(45 313)" fill="#5e72dd"/>
+    <path id="Tracé_2112" data-name="Tracé 2112" d="M311.713,14.047V10.584h8.269a.992.992,0,0,0,.842-1.516l-1.732-2.783L320.825,3.5a.992.992,0,0,0-.842-1.516h-8.269V.992a.992.992,0,0,0-1.984,0V14.047A1.279,1.279,0,0,1,311.713,14.047Z" transform="translate(-242.096 319.852)" fill="#e8fcff"/>
+    <path id="Tracé_2113" data-name="Tracé 2113" d="M155.286,349.174l-2.369,2.207a.992.992,0,0,1-1.353,0l-1.718-1.6-1.718,1.6a.992.992,0,0,1-1.353,0l-2.368-2.207L137.58,358.9a.661.661,0,0,0,.541,1.041h23.45a.661.661,0,0,0,.542-1.041Z" transform="translate(-81.222 -6.225)" fill="#e8fcff"/>
+    <path id="Tracé_2114" data-name="Tracé 2114" d="M261.553,246.8l1.718-1.6a.992.992,0,0,1,1.353,0l1.718,1.6,1.911-1.74-3.764-5.364a.662.662,0,0,0-1.083,0l-3.764,5.364Z" transform="translate(-195.323 96.278)" fill="#e8fcff"/>
+  </g>
+</svg>

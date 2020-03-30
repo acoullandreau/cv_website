@@ -7,6 +7,7 @@ window.onload = function () {
 	var factory = new ElementFactory(scene)
 	factory.createElement('bg', document.getElementById('bg-img'))
 	factory.createElement('train', document.getElementById('bg-train-img'))
+	// factory.createElement('foreground', document.getElementById('fg-hide-train-img'))
 	console.log(scene.elements_list[0].image.getBoundingClientRect())
 	window.addEventListener("resize", scene.onResize.bind(scene));
 	document.addEventListener("keydown", scene.onKeyDown.bind(scene));
@@ -27,14 +28,26 @@ var train_state = {
 
 var bg_state = {
 	0: {position: 0, duration: 1000},
-	1: {position: -1000, duration: 1000},
+	1: {position: -700, duration: 1000},
 	2: {position: -1300, duration: 1000},
 	3: {position: -2100, duration: 1000},
-	4: {position: -3050, duration: 1000},
-	5: {position: -4000, duration: 1000},
-	6: {position: -5800, duration: 1000},
-	7: {position: -7000, duration: 1000},
-	8: {position: -7700, duration: 1000}
+	4: {position: -3100, duration: 1000},
+	5: {position: -4100, duration: 1000},
+	6: {position: -5100, duration: 1000},
+	7: {position: -6100, duration: 1000},
+	8: {position: -7200, duration: 1000}
+}
+
+var fg_state = {
+	0: {position: 0, duration: 0},
+	1: {position: 0, duration: 0},
+	2: {position: 0, duration: 0},
+	3: {position: 0, duration: 0},
+	4: {position: 0, duration: 0},
+	5: {position: 0, duration: 0},
+	6: {position: 0, duration: 0},
+	7: {position: 0, duration: 0},
+	8: {position: 0, duration: 0}
 }
 
 function ElementFactory(scene) {
@@ -49,6 +62,9 @@ function ElementFactory(scene) {
 			bg_element.is_background = true;
 			this.addElementToScene(bg_element);
 			this.addBackgroundToScene(bg_element);
+		} else if (element == 'foreground') {
+			var foreground_element = new SceneElements(image, fg_state);
+			this.addElementToScene(foreground_element);
 		}
 	}
 	this.addElementToScene = function(element) {

@@ -17,3 +17,52 @@ body {
 	height:100%;
 	min-height: 1025px;
 }
+
+#top-nav-bar {
+	position: absolute;
+	width:100%;
+}
+
+#contact {
+	position: absolute;
+	top:50%;
+	left:125px;
+}
+
+#language {
+	position: absolute;
+	top:50%;
+	right:150px;
+}
+
+#left-nav-bar ul {
+	position: relative;
+	top:125px;
+	float: left;
+	left:0px;
+	list-style:none;
+	margin-bottom: 8px;
+}
+
+#right-nav-bar ul {
+	position: absolute;
+	top:50px;
+	right:50px;
+	list-style:none;
+	margin-bottom: 150px;
+}
+
+#left-nav-bar li {
+	margin-bottom: 8px;
+}
+
+#right-nav-bar li {
+	margin-bottom: 8px;
+}
+
+#fg-hide-train img {
+	position: fixed;
+	height:100%;
+	min-height: 1025px;
+}
+
