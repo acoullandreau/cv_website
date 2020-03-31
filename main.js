@@ -3,12 +3,12 @@ window.onload = function () {
 	// button.addEventListener("click", onButtonClick)
 	// scene.background_image = document.getElementById('bg-img');
 	// scene.train_image = document.getElementById('bg-train-img');
-	var scene = new Scene()
-	var factory = new ElementFactory(scene)
-	factory.createElement('bg', document.getElementById('bg-img'))
-	factory.createElement('train', document.getElementById('bg-train-img'))
+	var scene = new Scene();
+	var factory = new ElementFactory(scene);
+	factory.createElement('bg', document.getElementById('bg-img'));
+	factory.createElement('train', document.getElementById('bg-train-img'));
 	// factory.createElement('foreground', document.getElementById('fg-hide-train-img'))
-	console.log(scene.elements_list[0].image.getBoundingClientRect())
+	// console.log(scene.elements_list[0].image.getBoundingClientRect())
 	window.addEventListener("resize", scene.onResize.bind(scene));
 	document.addEventListener("keydown", scene.onKeyDown.bind(scene));
 	window.requestAnimationFrame(scene.animate.bind(scene));
@@ -80,7 +80,7 @@ function Scene() {
 	this.background;
 	this.elements_list = [];
 	this.last_time = 0;
-	this.ratio = window.innerHeight / 1025;
+	this.ratio = window.innerHeight / 700;
 	this.addElement = function (element) {
 		this.elements_list.push(element);
 	}
@@ -129,7 +129,7 @@ function Scene() {
 		}
 	}
 	this.onResize = function(event) {
-		this.ratio = window.innerHeight / 1025;
+		this.ratio = window.innerHeight / 700;
 		if (this.ratio < 1) {
 			this.ratio = 1;
 		}
@@ -174,7 +174,6 @@ function SceneElements(image, state_dict) {
 				this.image.style.top = (0.93*this.scene.elements_list[0].image.getBoundingClientRect().height)+"px";
 			}
 		}
-		console.log(this.scene.elements_list[0].image.getBoundingClientRect().height);
 	}
 }
 
