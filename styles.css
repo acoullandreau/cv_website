@@ -21,9 +21,15 @@ body {
 	min-height: 1025px;
 }*/
 
+/*#nav-menu img {
+	width:100%;
+	height: auto;
+}*/
+
 #top-nav-bar {
 	position: absolute;
 	width:100%;
+
 }
 
 #top-nav-bar p {
@@ -119,7 +125,7 @@ body {
 	margin:0px;
 	text-align: center;
 	font-family: 'Source Serif Pro', serif;
-	font-size: 70px;
+	font-size: 7vh;
 	font-weight: 700;
 	color: #535353;
 }

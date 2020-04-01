@@ -173,9 +173,7 @@ function SceneElements(image, state_dict) {
 		var updated_position = this.state_dict[this.current_state]['position'];
 		this.slideTo(updated_position);
 		if (this.is_background == false) {
-			if (this.scene.ratio > 1) {
-				this.image.style.top = (0.93*this.scene.elements_list[0].image.getBoundingClientRect().height)+"px";
-			}
+			this.image.style.top = (0.93*this.scene.elements_list[0].image.getBoundingClientRect().height)+"px";
 		}
 	}
 }
