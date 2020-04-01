@@ -26,6 +26,11 @@ body {
 	width:100%;
 }
 
+#top-nav-bar p {
+	position: absolute;
+	top:50%;
+}
+
 #contact a {
 	position: absolute;
 	top:40%;
@@ -46,11 +51,6 @@ body {
 	font-weight: 300;
 	color: #535353;
 	text-decoration: none;
-}
-
-#top-nav-bar p {
-	position: absolute;
-	top:50%;
 }
 
 #left-nav-bar ul {
@@ -83,7 +83,7 @@ body {
 
 #content-container {
 	position: absolute;
-	top: 5%;
+	top: 15%;
 	width: 100%;
 	margin: 0 auto;
 }

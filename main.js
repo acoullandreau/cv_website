@@ -14,6 +14,9 @@ window.onload = function () {
 	window.requestAnimationFrame(scene.animate.bind(scene));
 }
 
+var ORIGINAL_BG_HEIGHT = 1025;
+var ORIGINAL_BG_WIDTH = 9100;
+
 var train_state = {
 	0: {position: 0, duration: 500},
 	1: {position: 250, duration: 500},
@@ -80,7 +83,7 @@ function Scene() {
 	this.background;
 	this.elements_list = [];
 	this.last_time = 0;
-	this.ratio = window.innerHeight / 700;
+	this.ratio = window.innerHeight / ORIGINAL_BG_HEIGHT;
 	this.addElement = function (element) {
 		this.elements_list.push(element);
 	}
@@ -121,7 +124,7 @@ function Scene() {
 			for (var index in this.elements_list) {
 				var to_pixel = this.elements_list[index].state_dict[new_state]['position'];
 				var animation_duration = this.elements_list[index].state_dict[new_state]['duration'];
-				if ((to_pixel + 1100)>9100) {
+				if ((to_pixel + window.innerWidth)>ORIGINAL_BG_WIDTH) {
 					to_pixel = this.elements_list[index].state_dict[new_state]['position']
 				}
 				this.elements_list[index].updateAnimation(new_state, to_pixel, animation_duration);
@@ -129,7 +132,7 @@ function Scene() {
 		}
 	}
 	this.onResize = function(event) {
-		this.ratio = window.innerHeight / 700;
+		this.ratio = window.innerHeight / ORIGINAL_BG_HEIGHT;
 		if (this.ratio < 1) {
 			this.ratio = 1;
 		}
@@ -161,8 +164,8 @@ function SceneElements(image, state_dict) {
 	this.slideTo = function(position) {
 		var scene_ratio = this.scene.ratio;
 		var target_position = position * scene_ratio;
-		if (Math.abs(target_position) > 9100 * this.scene.ratio - window.innerWidth) {
-			target_position = -9100 * this.scene.ratio + window.innerWidth;
+		if (Math.abs(target_position) > ORIGINAL_BG_WIDTH * this.scene.ratio - window.innerWidth) {
+			target_position = -ORIGINAL_BG_WIDTH * this.scene.ratio + window.innerWidth;
 		}
 		this.image.style.transform = "translateX("+target_position+"px)";
 	}
