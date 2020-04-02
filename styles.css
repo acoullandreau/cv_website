@@ -47,11 +47,10 @@ body {
 }
 
 .FontSizeTitle {
-	font-size: 25px;
+	font-size: 2.5vh;
 }
 
 .TextWithIcon {
-	margin:auto;
 	display: inline-block;
 	padding-left: 10px;
 }
@@ -132,6 +131,72 @@ li {
 
 /*Specific to main page*/
 
+.GridWrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 20%) repeat(4, 15%);
+  	grid-template-rows: repeat(3, 100px); 
+  	grid-row-gap: 10px;
+  	justify-content: center;
+}
+
+.GridElemOne {
+	grid-column: 2 / span 2;
+  	grid-row-start: 1;
+  	justify-self:center;
+  	align-self: center;
+}
+
+.GridElemTwo {
+	grid-column: 4 / span 2;
+  	grid-row-start: 1;
+  	justify-self:center;
+  	align-self: center;
+}
+
+.GridElemThree {
+	grid-column: 1 / span 2;
+  	grid-row-start: 2;
+  	justify-self:start;
+  	align-self: center;
+}
+
+.GridElemFour {
+	grid-column: 3 / span 2;
+  	grid-row-start: 2;
+  	justify-self:start;
+  	align-self: center;
+}
+
+.GridElemFive {
+	grid-column: 5 / span 2;
+  	grid-row-start: 2;
+  	justify-self:start;
+  	align-self: center;
+}
+
+.GridElemSix {
+	grid-column: 1 / span 2;
+  	grid-row-start: 3;
+  	justify-self:start;
+  	align-self: center;
+}
+
+.GridElemSeven {
+	grid-column: 3 / span 2;
+  	grid-row-start: 3;
+  	justify-self:start;
+  	align-self: center;
+}
+
+.GridElemEight {
+	grid-column: 5 / span 2;
+	grid-row-start: 3;
+  	justify-self:start;
+  	align-self: center;
+}
+
+
+
 #content-container {
 	position: absolute;
 	top: 10%;
@@ -147,26 +212,14 @@ li {
 }
 
 #navigation-container {
-	margin-top: 5%;
+	margin-top: 7%;
 	margin-left: auto;
     margin-right: auto;
-	padding:2%;
-	width: 80%;
+	padding:1%;
+	width: 70%;
 	background-color:#E8FCFF;
 	border-radius: 15px;
-	filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.424));
-}
-
-#nav-first-row {
-	display: inline-block;
-}
-
-#nav-presentation {
-	float: left;
-}
-
-#nav-temoignages {
-	float: right;
+	filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.24));
 }
 
 #Alexina-titre p {
