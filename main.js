@@ -133,9 +133,9 @@ function Scene() {
 	}
 	this.onResize = function(event) {
 		this.ratio = window.innerHeight / ORIGINAL_BG_HEIGHT;
-		if (this.ratio < 1) {
-			this.ratio = 1;
-		}
+		// if (this.ratio < 1) {
+		// 	this.ratio = 1;
+		// }
 		for (var index in this.elements_list) {
 			this.elements_list[index].updateOnResize();
 		}
