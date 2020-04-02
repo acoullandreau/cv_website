@@ -33,7 +33,6 @@ body {
 	font-weight: 700;
 }
 
-
 .ColorLight {
 	color:#FFFFFF;
 }
@@ -50,6 +49,10 @@ body {
 	font-size: 2.5vh;
 }
 
+.FontSizeParagraph {
+	font-size: 1.5vh;
+}
+
 .TextWithIcon {
 	display: inline-block;
 	padding-left: 10px;
@@ -58,6 +61,12 @@ body {
 .IconWithText {
 	vertical-align: middle;
 }
+
+.PageTitre {
+	margin:0px;
+	text-align: center;
+}
+
 
 a {
 	text-decoration: none;
@@ -128,75 +137,6 @@ li {
 	margin-bottom: 10%;
 }
 
-
-/*Specific to main page*/
-
-.GridWrapper {
-	display: grid;
-	grid-template-columns: repeat(2, 20%) repeat(4, 15%);
-  	grid-template-rows: repeat(3, 100px); 
-  	grid-row-gap: 10px;
-  	justify-content: center;
-}
-
-.GridElemOne {
-	grid-column: 2 / span 2;
-  	grid-row-start: 1;
-  	justify-self:center;
-  	align-self: center;
-}
-
-.GridElemTwo {
-	grid-column: 4 / span 2;
-  	grid-row-start: 1;
-  	justify-self:center;
-  	align-self: center;
-}
-
-.GridElemThree {
-	grid-column: 1 / span 2;
-  	grid-row-start: 2;
-  	justify-self:start;
-  	align-self: center;
-}
-
-.GridElemFour {
-	grid-column: 3 / span 2;
-  	grid-row-start: 2;
-  	justify-self:start;
-  	align-self: center;
-}
-
-.GridElemFive {
-	grid-column: 5 / span 2;
-  	grid-row-start: 2;
-  	justify-self:start;
-  	align-self: center;
-}
-
-.GridElemSix {
-	grid-column: 1 / span 2;
-  	grid-row-start: 3;
-  	justify-self:start;
-  	align-self: center;
-}
-
-.GridElemSeven {
-	grid-column: 3 / span 2;
-  	grid-row-start: 3;
-  	justify-self:start;
-  	align-self: center;
-}
-
-.GridElemEight {
-	grid-column: 5 / span 2;
-	grid-row-start: 3;
-  	justify-self:start;
-  	align-self: center;
-}
-
-
-
 #content-container {
 	position: absolute;
 	top: 10%;
@@ -211,6 +151,74 @@ li {
     margin-right: auto;
 }
 
+
+
+/*Specific to home page*/
+
+.HomeGridWrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 20%) repeat(4, 15%);
+  	grid-template-rows: repeat(3, 100px); 
+  	grid-row-gap: 10px;
+  	justify-content: center;
+}
+
+.HomeGridElemOne {
+	grid-column: 2 / span 2;
+  	grid-row-start: 1;
+  	justify-self:center;
+  	align-self: center;
+}
+
+.HomeGridElemTwo {
+	grid-column: 4 / span 2;
+  	grid-row-start: 1;
+  	justify-self:center;
+  	align-self: center;
+}
+
+.HomeGridElemThree {
+	grid-column: 1 / span 2;
+  	grid-row-start: 2;
+  	justify-self:start;
+  	align-self: center;
+}
+
+.HomeGridElemFour {
+	grid-column: 3 / span 2;
+  	grid-row-start: 2;
+  	justify-self:start;
+  	align-self: center;
+}
+
+.HomeGridElemFive {
+	grid-column: 5 / span 2;
+  	grid-row-start: 2;
+  	justify-self:start;
+  	align-self: center;
+}
+
+.HomeGridElemSix {
+	grid-column: 1 / span 2;
+  	grid-row-start: 3;
+  	justify-self:start;
+  	align-self: center;
+}
+
+.HomeGridElemSeven {
+	grid-column: 3 / span 2;
+  	grid-row-start: 3;
+  	justify-self:start;
+  	align-self: center;
+}
+
+.HomeGridElemEight {
+	grid-column: 5 / span 2;
+	grid-row-start: 3;
+  	justify-self:start;
+  	align-self: center;
+}
+
 #navigation-container {
 	margin-top: 7%;
 	margin-left: auto;
@@ -222,11 +230,6 @@ li {
 	filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.24));
 }
 
-#Alexina-titre p {
-	margin:0px;
-	text-align: center;
-}
-
 #Alexina-ss-titre p {
 	margin:0px;
 	text-align: center;
@@ -234,3 +237,42 @@ li {
 }
 
 
+/*Specific to Presentation page*/
+
+.PresGridWrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+  	grid-template-rows: repeat(7, 100px); 
+}
+
+.PresGridElemOne {
+	grid-column: 1;
+  	grid-row-start: 1;
+}
+
+.PresGridElemTwo {
+	grid-column: 1;
+  	grid-row-start: 2;
+}
+
+#photo-presentation {
+	margin-top: 10%;
+	margin-left: 7%;
+	float: left;
+}
+
+#presentation-container {
+	display: inline-block;
+	width: 100%
+}
+
+#presentation-text-container {
+	margin-top: 4%;
+	margin-left: auto;
+    margin-right: 0;
+    float: right;
+	width: 65%;
+	background-color:#E8FCFF;
+	border-radius: 15px;
+	filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.24));
+}
