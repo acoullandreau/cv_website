@@ -63,7 +63,6 @@ body {
 }
 
 .PageTitre {
-	margin:0px;
 	text-align: center;
 }
 
@@ -75,6 +74,10 @@ a {
 
 li {
 	list-style:none;
+}
+
+p {
+	margin: 0px;
 }
 
 #container {
@@ -241,36 +244,104 @@ li {
 
 .PresGridWrapper {
 	display: grid;
-	grid-template-columns: repeat(2, 50%);
-  	grid-template-rows: repeat(7, 100px); 
+	grid-template-columns: repeat(2, 45%);
+  	grid-template-rows: repeat(7, 15%); 
+  	grid-column-gap: 3%;
 }
 
 .PresGridElemOne {
 	grid-column: 1;
   	grid-row-start: 1;
+  	justify-self:start;
+  	align-self: end;
 }
 
 .PresGridElemTwo {
 	grid-column: 1;
   	grid-row-start: 2;
+  	justify-self:stretch;
+  	align-self: start;
 }
 
-#photo-presentation {
-	margin-top: 10%;
-	margin-left: 7%;
-	float: left;
+.PresGridElemThree {
+	grid-column: 1;
+  	grid-row-start: 3;
+  	justify-self:stretch;
+  	align-self: end;
 }
+
+.PresGridElemFour {
+	grid-column: 1;
+  	grid-row-start: 4;
+  	justify-self:stretch;
+  	align-self: start;
+}
+
+.PresGridElemFive {
+	grid-column: 1;
+  	grid-row-start: 5;
+  	justify-self:stretch;
+  	align-self: end;
+}
+
+.PresGridElemSix {
+	grid-column: 1;
+  	grid-row-start: 6;
+  	justify-self:stretch;
+  	align-self: start;
+}
+
+.PresGridElemSeven {
+	grid-column: 2;
+  	grid-row-start: 1;
+  	justify-self:stretch;
+  	align-self: end;
+}
+
+.PresGridElemEight {
+	grid-column: 2;
+  	grid-row-start: 2;
+  	justify-self:stretch;
+  	align-self: start;
+}
+
+.PresGridElemNine {
+	grid-column: 2;
+  	grid-row-start: 3;
+  	justify-self:stretch;
+  	align-self: end;
+}
+
+.PresGridElemTen {
+	grid-column: 2;
+  	grid-row-start: 4;
+  	justify-self:stretch;
+  	align-self: start;
+}
+
+
 
 #presentation-container {
-	display: inline-block;
 	width: 100%
 }
 
+#photo-presentation {
+	display: inline-block;
+	margin-top: 10%;
+	margin-left: 3%;
+	width: 25%;
+}
+
+#photo-presentation img {
+	width: 100%;
+}
+
 #presentation-text-container {
-	margin-top: 4%;
-	margin-left: auto;
-    margin-right: 0;
     float: right;
+	margin-top: 4%;
+    margin-right: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
 	width: 65%;
 	background-color:#E8FCFF;
 	border-radius: 15px;
