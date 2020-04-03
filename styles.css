@@ -248,6 +248,7 @@ p {
 	grid-template-columns: repeat(2, 45%);
   	grid-template-rows: repeat(6, 15%); 
   	grid-column-gap: 3%;
+  	justify-content: center;
 }
 
 .PresGridElemOne {
@@ -320,8 +321,6 @@ p {
   	align-self: start;
 }
 
-
-
 #presentation-container {
 	width: 100%
 }
@@ -341,10 +340,67 @@ p {
     float: right;
 	margin-top: 4%;
     margin-right: 0%;
-    padding-left: 2%;
-    padding-right: 2%;
+	width: 70%;
+	background-color:#E8FCFF;
+	border-radius: 15px;
+	filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.24));
+}
+
+
+/*Specific to Form page*/
+
+#form-container {
+	margin-top: 4%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top:4%;
+	padding-bottom: 4%;
+	padding-left: 2%;
+	padding-right: 2%;
 	width: 65%;
 	background-color:#E8FCFF;
 	border-radius: 15px;
 	filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.24));
 }
+
+#form-intro p {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	width:70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
