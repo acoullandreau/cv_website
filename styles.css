@@ -349,6 +349,43 @@ p {
 
 /*Specific to Form page*/
 
+.Form {
+	width: 80%;
+	height: 100%;
+	margin-top: 7%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.FormField {
+	display: inline-block;
+	width: 80%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	padding-right: 0px;
+}
+
+.FormField p {
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+	width: 20%;
+}
+
+.FormField input {
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	float: right;
+}
+
+.Form textarea {
+	margin-top: 2%;
+	width: 100%;
+	min-height: 70px;
+	overflow: scroll;
+}
+
 #form-container {
 	margin-top: 4%;
 	margin-right: auto;
