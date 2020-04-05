@@ -7,6 +7,7 @@
 	  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet">
 	  <link rel="stylesheet" href="styles.css">
 	  <script src="main.js"></script>
+	  <script src="scripts.js"></script>
 	</head>
 	
 	<body>
@@ -25,51 +26,18 @@
 	<!-- 		Content section -->
 			<div id="content-container">
 				<div id="content">
-					<div>
-						<p class="Source Bold FontSizeSubHeader PageTitre">Formulaire de contact</p>
-					</div>
-				<div id="form-container">
-					<div id="form-intro" class="FontSizeFormIntro">
-						<p>Merci de renseigner le formulaire ci-dessous pour toute prise de contact ou correspondance.</p>
-						<p>Je ne manquerai pas de vous recontacter dans les plus brefs délais. </p>
-					</div>
-					<form class="Form Bold FontSizeFormFields">
-						<div id="form-fields">
-							<div class="FormField">
-								<p>Prénom</p>
-								<input type="text" class="FontSizeParagraph" name="fname"/>
-							</div>
-							<div class="FormField">
-								<p>Nom</p>
-								<input type="text" class="FontSizeParagraph" name="lname"/>
-							</div>
-							<div class="FormField">
-								<p>Adresse email</p>
-								<input type="email" class="FontSizeParagraph" name="email"/>
-							</div>
-						</div>
-						<div>
-							<textarea class="FontSizeParagraph" name="message"></textarea>
-						</div>
-						<div id="form-attachment" class="FontSizeSubParagraph">
-							<label><input type="file" id="attachment-input" name="attachment" accept=".jpg, .png, .pdf, .doc, .docx, .xslx, .xsl, .txt, .json">Ajouter une pièce jointe</label>
-						</div>
-						<div id="form-button">
-							<input type="button" id="send-button" class="ColorLight FontSizeFormIntro" value="Envoyer" />
-						</div>
-					</form>
 
-				</div>
+					
+
 				</div>
 			</div>
 		</div>
 
-
 	<!-- 		Navigation bars section -->
 			<div id="nav-menu">
 				<div id="top-nav-bar">
-					<a href="#"><img id="icon_home-img" src="./image_library/icon_home.svg" alt="Home"/></a>
-					<div id="contact">
+					<a href="#"><img id="icon_home-img" onclick="SwitchPage(0)" src="./image_library/icon_home.svg" alt="Home"/></a>
+					<div id="contact" onclick="SwitchPage(2)">
 						<a href="#"><img id="icon_contact-img" src="./image_library/icon_contact.svg" alt="Contact"/></a>
 						<div id="contact-text" class="Bold TextWithIcon">
 							<a href="#">Contactez-moi !</a>
@@ -85,14 +53,14 @@
 
 				<div id="left-nav-bar">
 					<ul>
-						<li><a href="#"><img id="icon_presentation-img" src="./image_library/icon_presentation.svg" alt="Presentation"/></a></li>
-						<li><a href="#"><img id="icon_temoignages-img" src="./image_library/icon_temoignages.svg" alt="Temoignages"/></a></li>
-						<li><a href="#"><img id="icon_exp_pro-img" src="./image_library/icon_exp_pro.svg" alt="Professional-exp"/></a></li>
-						<li><a href="#"><img id="icon_skills-img" src="./image_library/icon_skills.svg" alt="Skills"/></a></li>
-						<li><a href="#"><img id="icon_achievements-img" src="./image_library/icon_achievements.svg" alt="Achievements"/></a></li>
-						<li><a href="#"><img id="icon_exp_pers-img" src="./image_library/icon_exp_pers.svg" alt="Personal-exp"/></a></li>
-						<li><a href="#"><img id="icon_education-img" src="./image_library/icon_education.svg" alt="Education"/></a></li>
-						<li><a href="#"><img id="icon_passions-img" src="./image_library/icon_passions.svg" alt="Passions"/></a></li>
+						<li><a href="#"><img id="icon_presentation-img" onclick="SwitchPage(1)" src="./image_library/icon_presentation.svg" alt="Presentation"/></a></li>
+						<li><a href="#"><img id="icon_temoignages-img" onclick="SwitchPage(3)" src="./image_library/icon_temoignages.svg" alt="Temoignages"/></a></li>
+						<li><a href="#"><img id="icon_exp_pro-img" onclick="SwitchPage(4)" src="./image_library/icon_exp_pro.svg" alt="Professional-exp"/></a></li>
+						<li><a href="#"><img id="icon_skills-img" onclick="SwitchPage(5)" src="./image_library/icon_skills.svg" alt="Skills"/></a></li>
+						<li><a href="#"><img id="icon_achievements-img" onclick="SwitchPage(6)" src="./image_library/icon_achievements.svg" alt="Achievements"/></a></li>
+						<li><a href="#"><img id="icon_exp_pers-img" onclick="SwitchPage(7)" src="./image_library/icon_exp_pers.svg" alt="Personal-exp"/></a></li>
+						<li><a href="#"><img id="icon_education-img" onclick="SwitchPage(8)" src="./image_library/icon_education.svg" alt="Education"/></a></li>
+						<li><a href="#"><img id="icon_passions-img" onclick="SwitchPage(9)" src="./image_library/icon_passions.svg" alt="Passions"/></a></li>
 					</ul>
 				</div>
 

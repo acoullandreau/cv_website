@@ -1,0 +1,34 @@
+<div>
+	<p class="Source Bold FontSizeSubHeader PageTitre">Formulaire de contact</p>
+</div>
+<div id="form-container">
+	<div id="form-intro" class="FontSizeFormIntro">
+		<p>Merci de renseigner le formulaire ci-dessous pour toute prise de contact ou correspondance.</p>
+		<p>Je ne manquerai pas de vous recontacter dans les plus brefs délais. </p>
+	</div>
+	<form class="Form Bold FontSizeFormFields">
+		<div id="form-fields">
+			<div class="FormField">
+				<p>Prénom</p>
+				<input type="text" class="FontSizeParagraph" name="fname"/>
+			</div>
+			<div class="FormField">
+				<p>Nom</p>
+				<input type="text" class="FontSizeParagraph" name="lname"/>
+			</div>
+			<div class="FormField">
+				<p>Adresse email</p>
+				<input type="email" class="FontSizeParagraph" name="email"/>
+			</div>
+		</div>
+		<div>
+			<textarea class="FontSizeParagraph" name="message"></textarea>
+		</div>
+		<div id="form-attachment" class="FontSizeSubParagraph">
+			<label><input type="file" id="attachment-input" name="attachment" accept=".jpg, .png, .pdf, .doc, .docx, .xslx, .xsl, .txt, .json">Ajouter une pièce jointe</label>
+		</div>
+		<div id="form-button">
+			<input type="button" id="send-button" class="ColorLight FontSizeFormIntro" value="Envoyer" />
+		</div>
+	</form>
+</div>
