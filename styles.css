@@ -478,15 +478,31 @@ label {
 
 
 
+/*Specific to Professional Experience page*/
 
+.ProGridWrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 45%);
+  	grid-template-rows: repeat(4, 300px); 
+  	grid-column-gap: 3%;
+  	grid-row-gap: 2%;
+  	justify-content: center;
+}
 
+.ExpBlock {
+	display: inline-block;
+}
 
+.DatePeriod {
+	float: left;
+	transform: rotate(-90deg);
+}
 
-
-
-
-
-
+.ExpProDetails {
+	width: 80%;
+	/*float: right;*/
+	display: inline-block;
+}
 
 
 

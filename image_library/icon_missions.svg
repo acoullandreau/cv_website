@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.263" height="28" viewBox="0 0 35.263 28">
+  <g id="Groupe_382" data-name="Groupe 382" transform="translate(150 -2935)">
+    <g id="Ellipse_89" data-name="Ellipse 89" transform="translate(-150 2935)" fill="none" stroke="#535353" stroke-width="1">
+      <ellipse cx="15" cy="14" rx="15" ry="14" stroke="none"/>
+      <ellipse cx="15" cy="14" rx="14.5" ry="13.5" fill="none"/>
+    </g>
+    <g id="Ellipse_90" data-name="Ellipse 90" transform="translate(-146 2938)" fill="none" stroke="#535353" stroke-width="3">
+      <circle cx="11" cy="11" r="11" stroke="none"/>
+      <circle cx="11" cy="11" r="9.5" fill="none"/>
+    </g>
+    <g id="Ellipse_91" data-name="Ellipse 91" transform="translate(-140 2943)" fill="#535353" stroke="#535353" stroke-width="1">
+      <circle cx="5.5" cy="5.5" r="5.5" stroke="none"/>
+      <circle cx="5.5" cy="5.5" r="5" fill="none"/>
+    </g>
+    <line id="Ligne_104" data-name="Ligne 104" y1="8.733" x2="15.74" transform="translate(-134.24 2940.5)" fill="none" stroke="#d3fbff" stroke-width="2"/>
+    <g id="Polygone_1" data-name="Polygone 1" transform="translate(-121.264 2946.122) rotate(-120)" fill="#535353">
+      <path d="M 6.074945449829102 7.036599636077881 L 0.7765003442764282 7.036599636077881 L 3.42572283744812 1.208297967910767 L 6.074945449829102 7.036599636077881 Z" stroke="none"/>
+      <path d="M 3.42572283744812 2.416617870330811 L 1.55300760269165 6.536599636077881 L 5.29843807220459 6.536599636077881 L 3.42572283744812 2.416617870330811 M 3.42572283744812 0 L 6.851442813873291 7.536599636077881 L 2.86102294921875e-06 7.536599636077881 L 3.42572283744812 0 Z" stroke="none" fill="#535353"/>
+    </g>
+  </g>
+</svg>
