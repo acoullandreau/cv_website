@@ -496,7 +496,7 @@ label {
 .ProGridWrapper {
 	display: grid;
 	grid-template-columns: repeat(2, 45%);
-  	grid-template-rows: repeat(4, 22vh); 
+  	grid-template-rows: 21vh repeat(3, 20vh); 
   	grid-column-gap: 3%;
   	grid-row-gap: 2%;
   	justify-content: center;
@@ -505,6 +505,49 @@ label {
 .ProGridElemOne {
 	grid-column: 1;
   	grid-row-start: 1;
+  	justify-self:end;
+  	align-self: end;
+}
+
+.ProGridElemTwo {
+	grid-column: 1;
+  	grid-row-start: 2;
+  	justify-self:end;
+  	align-self: end;
+}
+
+.ProGridElemThree {
+	grid-column: 2;
+  	grid-row-start: 2;
+  	justify-self:end;
+  	align-self: end;
+}
+
+
+.ProGridElemFour {
+	grid-column: 1;
+  	grid-row-start: 3;
+  	justify-self:end;
+  	align-self: end;
+}
+
+.ProGridElemFive {
+	grid-column: 2;
+  	grid-row-start: 3;
+  	justify-self:end;
+  	align-self: end;
+}
+
+.ProGridElemSix {
+	grid-column: 1;
+  	grid-row-start: 4;
+  	justify-self:end;
+  	align-self: end;
+}
+
+.ProGridElemSeven {
+	grid-column: 2;
+  	grid-row-start: 4;
   	justify-self:end;
   	align-self: end;
 }
@@ -519,7 +562,7 @@ label {
 
 .ExpTitle {
 	width: 55%;
-	margin-top: 2.5%;
+	margin-top: 2%;
 	margin-bottom: 3%;
 	margin-right: 2%;
 	float: right;
@@ -542,11 +585,24 @@ label {
 }
 
 .ExpLogo {
-	width: 20%;
+	width: 35%;
 	float: left;
-	margin-top: 10%;
+	margin-top: 5vh;
 	margin-bottom: auto;
-	margin-left: 10%;
+	margin-left: 3%;
+}
+
+.ExpLogoDefault img {
+	margin-left: 25%;
+	width: auto;
+	height: auto;
+}
+
+.ExpLogoCompany img {
+	margin-left: 8%;
+	max-height: 12vh;
+	width: 80%;
+	height: 10%;
 }
 
 .ProExpGridWrapper {
@@ -615,7 +671,11 @@ label {
   	align-self: end;
 }
 
-
+.ProExpGridWrapper img {
+	max-width: 3vh;
+	width: auto;
+	height: auto;
+}
 
 
 
