@@ -715,23 +715,36 @@ label {
 
 .LevelBar {
 	border-radius: 15px;
-	height: 100%;
-	width: 3%;
-	margin-left: 5%;
-	margin-right: 3%;
-	float: left;
+	width: 0.5vh;
+	height: 80%;
 }
 
 .SkillTitle {
 	margin: 5%;
 }
 
-.SkillList {
-	display: inline-block;
-	width: 100%;
-	margin-bottom: 3%;
-	margin-right: 5%;
+.SkillList tr {
+	padding-top: 3%;
 }
+
+.SkillList td {
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 5%;
+	padding-bottom:5%;
+
+}
+
+.SkillContainer {
+	width: 100%;
+	padding-left: 5%;
+}
+
+.SkillContainer img{
+	z-index: 10;
+}
+
+
 
 .SkillGridWrapper {
 	display: grid;
