@@ -729,7 +729,7 @@ label {
 
 .SkillGridElemOne {
 	width: 100%;
-	height: 85%;
+	height: 80%;
 	border-radius: 15px;
 	grid-column: 1;
   	grid-row: 1 / span 2;
@@ -738,6 +738,9 @@ label {
 }
 
 .SkillGridElemTwo {
+	width: 100%;
+	height: 100%;
+	position: relative;
 	border-radius: 15px;
 	grid-column: 2;
   	grid-row-start: 1;
@@ -746,6 +749,9 @@ label {
 }
 
 .SkillGridElemThree {
+	width: 100%;
+	height: 100%;
+	position: relative;
 	border-radius: 15px;
 	grid-column: 2;
   	grid-row-start: 2;
@@ -754,6 +760,9 @@ label {
 }
 
 .SkillGridElemFour {
+	width: 100%;
+	height: 100%;
+	position: relative;
 	border-radius: 15px;
 	grid-column: 3;
   	grid-row-start: 1;
@@ -762,6 +771,9 @@ label {
 }
 
 .SkillGridElemFive {
+	width: 100%;
+	height: 100%;
+	position: relative;
 	border-radius: 15px;
 	grid-column: 3;
   	grid-row-start: 2;
@@ -769,7 +781,17 @@ label {
   	align-self: start;
 }
 
+.SkillContextImage {
+	position: absolute;
+	float: right;
+	top: 5%;
+	right: 5%;
+}
+
+
 .SkillTitle {
+	width: auto;
+	float: left;
 	margin: 5%;
 }
 
