@@ -3,17 +3,18 @@ window.onload = function () {
 	// button.addEventListener("click", onButtonClick)
 	// scene.background_image = document.getElementById('bg-img');
 	// scene.train_image = document.getElementById('bg-train-img');
-	var scene = new Scene();
+	scene = new Scene();
 	var factory = new ElementFactory(scene);
 	factory.createElement('bg', document.getElementById('bg-img'));
 	factory.createElement('train', document.getElementById('bg-train-img'));
 	// factory.createElement('foreground', document.getElementById('fg-hide-train-img'))
 	// console.log(scene.elements_list[0].image.getBoundingClientRect())
 	window.addEventListener("resize", scene.onResize.bind(scene));
-	document.addEventListener("keydown", scene.onKeyDown.bind(scene));
+	// document.addEventListener("keydown", scene.onKeyDown.bind(scene));
 	window.requestAnimationFrame(scene.animate.bind(scene));
 }
 
+var scene;
 var ORIGINAL_BG_HEIGHT = 1025;
 var ORIGINAL_BG_WIDTH = 9100;
 
@@ -98,25 +99,25 @@ function Scene() {
 			this.elements_list[index].animate(delta_time);
 		}
 	}
-	this.onKeyDown = function(event) {
+	this.changePage = function(page_reference) {
 		var new_state = undefined
-		if (event.code === "KeyW") {
+		if (page_reference === 1) {
 			new_state = 1;
-		} else if (event.code === "KeyE") {
+		} else if (page_reference === 3) {
 			new_state = 2;
-		} else if (event.code === "KeyR") {
+		} else if (page_reference === 4) {
 			new_state = 3;
-		} else if (event.code === "KeyT") {
+		} else if (page_reference === 5) {
 			new_state = 4;
-		} else if (event.code === "KeyY") {
+		} else if (page_reference === 6) {
 			new_state = 5;
-		} else if (event.code === "KeyU") {
+		} else if (page_reference === 7) {
 			new_state = 6;
-		} else if (event.code === "KeyI") {
+		} else if (page_reference === 8) {
 			new_state = 7;
-		} else if (event.code === "KeyO") {
+		} else if (page_reference === 9) {
 			new_state = 8;
-		} else if (event.code === "KeyQ") {
+		} else if (page_reference === 0 | page_reference === 2){
 			new_state = 0;
 		}
 

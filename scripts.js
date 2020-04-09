@@ -18,7 +18,11 @@ SwitchPage = function(page_reference) {
 		return response.text();
 	}).then(function(html) {
 		document.getElementById('content').innerHTML = html;
+		console.log(page_reference)
+		console.log(scene)
+		scene.changePage(page_reference);
 	}).catch(function (err) {
 		console.warn('Something went wrong.', err);
 	})
+
 }
