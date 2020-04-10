@@ -91,6 +91,25 @@ body {
 	background-color:#EA5E48;
 }
 
+.Blur {
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	position: fixed;
+	height:100%;
+	width: 100%;
+}
+
+.OverlayWindow {
+	position: absolute;
+	width: 30%;
+	height: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	/*margin-top: 30%;*/
+}
+
+
+
 h1 {
 	text-align: center;
 	margin: 0px;
