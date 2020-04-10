@@ -1,0 +1,51 @@
+{
+	"current_activity": {
+		"missions": ["Je travaille aujourd’hui sur la conception et le développement d’une solution logicielle de gestion d’objets connectés." ],
+		"competences": {
+			"competences_mobilisées":[],
+			"competences_acquises":[]
+		}
+	},
+	"paradox": {
+		"missions": [],
+		"competences": {
+			"competences_mobilisées":[],
+			"competences_acquises":[]
+		}
+	},
+	"nomosphere": {
+		"missions": [],
+		"competences": {
+			"competences_mobilisées":[],
+			"competences_acquises":[]
+		}
+	},
+	"citelum":{
+		"missions": [],
+		"competences": {
+			"competences_mobilisées":[],
+			"competences_acquises":[]
+		}
+	},
+	"evesa":{
+		"missions": [],
+		"competences": {
+			"competences_mobilisées":[],
+			"competences_acquises":[]
+		}
+	},
+	"shanghai": {
+		"missions": [],
+		"competences": {
+			"competences_mobilisées":[],
+			"competences_acquises":[]
+		}
+	},
+	"cbc": {
+		"missions": [],
+		"competences": {
+			"competences_mobilisées":[],
+			"competences_acquises":[]
+		}
+	}
+}

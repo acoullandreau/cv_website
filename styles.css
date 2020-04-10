@@ -91,25 +91,6 @@ body {
 	background-color:#EA5E48;
 }
 
-.Blur {
-	-webkit-backdrop-filter: blur(5px);
-	backdrop-filter: blur(5px);
-	position: fixed;
-	height:100%;
-	width: 100%;
-}
-
-.OverlayWindow {
-	position: absolute;
-	width: 30%;
-	height: 50%;
-	margin-right: auto;
-	margin-left: auto;
-	/*margin-top: 30%;*/
-}
-
-
-
 h1 {
 	text-align: center;
 	margin: 0px;
@@ -905,4 +886,58 @@ label {
 }
 
 
+/*Specific to Blur Overlay and Overlay Window*/
 
+#overlay {
+	display: none;
+	position: fixed;
+	height:100%;
+	width: 100%;
+}
+
+
+.Blur {
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	position: fixed;
+	height:100%;
+	width: 100%;
+}
+
+.OverlayWindow {
+	border-radius: 15px;
+	position: absolute;
+	width: auto;
+	height: auto;
+	margin-right: auto;
+	margin-left: 30%;
+	margin-top: 15%;
+	padding: 1%;
+}
+
+.SectionContent {
+	padding-top:2%;
+	padding-bottom: 2%;
+}
+
+.SectionContent ul {
+	margin-top:2%; 
+	padding-left:1%;
+}
+
+.Close {
+	position: relative;
+	float: right;
+}
+
+.SectionQuoteLeft {
+	position: absolute;
+	top: 10%;
+}
+
+.SectionQuoteRight {
+	position: absolute;
+	right: 5%;
+	bottom: 10%;
+	/*float: right;*/
+}
