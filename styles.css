@@ -623,6 +623,10 @@ label {
     grid-column-gap: 3%;
 }
 
+.ProExpGridWrapper a {
+    display: inline-block;
+}
+
 .ProExpElemOne {
 	grid-column-start: 1;
   	grid-row-start: 1;
@@ -927,6 +931,7 @@ label {
 
 .Close {
 	position: relative;
+	z-index: 100;
 	float: right;
 }
 
