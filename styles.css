@@ -915,6 +915,7 @@ label {
 	height: auto;
 	min-height: 30vh;
 	min-width: 50vh;
+	max-width: 50vh;
 	margin-right: auto;
 	margin-left: 30%;
 	margin-top: 15%;
@@ -928,7 +929,11 @@ label {
 
 .SectionContent ul {
 	margin-top:2%; 
-	padding-left:1%;
+	padding-left:8%;
+}
+
+.SectionContent li {
+	list-style: disc !important; 
 }
 
 .Close {
