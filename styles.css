@@ -913,6 +913,8 @@ label {
 	position: absolute;
 	width: auto;
 	height: auto;
+	min-height: 30vh;
+	min-width: 50vh;
 	margin-right: auto;
 	margin-left: 30%;
 	margin-top: 15%;

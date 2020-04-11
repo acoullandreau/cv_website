@@ -32,7 +32,7 @@ SwitchPage = function(page_reference) {
 
 
 OpenOverlay = function(section_reference, element_reference) {
-	var overlay_template = 'overlay_template_one_div.html';
+	var overlay_template = 'overlay_template.html';
 	var overlay_json = 'overlay_content.json';
 
 	promise_json = fetch(overlay_json).then(function(response) {
