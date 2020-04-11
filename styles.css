@@ -986,9 +986,10 @@ label {
 .AchiveGridWrapper {
 	margin-top: 5%;
 	display: grid;
-	grid-template-columns: repeat(2, 50%);
+	grid-template-columns: repeat(2, 50%) ;
   	grid-template-rows: 60vh; 
   	grid-column-gap: 3%;
+  	/*overflow-x: scroll;*/
 }
 
 .AchiveGridElemOne {
@@ -1074,4 +1075,19 @@ label {
 	/*margin-right: 3%;*/
 }
 
+/*.ScrollOuterWrapper {
+	width: 100vh;
+	height: 100vh;
+	transform: rotate(-90deg) translate(-100vh);
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: absolute;
+}
 
+.ScrollInnerWrapper {
+	display: flex;
+	flex-direction: row;
+	width: 200vw;
+	transform: rotate(90deg) translateY(-100vh);
+	transform-origin: top left;
+}*/
