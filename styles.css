@@ -108,6 +108,10 @@ body {
 	margin: 5%;
 }
 
+.ContentBlock {
+	margin-left: 5%;
+}
+
 .BackGroundLight {
 	background-color:#E8FCFF;
 }
@@ -1027,7 +1031,7 @@ label {
 
 .DescriptionBlock {
 	border-radius: 15px;
-	margin-top: 20%;
+	margin-top: 10%;
 	width: 80%;
 	height:40%; 
 	max-height: 20vh;
@@ -1146,11 +1150,6 @@ label {
 	bottom: 10%;
 	right: 5%;
 }
-
-.PersExpBlock {
-	margin-left: 3%;
-}
-
 
 .Description {
 	width: 85%;
