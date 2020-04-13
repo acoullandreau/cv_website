@@ -1173,7 +1173,7 @@ label {
 	margin-top: 3%;
 	display: grid;
 	grid-template-columns: repeat(2, 48%);
-  	grid-template-rows: repeat(2, 25vh);
+  	grid-template-rows: repeat(2, 29vh);
   	grid-gap: 2%;
 }
 
