@@ -7,7 +7,7 @@ page_correspondance = {
 	5:'competences.html',
 	6:'accomplissements.html',
 	7:'exp_pers.html',
-	8:'eductaion.html',
+	8:'education.html',
 	9:'passions.html'
 }
 
