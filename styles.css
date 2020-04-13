@@ -1218,6 +1218,7 @@ label {
 }
 
 .DescriptionContainer {
+	margin-top: 8%;
 	display: grid;
 	grid-template-columns: repeat(2, 49%);
 	grid-gap: 2%;
@@ -1240,7 +1241,10 @@ label {
   	align-self: center;
 }
 
-
+.DescriptionExpand a {
+	display: inline-block;
+	margin-right: 5%;
+}
 
 
 
