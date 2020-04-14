@@ -17,7 +17,7 @@ nav_bar_correspondance = {
 	2:'nav-bar-exp-pro',
 	3:'nav-bar-competences',
 	4:'nav-bar-accomplissements',
-	5:'nav-bar-exp_pers',
+	5:'nav-bar-exp-pers',
 	6:'nav-bar-education',
 	7:'nav-bar-passions',
 }
@@ -91,7 +91,7 @@ NavBarHover = function(element_reference, action) {
 	var elem_to_edit = document.getElementById(elem_ref);
 
 	if (action == 1) {
-		elem_to_edit.style.display = "block";
+		elem_to_edit.style.display = "inline-block";
 	} else {
 		elem_to_edit.style.display = "none";
 	}

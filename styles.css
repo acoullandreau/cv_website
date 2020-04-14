@@ -1336,9 +1336,9 @@ label {
 }
 
 .NavMenuExpand {
-	/*display: none;*/
-	display: inline-block;
-	position: relative;
+	display: none;
+	/*display: inline-block;*/
+	/*position: relative;*/
 	border-radius: 190px;
 	height: 50px;
 	margin-bottom: 4px;
@@ -1350,9 +1350,9 @@ label {
 	padding-left: 60px;
 }
 
-
-
-
+.ExternalFixedHeight {
+	height: 33px;
+}
 
 /*.LeftNavBarGridWrapper {
 	position: absolute;
