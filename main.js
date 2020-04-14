@@ -146,10 +146,7 @@ function Scene() {
 				this.elements_list[index].updateAnimation(new_state, to_pixel, animation_duration);
 			}
 		}
-
-		if (this.animating == false) {
-			window.requestAnimationFrame(this.animate.bind(this));
-		}
+		this.requestAnimationFrame();
 	}
 	this.onResize = function(event) {
 		this.ratio = window.innerHeight / ORIGINAL_BG_HEIGHT;
@@ -158,6 +155,11 @@ function Scene() {
 		// }
 		for (var index in this.elements_list) {
 			this.elements_list[index].updateOnResize();
+		}
+	}
+	this.requestAnimationFrame = function () {
+		if (this.animating == false) {
+			window.requestAnimationFrame(this.animate.bind(this));
 		}
 	}
 }
