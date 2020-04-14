@@ -106,63 +106,39 @@
 					</div>
 				</div>
 
-				<div id="left-nav-bar">
-					<ul>
-						<li>
-							<div class="LeftNavBar">
-								<div class="IconCircle BackGroundPetrol"><a href="#"><img class="IconImgOne" id="icon_presentation-img" onclick="SwitchPage(1)" src="./image_library/icon_presentation.svg"/></a></div>
-								<div id="" class="NavMenuExpand BackGroundPetrol"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Présentation<p></a></div>
-							</div>
-							
-						</li>
-						<li>
-							<div class="LeftNavBar">
-								<div class="IconCircle BackGroundDark"><a href="#"><img class="IconImgTwo" id="icon_temoignages-img" onclick="SwitchPage(3)" src="./image_library/icon_temoignages.svg"/></a></div>
-								<div id="" class="NavMenuExpand BackGroundDark"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Témoignages<p></a></div>
-							</div>
-							
-						</li>
-						<li>
-							<div class="LeftNavBar">
-								<div class="IconCircle CircleRed"><a href="#"><img class="IconImgThree" id="icon_exp_pro-img" onclick="SwitchPage(4)" src="./image_library/icon_exp_pro.svg"/></a></div>
-								<div id="" class="NavMenuExpand CircleRed"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Expériences professionnelles<p></a></div>
-							</div>
-							
-						</li>
-						<li>
-							<div class="LeftNavBar">
-								<div class="IconCircle BackGroundOrange"><a href="#"><img class="IconImgThree" id="icon_skills-img" onclick="SwitchPage(5)" src="./image_library/icon_skills.svg" alt="Skills"/></a></div>
-								<div id="" class="NavMenuExpand BackGroundOrange"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Compétences<p></a></div>
-							</div>
-							
-						</li>
-
-						<li>
-							<div class="LeftNavBar">
-								<div class="IconCircle BackGroundBlue"><a href="#"><img class="IconImgThree" id="icon_achievements-img" onclick="SwitchPage(6)" src="./image_library/icon_achievements.svg" alt="Achievements"/></a></div>
-								<div id="" class="NavMenuExpand BackGroundBlue"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Accomplissements<p></a></div>
-							</div>
-							
-						</li>
-						<li>
-							<div class="LeftNavBar">
-								<div class="IconCircle BackGroundYellow"><a href="#"><img class="IconImgOne" id="icon_exp_pers-img" onclick="SwitchPage(7)" src="./image_library/icon_exp_pers.svg" alt="Personal-exp"/></a></div>
-								<div id="" class="NavMenuExpand BackGroundYellow"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Expériences personnelles<p></a></div>
-							</div>
-							
-						</li>
-						<li>
-							<div class="LeftNavBar">
-								<div class="IconCircle BackGroundGreen"><a href="#"><img class="IconImgTwo" id="icon_education-img" onclick="SwitchPage(8)" src="./image_library/icon_education.svg" alt="Education"/></a></div>
-								<div id="" class="NavMenuExpand BackGroundGreen"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Formations<p></a></div>
-							</div>
-							
-						</li>
-						<li>
-							<div class="LeftNavBar">
-								<div class="IconCircle BackGroundPink"><a href="#"><img class="IconImgTwo" id="icon_passions-img" onclick="SwitchPage(9)" src="./image_library/icon_passions.svg" alt="Passions"/></a></div>
-								<div id="" class="NavMenuExpand BackGroundPink"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Passions<p></a></div>
-							</div>
+				<div id="left-nav-bar" class="LeftNavBarGridWrapper">
+					<div class="LeftNavBarGridElemOne">
+						<a href="#" onclick="SwitchPage(1)"><img id="icon_presentation-img" src="./image_library/icon_presentation_2.svg"/></a>
+						<div id="nav-bar-presentation" class="NavMenuExpand BackGroundPetrol"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Présentation<p></a></div>
+					</div>
+					<div class="LeftNavBarGridElemTwo">
+						<a href="#" onclick="SwitchPage(3)" ><img id="icon_temoignages-img" src="./image_library/icon_temoignages_2.svg"/></a>
+						<div id="nav-bar-temoignages" class="NavMenuExpand BackGroundDark"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Témoignages<p></a></div>
+					</div>
+					<div class="LeftNavBarGridElemThree" onmouseover="NavBarHover(2, 1)" onmouseout="NavBarHover(2, 0)">
+						<a href="#" onclick="SwitchPage(4)"><img id="icon_exp_pro-img" src="./image_library/icon_exp_pro_2.svg"/></a>
+						<div id="nav-bar-exp-pro" class="NavMenuExpand CircleRed"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Expériences professionnelles<p></a></div>
+					</div>
+					<div class="LeftNavBarGridElemFour">
+						<a href="#" onclick="SwitchPage(5)"><img id="icon_skills-img" src="./image_library/icon_skills_2.svg"/></a>
+						<div id="nav-bar-competences" class="NavMenuExpand BackGroundOrange"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Compétences<p></a></div>
+					</div>
+					<div class="LeftNavBarGridElemFive">
+						<a href="#" onclick="SwitchPage(6)"><img id="icon_achievements-img" src="./image_library/icon_achievements_2.svg"/></a>
+						<div id="nav-bar-accomplissements" class="NavMenuExpand BackGroundBlue"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Accomplissements<p></a></div>
+					</div>
+					<div class="LeftNavBarGridElemSix">
+						<a href="#" onclick="SwitchPage(7)"><img id="icon_exp_pers-img" src="./image_library/icon_exp_pers_2.svg"/></a>
+						<div id="nav-bar-exp-pers" class="NavMenuExpand BackGroundYellow"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Expériences personnelles<p></a></div>
+					</div>
+					<div class="LeftNavBarGridElemSeven">
+						<a href="#" onclick="SwitchPage(8)"><img id="icon_education-img" src="./image_library/icon_education_2.svg"/></a>
+						<div id="nav-bar-education" class="NavMenuExpand BackGroundGreen"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Formations<p></a></div>
+					</div>
+					<div class="LeftNavBarGridElemEight">
+						<a href="#" onclick="SwitchPage(9)"><img id="icon_passions-img" src="./image_library/icon_passions_2.svg"/></a>
+						<div id="nav-bar-passions" class="NavMenuExpand BackGroundPink"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeTitle Bold ColorLight">Passions<p></a></div>
+					</div>
 							
 						</li>
 					</ul>

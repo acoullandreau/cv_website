@@ -245,8 +245,7 @@ label {
 #left-nav-bar {
 	position: relative;
 	top:125px;
-	float: left;
-	left:0px;
+	left: 35px;
 	margin-bottom: 8px;
 }
 
@@ -255,10 +254,6 @@ label {
 	top:50px;
 	right:50px;
 	margin-bottom: 150px;
-}
-
-#left-nav-bar li {
-	margin-bottom: 2%;
 }
 
 #right-nav-bar li {
@@ -1324,33 +1319,54 @@ label {
 
 /*Specific to left nav bar*/
 
-.LeftNavBar {
-	display: inline-block;
-}
-
-.IconCircle {
+.LeftNavBarGridWrapper {
 	position: absolute;
-	border-radius: 50%;
+	display: grid;
 	width: 50px;
-    height: 50px;
+  	grid-template-rows: repeat(8, 50px);
+  	grid-gap: 2%;
 }
 
-.IconImgOne {
-	position: relative;
-	left: 20%;
-	top: 10%;
+.LeftNavBarElemOne {
+	display: inline-block;
+	grid-row:1;
+	justify-self:start;
 }
 
-.IconImgTwo {
-	position: relative;
-	left: 20%;
-	top: 25%;
+.LeftNavBarElemTwo {
+	display: inline-block;
+	grid-row:2;
+	justify-self:center;
 }
-
-.IconImgThree {
-	position: relative;
-	left: 20%;
-	top: 15%;
+.LeftNavBarElemThree {
+	display: inline-block;
+	grid-row:3;
+	justify-self:center;
+}
+.LeftNavBarElemFour {
+	display: inline-block;
+	grid-row:4;
+	justify-self:center;
+}
+.LeftNavBarElemFive {
+	display: inline-block;
+	grid-row:5;
+	justify-self:center;
+}
+.LeftNavBarElemSix {
+	display: inline-block;
+	grid-row:6;
+	justify-self:center;
+}
+.LeftNavBarElemSeven {
+	display: inline-block;
+	grid-row:7;
+	justify-self:center;
+}
+.LeftNavBarElemEight {
+	display: inline-block;
+	grid-row:8;
+	  	justify-self:center;
 }
 
 

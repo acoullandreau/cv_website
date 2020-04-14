@@ -11,12 +11,24 @@ page_correspondance = {
 	9:'passions.html'
 }
 
+nav_bar_correspondance = {
+	0:'nav-bar-presentation',
+	1:'nav-bar-temoignages',
+	2:'nav-bar-exp-pro',
+	3:'nav-bar-competences',
+	4:'nav-bar-accomplissements',
+	5:'nav-bar-exp_pers',
+	6:'nav-bar-education',
+	7:'nav-bar-passions',
+}
+
 overlay_dict_correspondance = {
 	'missions':'Missions',
 	'competences_mobilisées':'Compétences mobilisées',
 	'competences_acquises':'Compétences acquises',
 	'perfectionnement_professionnel':'Perfectionnement professionnel'
 }
+
 
 SwitchPage = function(page_reference) {
 	var html_file_name = page_correspondance[page_reference]
@@ -71,4 +83,17 @@ OpenOverlay = function(section_reference, element_reference) {
 
 CloseWindow = function() {
 	document.getElementById("overlay").style.display = "none";
+}
+
+
+NavBarHover = function(element_reference, action) {
+	var elem_ref = nav_bar_correspondance[element_reference];
+	var elem_to_edit = document.getElementById(elem_ref);
+
+	if (action == 1) {
+		elem_to_edit.style.display = "block";
+	} else {
+		elem_to_edit.style.display = "none";
+	}
+	
 }
