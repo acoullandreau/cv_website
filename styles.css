@@ -1319,7 +1319,42 @@ label {
 
 /*Specific to left nav bar*/
 
-.LeftNavBarGridWrapper {
+
+.LeftNavBar {
+	position: absolute;
+	top: 120px;
+	left: 35px;
+}
+
+.LeftNavBar img {
+	height: 50px;
+}
+
+.NavMenuIcon {
+	position: relative;
+	z-index: 100;
+}
+
+.NavMenuExpand {
+	/*display: none;*/
+	display: inline-block;
+	position: relative;
+	border-radius: 190px;
+	height: 50px;
+	margin-bottom: 4px;
+}
+
+.NavMenuExpand p {
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-left: 60px;
+}
+
+
+
+
+
+/*.LeftNavBarGridWrapper {
 	position: absolute;
 	display: grid;
 	width: 50px;
@@ -1367,23 +1402,9 @@ label {
 	display: inline-block;
 	grid-row:8;
 	  	justify-self:center;
-}
+}*/
 
 
-.NavMenuExpand {
-	/*display: none;*/
-	border-radius: 200px;
-	height: 50px;
-	width: 100%;
-	min-width: 250px;
-}
-
-.NavMenuExpand p {
-	position: relative;
-	top: 5px;
-	padding-right: 50px;
-	padding-left: 80px;
-}
 
 
 
