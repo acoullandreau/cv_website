@@ -81,6 +81,7 @@ function ElementFactory(scene) {
 }
 
 function Scene() {
+	this.animating = true;
 	this.background;
 	this.elements_list = [];
 	this.last_time = 0;
@@ -92,11 +93,25 @@ function Scene() {
 		this.background = element;
 	}
 	this.animate = function(global_time) {
-		window.requestAnimationFrame(this.animate.bind(this));
-		var delta_time = global_time - this.last_time;
-		this.last_time = global_time;
+		var animations_pending = false;
 		for (var index in this.elements_list) {
-			this.elements_list[index].animate(delta_time);
+			if (this.elements_list[index].animation.isAnimationOver() == false) {
+				animations_pending = true;
+			}
+		}
+		if (animations_pending == false) {
+			this.animating = false;
+		} else {
+			window.requestAnimationFrame(this.animate.bind(this));
+			if (this.animating == false) {
+				this.animating = true;
+				this.last_time = global_time;
+			}
+			var delta_time = global_time - this.last_time;
+			this.last_time = global_time;
+			for (var index in this.elements_list) {
+				this.elements_list[index].animate(delta_time);
+			}
 		}
 	}
 	this.changePage = function(page_reference) {
@@ -131,6 +146,10 @@ function Scene() {
 				this.elements_list[index].updateAnimation(new_state, to_pixel, animation_duration);
 			}
 		}
+
+		if (this.animating == false) {
+			window.requestAnimationFrame(this.animate.bind(this));
+		}
 	}
 	this.onResize = function(event) {
 		this.ratio = window.innerHeight / ORIGINAL_BG_HEIGHT;
@@ -140,7 +159,7 @@ function Scene() {
 		for (var index in this.elements_list) {
 			this.elements_list[index].updateOnResize();
 		}
-	} 
+	}
 }
 
 function SceneElements(image, state_dict) {

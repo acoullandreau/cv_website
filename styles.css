@@ -281,6 +281,46 @@ label {
 }
 
 
+
+
+/*Specific to left nav bar*/
+
+.LeftNavBar {
+	position: absolute;
+	top: 120px;
+	left: 35px;
+}
+
+.LeftNavBar img {
+	height: 50px;
+}
+
+.NavMenuIcon {
+	position: relative;
+	z-index: 100;
+}
+
+.NavMenuExpand {
+	display: none;
+	border-radius: 190px;
+	height: 50px;
+	margin-bottom: 4px;
+}
+
+.NavMenuExpand p {
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-left: 60px;
+}
+
+.ExternalFixedHeight {
+	height: 33px;
+}
+
+
+
+
+
 /*Specific to home page*/
 
 .HomeGridWrapper {
@@ -1314,97 +1354,5 @@ label {
 	bottom: 8%;
 	right: 5%;
 }
-
-
-
-/*Specific to left nav bar*/
-
-
-.LeftNavBar {
-	position: absolute;
-	top: 120px;
-	left: 35px;
-}
-
-.LeftNavBar img {
-	height: 50px;
-}
-
-.NavMenuIcon {
-	position: relative;
-	z-index: 100;
-}
-
-.NavMenuExpand {
-	display: none;
-	/*display: inline-block;*/
-	/*position: relative;*/
-	border-radius: 190px;
-	height: 50px;
-	margin-bottom: 4px;
-}
-
-.NavMenuExpand p {
-	padding-top: 5px;
-	padding-right: 20px;
-	padding-left: 60px;
-}
-
-.ExternalFixedHeight {
-	height: 33px;
-}
-
-/*.LeftNavBarGridWrapper {
-	position: absolute;
-	display: grid;
-	width: 50px;
-  	grid-template-rows: repeat(8, 50px);
-  	grid-gap: 2%;
-}
-
-.LeftNavBarElemOne {
-	display: inline-block;
-	grid-row:1;
-	justify-self:start;
-}
-
-.LeftNavBarElemTwo {
-	display: inline-block;
-	grid-row:2;
-	justify-self:center;
-}
-.LeftNavBarElemThree {
-	display: inline-block;
-	grid-row:3;
-	justify-self:center;
-}
-.LeftNavBarElemFour {
-	display: inline-block;
-	grid-row:4;
-	justify-self:center;
-}
-.LeftNavBarElemFive {
-	display: inline-block;
-	grid-row:5;
-	justify-self:center;
-}
-.LeftNavBarElemSix {
-	display: inline-block;
-	grid-row:6;
-	justify-self:center;
-}
-.LeftNavBarElemSeven {
-	display: inline-block;
-	grid-row:7;
-	justify-self:center;
-}
-.LeftNavBarElemEight {
-	display: inline-block;
-	grid-row:8;
-	  	justify-self:center;
-}*/
-
-
-
 
 
