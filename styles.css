@@ -258,7 +258,7 @@ label {
 }
 
 #left-nav-bar li {
-	margin-bottom: 5%;
+	margin-bottom: 2%;
 }
 
 #right-nav-bar li {
@@ -1322,14 +1322,52 @@ label {
 
 
 
-/*Specific Passions page*/
+/*Specific to left nav bar*/
 
-#passions-list {
-	
-} 
+.LeftNavBar {
+	display: inline-block;
+}
+
+.IconCircle {
+	position: absolute;
+	border-radius: 50%;
+	width: 50px;
+    height: 50px;
+}
+
+.IconImgOne {
+	position: relative;
+	left: 20%;
+	top: 10%;
+}
+
+.IconImgTwo {
+	position: relative;
+	left: 20%;
+	top: 25%;
+}
+
+.IconImgThree {
+	position: relative;
+	left: 20%;
+	top: 15%;
+}
 
 
+.NavMenuExpand {
+	/*display: none;*/
+	border-radius: 200px;
+	height: 50px;
+	width: 100%;
+	min-width: 250px;
+}
 
+.NavMenuExpand p {
+	position: relative;
+	top: 5px;
+	padding-right: 50px;
+	padding-left: 80px;
+}
 
 
 
