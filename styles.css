@@ -238,9 +238,16 @@ label {
 	right:150px;
 }
 
-#language-text {
-	font-size: 18px;
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: #11ffee00;
+	border-style: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 }
+
 
 #left-nav-bar {
 	position: relative;
