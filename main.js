@@ -7,7 +7,7 @@ window.onload = function () {
 	var factory = new ElementFactory(scene);
 	factory.createElement('bg', document.getElementById('bg-img'));
 	factory.createElement('train', document.getElementById('bg-train-img'));
-	// factory.createElement('foreground', document.getElementById('fg-hide-train-img'))
+	factory.createElement('bg', document.getElementById('fg-hide-train-img'))
 	// console.log(scene.elements_list[0].image.getBoundingClientRect())
 	window.addEventListener("resize", scene.onResize.bind(scene));
 	// document.addEventListener("keydown", scene.onKeyDown.bind(scene));
