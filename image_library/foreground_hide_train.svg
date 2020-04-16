@@ -28,11 +28,11 @@
   </metadata>
   <sodipodi:namedview
      inkscape:current-layer="svg1589"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:window-y="88"
      inkscape:window-x="0"
      inkscape:cy="384"
-     inkscape:cx="3421.913"
+     inkscape:cx="3415"
      inkscape:zoom="0.14465593"
      showgrid="false"
      id="namedview1591"
@@ -3199,9 +3199,9 @@
     <rect
        id="Rectangle_1529-2"
        data-name="Rectangle 1529"
-       width="264.09399"
+       width="278.09399"
        height="89"
-       transform="translate(3070,680)"
+       transform="translate(3056,680)"
        fill="#b8bc10"
        x="0"
        y="0" />
@@ -3235,9 +3235,9 @@
     <rect
        id="Rectangle_1545-2"
        data-name="Rectangle 1545"
-       width="44.082001"
+       width="58.082001"
        height="64.333"
-       transform="translate(3070,703.667)"
+       transform="translate(3056,703.667)"
        fill="#b3b7b7"
        x="0"
        y="0" />
@@ -5710,9 +5710,9 @@
     <rect
        id="Rectangle_2495-2"
        data-name="Rectangle 2495"
-       width="264.09399"
+       width="278.09399"
        height="14"
-       transform="translate(3070,666)"
+       transform="translate(3056,666)"
        fill="#c9ce00"
        x="0"
        y="0" />
