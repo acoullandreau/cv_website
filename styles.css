@@ -29,9 +29,7 @@ body {
 	position: fixed;
 	height:100%;
 	min-height: 700px;
-	/*z-index: 100;*/
 }
-
 
 .Source {
 	font-family: 'Source Serif Pro', serif;
@@ -256,14 +254,6 @@ select {
 	font-weight: 300;
 }
 
-
-#left-nav-bar {
-	position: relative;
-	top:125px;
-	left: 35px;
-	margin-bottom: 8px;
-}
-
 #right-nav-bar {
 	position: absolute;
 	top:50px;
@@ -300,10 +290,22 @@ select {
 
 /*Specific to left nav bar*/
 
+.FontSizeNavBar {
+	font-size: 20px;
+}
+
+#left-nav-bar {
+	position: relative;
+	top:125px;
+	left: 35px;
+	margin-bottom: 8px;
+}
+
 .LeftNavBar {
 	position: absolute;
 	top: 120px;
 	left: 35px;
+	min-height: 432px;
 }
 
 .LeftNavBar img {
@@ -323,13 +325,13 @@ select {
 }
 
 .NavMenuExpand p {
-	padding-top: 5px;
+	padding-top: 10px;
 	padding-right: 20px;
 	padding-left: 60px;
 }
 
 .ExternalFixedHeight {
-	height: 33px;
+	height: 54px;
 }
 
 
