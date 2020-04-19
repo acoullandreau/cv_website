@@ -172,7 +172,7 @@ function SceneElements(image, state_dict) {
 	this.current_state = 0
 	this.animation_duration = this.state_dict[this.current_state]['duration']
 	this.current_position = this.state_dict[this.current_state]['position']
-	this.animation = new Animation(this, this.current_position, 0, this.animation_duration)
+	this.animation = new Animation(this, this.current_position, 0, 'pixel', this.animation_duration)
 	this.animate = function(delta_time) {
 		if (this.animation.isAnimationOver() == false) {
 			this.animation.animate(delta_time)
@@ -181,7 +181,7 @@ function SceneElements(image, state_dict) {
 	this.updateAnimation = function(state, to_pixel, duration) {
 		this.current_state = state;
 		this.animation_duration = duration;
-		this.animation = new Animation(this, this.current_position, to_pixel, this.animation_duration);
+		this.animation = new Animation(this, this.current_position, to_pixel, 'pixel', this.animation_duration);
 	}
 	this.slideTo = function(position) {
 		var scene_ratio = this.scene.ratio;
@@ -200,16 +200,45 @@ function SceneElements(image, state_dict) {
 	}
 }
 
-function Animation(object, from_pixel, to_pixel, animation_duration) {
+// function Animation(object, from_pixel, to_pixel, animation_duration) {
+// 	this.object = object
+// 	this.from_pixel = from_pixel;
+// 	this.to_pixel = to_pixel;
+// 	this.animation_duration = animation_duration;
+// 	this.time_elapsed = 0;
+// 	this.offsetPixels = function() {
+// 		var dist_to_move = this.to_pixel - this.from_pixel;
+// 		var next_position = (dist_to_move / this.animation_duration) * this.time_elapsed
+// 		return next_position
+// 	};
+// 	this.animate = function(delta_time) {
+// 		this.time_elapsed += delta_time
+// 		if (this.time_elapsed > this.animation_duration) {
+// 			this.time_elapsed = this.animation_duration
+// 		}
+// 		if (this.time_elapsed <= this.animation_duration) {
+// 			var offset_pixels = this.offsetPixels()
+// 			this.object.slideTo(this.from_pixel + offset_pixels);
+// 			this.object.current_position = this.from_pixel + offset_pixels;
+// 		}
+// 	}
+// 	this.isAnimationOver = function() {
+// 		return this.time_elapsed >= this.animation_duration
+// 	} 
+// }
+
+
+function Animation(object, from, to, target, animation_duration) {
 	this.object = object
-	this.from_pixel = from_pixel;
-	this.to_pixel = to_pixel;
+	this.from = from;
+	this.to = to;
+	this.target = target;
 	this.animation_duration = animation_duration;
 	this.time_elapsed = 0;
-	this.offsetPixels = function() {
-		var dist_to_move = this.to_pixel - this.from_pixel;
-		var next_position = (dist_to_move / this.animation_duration) * this.time_elapsed
-		return next_position
+	this.offsetValue = function() {
+		var offset = this.to - this.from;
+		var next_value = (offset / this.animation_duration) * this.time_elapsed
+		return next_value
 	};
 	this.animate = function(delta_time) {
 		this.time_elapsed += delta_time
@@ -217,9 +246,14 @@ function Animation(object, from_pixel, to_pixel, animation_duration) {
 			this.time_elapsed = this.animation_duration
 		}
 		if (this.time_elapsed <= this.animation_duration) {
-			var offset_pixels = this.offsetPixels()
-			this.object.slideTo(this.from_pixel + offset_pixels);
-			this.object.current_position = this.from_pixel + offset_pixels;
+			if (this.target == 'pixel') {
+				var offset_pixels = this.offsetValue();
+				this.object.slideTo(this.from + offset_pixels);
+				this.object.current_position = this.from + offset_pixels;
+			} else if (this.target == 'opacity') {
+				var offset_opacity = this.offsetValue();
+				this.object.opacity = this.from + offset_opacity;
+			}
 		}
 	}
 	this.isAnimationOver = function() {
@@ -227,4 +261,5 @@ function Animation(object, from_pixel, to_pixel, animation_duration) {
 	} 
 }
 
-
+// var content_div = document.getElementById("content-container");
+// content_div.style.opacity = opacity;
