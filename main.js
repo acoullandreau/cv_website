@@ -86,6 +86,7 @@ function Scene() {
 	this.elements_list = [];
 	this.animation_list = [];
 	this.current_animation_index = 0;
+	this.current_state = 0;
 	this.last_time = 0;
 	this.ratio = window.innerHeight / ORIGINAL_BG_HEIGHT;
 	this.addElement = function (element) {
@@ -153,22 +154,21 @@ function Scene() {
 			var slide_animations = []
 			for (var index in this.elements_list) {
 				var to_pixel = this.elements_list[index].state_dict[new_state]['position'];
-				var animation_duration = this.elements_list[index].state_dict[new_state]['duration'];
+				// var animation_duration = this.elements_list[index].state_dict[new_state]['duration'];
 				if ((to_pixel + window.innerWidth)>ORIGINAL_BG_WIDTH) {
 					to_pixel = this.elements_list[index].state_dict[new_state]['position']
 				}
+				var animation_duration = this.calculate_animation_duration(new_state)
 				this.elements_list[index].updateAnimation(new_state, to_pixel, animation_duration);
 				slide_animations.push(this.elements_list[index].animation)
 			}
 			this.updateAnimationList(slide_animations, callback);
+			this.current_state = new_state;
 		}
 		this.requestAnimationFrame();
 	}
 	this.onResize = function(event) {
 		this.ratio = window.innerHeight / ORIGINAL_BG_HEIGHT;
-		// if (this.ratio < 1) {
-		// 	this.ratio = 1;
-		// }
 		for (var index in this.elements_list) {
 			this.elements_list[index].updateOnResize();
 		}
@@ -183,6 +183,11 @@ function Scene() {
 		var fade_out_animation = new Animation(content_to_fade, 100, 0, 'opacity', 500, callback);
 		var fade_in_animation = new Animation(content_to_fade, 0, 100, 'opacity', 500);
 		this.animation_list = [[fade_out_animation], slide_animations, [fade_in_animation]];
+	}
+	this.calculate_animation_duration = function(next_state) {
+		var default_duration = 1000;
+		var diff_states = Math.abs(next_state - this.current_state);
+		return default_duration + diff_states*200
 	}
 }
 
@@ -262,5 +267,3 @@ function Animation(object, from, to, target, animation_duration, end_callback) {
 	} 
 }
 
-// var content_div = document.getElementById("content-container");
-// content_div.style.opacity = opacity;
