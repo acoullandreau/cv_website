@@ -1,16 +1,13 @@
 window.onload = function () {
-	// var button = document.getElementsByName('Animate').item(0);
-	// button.addEventListener("click", onButtonClick)
-	// scene.background_image = document.getElementById('bg-img');
-	// scene.train_image = document.getElementById('bg-train-img');
+	// We create the scene instance that will hold the scene elements
 	scene = new Scene();
 	var factory = new ElementFactory(scene);
 	factory.createElement('bg', document.getElementById('bg-img'));
 	factory.createElement('train', document.getElementById('bg-train-img'));
 	factory.createElement('bg', document.getElementById('fg-hide-train-img'))
-	// console.log(scene.elements_list[0].image.getBoundingClientRect())
+	// we add an event that is always listening, not just when the page load
 	window.addEventListener("resize", scene.onResize.bind(scene));
-	// document.addEventListener("keydown", scene.onKeyDown.bind(scene));
+	// we initialise the requestAnimationFrame function that will handle the animation of the elements
 	window.requestAnimationFrame(scene.animate.bind(scene));
 }
 
@@ -96,6 +93,8 @@ function Scene() {
 		this.background = element;
 	}
 	this.animate = function(global_time) {
+		// this function is first called when the page is loaded
+		// then it is called again everytime this.requestAnimationFrame() is called, and while there are still elements to animate (animations_pending == true)
 		var animations_pending = false;
 		for (var index in this.animation_list[this.current_animation_index]) {
 			var animation = this.animation_list[this.current_animation_index][index]
@@ -115,8 +114,10 @@ function Scene() {
 				window.requestAnimationFrame(this.animate.bind(this));
 			}
 		} else {
+			// there are animations pending, so we keep requesting frames and computing the animations
 			window.requestAnimationFrame(this.animate.bind(this));
 			if (this.animating == false) {
+				// we update the current state to "we are animating", and we reset the last_time value
 				this.animating = true;
 				this.last_time = global_time;
 			}
@@ -154,7 +155,6 @@ function Scene() {
 			var slide_animations = []
 			for (var index in this.elements_list) {
 				var to_pixel = this.elements_list[index].state_dict[new_state]['position'];
-				// var animation_duration = this.elements_list[index].state_dict[new_state]['duration'];
 				if ((to_pixel + window.innerWidth)>ORIGINAL_BG_WIDTH) {
 					to_pixel = this.elements_list[index].state_dict[new_state]['position']
 				}
@@ -162,9 +162,11 @@ function Scene() {
 				this.elements_list[index].updateAnimation(new_state, to_pixel, animation_duration);
 				slide_animations.push(this.elements_list[index].animation)
 			}
+			// we update the list of animations with the new target
 			this.updateAnimationList(slide_animations, callback);
 			this.current_state = new_state;
 		}
+		// we call the scene.animate function again with the new list of animations
 		this.requestAnimationFrame();
 	}
 	this.onResize = function(event) {
@@ -267,3 +269,11 @@ function Animation(object, from, to, target, animation_duration, end_callback) {
 	} 
 }
 
+// General logic of the code
+// 1. we load the page : create all the scene elements, initialise the animation logic, create an event listener for window resize
+// 2. whenever the window is resized, we recompute the position of the elements to take into account the new scaling ratio
+// 3. whenever the scene.changePage is called (from another script linked to the onclick attribute in the HTML), we compute the target position and duration of the animation,
+// we rebuild the list of animation and we call the scene.animate function
+// 4. in the scene.animate function : we check if for the current animation in the list that is being handled all the animations are over ;
+// if all the animations are over, we increment the index of the current animation and we repeat
+// if all the animations are not over, we animate the element
