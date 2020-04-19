@@ -84,6 +84,8 @@ function Scene() {
 	this.animating = true;
 	this.background;
 	this.elements_list = [];
+	this.animation_list = [];
+	this.current_animation_index = 0;
 	this.last_time = 0;
 	this.ratio = window.innerHeight / ORIGINAL_BG_HEIGHT;
 	this.addElement = function (element) {
@@ -94,13 +96,23 @@ function Scene() {
 	}
 	this.animate = function(global_time) {
 		var animations_pending = false;
-		for (var index in this.elements_list) {
-			if (this.elements_list[index].animation.isAnimationOver() == false) {
+		for (var index in this.animation_list[this.current_animation_index]) {
+			var animation = this.animation_list[this.current_animation_index][index]
+			if (animation.isAnimationOver() == false) {
 				animations_pending = true;
 			}
 		}
+		// There are no animations pending
 		if (animations_pending == false) {
-			this.animating = false;
+			this.current_animation_index += 1;
+			// We check if there are more animations to process
+			if (this.current_animation_index  >=this.animation_list.length) {
+				// We got to the end of the list of animations, we reset the index and stop animating
+				this.current_animation_index = 0;
+				this.animating = false;
+			} else {
+				window.requestAnimationFrame(this.animate.bind(this));
+			}
 		} else {
 			window.requestAnimationFrame(this.animate.bind(this));
 			if (this.animating == false) {
@@ -109,12 +121,13 @@ function Scene() {
 			}
 			var delta_time = global_time - this.last_time;
 			this.last_time = global_time;
-			for (var index in this.elements_list) {
-				this.elements_list[index].animate(delta_time);
+			for (var index in this.animation_list[this.current_animation_index]) {
+				var animation = this.animation_list[this.current_animation_index][index]
+				animation.animate(delta_time);
 			}
 		}
 	}
-	this.changePage = function(page_reference) {
+	this.changePage = function(page_reference, callback) {
 		var new_state = undefined
 		if (page_reference === 1) {
 			new_state = 1;
@@ -137,6 +150,7 @@ function Scene() {
 		}
 
 		if (new_state !== undefined) {
+			var slide_animations = []
 			for (var index in this.elements_list) {
 				var to_pixel = this.elements_list[index].state_dict[new_state]['position'];
 				var animation_duration = this.elements_list[index].state_dict[new_state]['duration'];
@@ -144,7 +158,9 @@ function Scene() {
 					to_pixel = this.elements_list[index].state_dict[new_state]['position']
 				}
 				this.elements_list[index].updateAnimation(new_state, to_pixel, animation_duration);
+				slide_animations.push(this.elements_list[index].animation)
 			}
+			this.updateAnimationList(slide_animations, callback);
 		}
 		this.requestAnimationFrame();
 	}
@@ -161,6 +177,12 @@ function Scene() {
 		if (this.animating == false) {
 			window.requestAnimationFrame(this.animate.bind(this));
 		}
+	}
+	this.updateAnimationList = function(slide_animations, callback) {
+		var content_to_fade = document.getElementById("content-container").style;
+		var fade_out_animation = new Animation(content_to_fade, 100, 0, 'opacity', 500, callback);
+		var fade_in_animation = new Animation(content_to_fade, 0, 100, 'opacity', 500);
+		this.animation_list = [[fade_out_animation], slide_animations, [fade_in_animation]];
 	}
 }
 
@@ -200,40 +222,13 @@ function SceneElements(image, state_dict) {
 	}
 }
 
-// function Animation(object, from_pixel, to_pixel, animation_duration) {
-// 	this.object = object
-// 	this.from_pixel = from_pixel;
-// 	this.to_pixel = to_pixel;
-// 	this.animation_duration = animation_duration;
-// 	this.time_elapsed = 0;
-// 	this.offsetPixels = function() {
-// 		var dist_to_move = this.to_pixel - this.from_pixel;
-// 		var next_position = (dist_to_move / this.animation_duration) * this.time_elapsed
-// 		return next_position
-// 	};
-// 	this.animate = function(delta_time) {
-// 		this.time_elapsed += delta_time
-// 		if (this.time_elapsed > this.animation_duration) {
-// 			this.time_elapsed = this.animation_duration
-// 		}
-// 		if (this.time_elapsed <= this.animation_duration) {
-// 			var offset_pixels = this.offsetPixels()
-// 			this.object.slideTo(this.from_pixel + offset_pixels);
-// 			this.object.current_position = this.from_pixel + offset_pixels;
-// 		}
-// 	}
-// 	this.isAnimationOver = function() {
-// 		return this.time_elapsed >= this.animation_duration
-// 	} 
-// }
-
-
-function Animation(object, from, to, target, animation_duration) {
+function Animation(object, from, to, target, animation_duration, end_callback) {
 	this.object = object
 	this.from = from;
 	this.to = to;
 	this.target = target;
 	this.animation_duration = animation_duration;
+	this.end_callback = end_callback;
 	this.time_elapsed = 0;
 	this.offsetValue = function() {
 		var offset = this.to - this.from;
@@ -252,12 +247,18 @@ function Animation(object, from, to, target, animation_duration) {
 				this.object.current_position = this.from + offset_pixels;
 			} else if (this.target == 'opacity') {
 				var offset_opacity = this.offsetValue();
-				this.object.opacity = this.from + offset_opacity;
+				this.object.opacity = this.from + offset_opacity +'%';
 			}
 		}
 	}
 	this.isAnimationOver = function() {
-		return this.time_elapsed >= this.animation_duration
+		if (this.time_elapsed >= this.animation_duration) {
+			if (this.end_callback !== undefined) {
+				this.end_callback();
+			}
+			return true;
+		} 
+		return false;
 	} 
 }
 

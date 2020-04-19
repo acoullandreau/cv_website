@@ -35,8 +35,9 @@ SwitchPage = function(page_reference) {
 	fetch(html_file_name).then(function(response) {
 		return response.text();
 	}).then(function(html) {
-		document.getElementById('content').innerHTML = html;
-		scene.changePage(page_reference);
+		scene.changePage(page_reference, function() {
+			document.getElementById('content').innerHTML = html;
+		});
 	}).catch(function (err) {
 		console.warn('Something went wrong.', err);
 	})
