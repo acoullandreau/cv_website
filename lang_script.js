@@ -68,6 +68,23 @@ loadTranslatedContent = function(language, page) {
 	}).catch(function (err) {
 		console.warn('Something went wrong.', err);
 	})
+}
+
+changeSelectedLanguage = function(language) {
+	var index;
+	if (language == 'fr') {
+		index = 0;
+	} else if (language == 'pt') {
+		index = 2;
+	} else {
+		index = 1;
+	}
+
+	document.getElementById("select-lang").options.selectedIndex = index;
 
 
 }
+
+
+
+

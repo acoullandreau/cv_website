@@ -10,9 +10,10 @@ window.onload = function () {
 	// we initialise the requestAnimationFrame function that will handle the animation of the elements
 	window.requestAnimationFrame(scene.animate.bind(scene));
 	//load the home page in the default browser language
-	localStorage.removeItem("language"); // we reset the value stored
+	// localStorage.removeItem("language"); // we reset the value stored
 	var browser_default_language = getLanguage();
 	loadTranslatedContent(browser_default_language, 'home');
+	changeSelectedLanguage(browser_default_language)
 	nav_menu_contact = document.getElementById("contact-text").innerHTML;
 	nav_menu_left_bar = document.getElementById("left-nav-bar-text").innerHTML;
 	nav_menu_pdf = document.getElementById("cv-file").innerHTML;
