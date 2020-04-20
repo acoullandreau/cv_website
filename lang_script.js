@@ -79,10 +79,7 @@ changeSelectedLanguage = function(language) {
 	} else {
 		index = 1;
 	}
-
 	document.getElementById("select-lang").options.selectedIndex = index;
-
-
 }
 
 
