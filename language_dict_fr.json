@@ -1,0 +1,54 @@
+{
+	"nav-bar" : {
+		"{nav-bar.contact}":"Contactez-moi !",
+		"{cv_name}":"A_Coullandreau_CV_fr.pdf",
+		"{navbar.navigation.presentation.title}":"Présentation",
+		"{navbar.navigation.temoignages.title}":"Témoignages",
+		"{navbar.navigation.exppro.title}":"Expériences professionnelles",
+		"{navbar.navigation.skills.title}":"Compétences",
+		"{navbar.navigation.achievements.title}":"Accomplissements",
+		"{navbar.navigation.exppers.title}":"Expériences personnelles",
+		"{navbar.navigation.education.title}":"Formations",
+		"{navbar.navigation.passions.title}":"Passions"
+	},
+	"home": {
+		"{home.maintitle}":"Alexina Coullandreau",
+		"{home.subtitle}":"Chef de projets",
+		"{home.navigation.presentation.title}":"Présentation",
+		"{home.navigation.temoignages.title}":"Témoignages",
+		"{home.navigation.exppro.title}":"Expériences professionnelles",
+		"{home.navigation.skills.title}":"Compétences",
+		"{home.navigation.achievements.title}":"Accomplissements",
+		"{home.navigation.exppers.title}":"Expériences personnelles",
+		"{home.navigation.education.title}":"Formations",
+		"{home.navigation.passions.title}":"Passions"
+	},
+	"presentation":{
+
+	},
+	"contact_form":{
+
+	},
+	"temoignages":{
+
+	},
+	"exp-pro":{
+
+	},
+	"competences":{
+
+	},
+	"accomplissements":{
+
+	},
+	"exp_pers":{
+
+	},
+	"education":{
+
+	},
+	"passions":{
+
+	}
+
+}

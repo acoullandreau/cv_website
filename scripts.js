@@ -1,14 +1,14 @@
 page_correspondance = {
-	0:'home.html',
-	1:'presentation.html',
-	2:'contact_form.html',
-	3:'temoignages.html',
-	4:'exp-pro.html',
-	5:'competences.html',
-	6:'accomplissements.html',
-	7:'exp_pers.html',
-	8:'education.html',
-	9:'passions.html'
+	0:'home',
+	1:'presentation',
+	2:'contact_form',
+	3:'temoignages',
+	4:'exp-pro',
+	5:'competences',
+	6:'accomplissements',
+	7:'exp_pers',
+	8:'education',
+	9:'passions'
 }
 
 nav_bar_correspondance = {
@@ -22,27 +22,19 @@ nav_bar_correspondance = {
 	7:'nav-bar-passions',
 }
 
-overlay_dict_correspondance = {
-	'missions':'Missions',
-	'competences_mobilisées':'Compétences mobilisées',
-	'competences_acquises':'Compétences acquises',
-	'perfectionnement_professionnel':'Perfectionnement professionnel'
-}
-
-
 SwitchPage = function(page_reference) {
-	var html_file_name = page_correspondance[page_reference]
-	fetch(html_file_name).then(function(response) {
-		return response.text();
-	}).then(function(html) {
-		scene.changePage(page_reference, function() {
-			document.getElementById('content').innerHTML = html;
-		});
-	}).catch(function (err) {
-		console.warn('Something went wrong.', err);
-	})
+	var html_file = page_correspondance[page_reference];
+	var content_language = getLanguage();
+	scene.changePage(page_reference, function() {
+		loadTranslatedContent(content_language, html_file)
+	});
 }
 
+SwitchLanguage = function(language) {
+	localStorage.setItem("language", language);
+	var content_language = getLanguage();
+	loadTranslatedContent(content_language, current_page);
+}
 
 OpenOverlay = function(section_reference, element_reference) {
 	var overlay_template = 'overlay_template.html';

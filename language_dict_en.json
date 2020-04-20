@@ -1,0 +1,54 @@
+{
+	"nav-bar":{
+		"{nav-bar.contact}":"Contact me!",
+		"{cv_name}":"A_Coullandreau_CV_en.pdf",
+		"{navbar.navigation.presentation.title}":"Introduction",
+		"{navbar.navigation.temoignages.title}":"Testimony",
+		"{navbar.navigation.exppro.title}":"Professional experiences",
+		"{navbar.navigation.skills.title}":"Skills",
+		"{navbar.navigation.achievements.title}":"Achievements",
+		"{navbar.navigation.exppers.title}":"Personal experiences",
+		"{navbar.navigation.education.title}":"Education",
+		"{navbar.navigation.passions.title}":"Passions"
+	},
+	"home":{
+		"{home.maintitle}":"Alexina Coullandreau",
+		"{home.subtitle}":"Project manager",
+		"{home.navigation.presentation.title}":"Introduction",
+		"{home.navigation.temoignages.title}":"Testimony",
+		"{home.navigation.exppro.title}":"Professional experiences",
+		"{home.navigation.skills.title}":"Skills",
+		"{home.navigation.achievements.title}":"Achievements",
+		"{home.navigation.exppers.title}":"Personal experiences",
+		"{home.navigation.education.title}":"Education",
+		"{home.navigation.passions.title}":"Passions"
+	},
+	"presentation":{
+
+	},
+	"contact_form":{
+
+	},
+	"temoignages":{
+
+	},
+	"exp-pro":{
+
+	},
+	"competences":{
+
+	},
+	"accomplissements":{
+
+	},
+	"exp_pers":{
+
+	},
+	"education":{
+
+	},
+	"passions":{
+
+	}
+
+}
