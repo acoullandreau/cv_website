@@ -1,23 +1,23 @@
 <div>
-	<h1 class="Source Bold FontSizeSubHeader PageTitre">Formulaire de contact</h1>
+	<h1 class="Source Bold FontSizeSubHeader PageTitre">{form.maintitle}</h1>
 </div>
 <div id="form-container" class="BackGroundLight">
 	<div id="form-intro" class="FontSizeFormIntro">
-		<p>Merci de renseigner le formulaire ci-dessous pour toute prise de contact ou correspondance.</p>
-		<p>Je ne manquerai pas de vous recontacter dans les plus brefs délais. </p>
+		<p>{form.description.one}</p>
+		<p>{form.description.two}</p>
 	</div>
 	<form class="Form Bold FontSizeFormFields">
 		<div id="form-fields">
 			<div class="FormField">
-				<p>Prénom</p>
+				<p>{form.fname.label}</p>
 				<input type="text" class="FontSizeParagraph" name="fname"/>
 			</div>
 			<div class="FormField">
-				<p>Nom</p>
+				<p>{form.lname.label}</p>
 				<input type="text" class="FontSizeParagraph" name="lname"/>
 			</div>
 			<div class="FormField">
-				<p>Adresse email</p>
+				<p>{form.email.label}</p>
 				<input type="email" class="FontSizeParagraph" name="email"/>
 			</div>
 		</div>
@@ -25,10 +25,8 @@
 			<textarea class="FontSizeParagraph" name="message"></textarea>
 		</div>
 		<div id="form-attachment" class="FontSizeParagraph">
-			<label><input type="file" id="attachment-input" name="attachment" accept=".jpg, .png, .pdf, .doc, .docx, .xslx, .xsl, .txt, .json">Ajouter une pièce jointe</label>
+			<label><input type="file" id="attachment-input" name="attachment" accept=".jpg, .png, .pdf, .doc, .docx, .xslx, .xsl, .txt, .json">{form.attachment.label}</label>
 		</div>
-		<div id="form-button">
-			<input type="button" id="send-button" class="ColorLight FontSizeFormIntro" value="Envoyer" />
-		</div>
+		<div id="form-button">{form.send.button}</div>
 	</form>
 </div>

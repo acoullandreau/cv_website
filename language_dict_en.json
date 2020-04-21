@@ -24,9 +24,29 @@
 		"{home.navigation.passions.title}":"Passions"
 	},
 	"presentation":{
+		"{presentation.maintitle}":"Introduction",
+
+		"{presentation.block.one.title}":"Briefly",
+		"{presentation.block.one.description}":"Young engineer graduated in <strong>urban engineering</strong>, I am passionate about History, litterature, science and technology in particular.",
+		"{presentation.block.two.title}":"Listener",
+		"{presentation.block.two.description}":"In permanent interaction with several professions, from <strong>juridical</strong> to <strong>financial</strong> through <strong>technical expertise</strong> and supplier relationships, I also interacted a lot with clients. ",
+		"{presentation.block.three.title}":"Analyst",
+		"{presentation.block.three.description}":"My degree in urban planning allows me to stay vigilant to the needs of the users, who remain the target for any <strong>development or deployment of a solution</strong>.",
+		"{presentation.block.four.title}":"Good relations",
+		"{presentation.block.four.description}":"I am curious and voluntary, and I had the opportunity to work on diverse projects related to urban life. Dynamic and smiling, I have <strong>good interactions</strong> with clients, suppliers and co-workers whom I get to work with.",
+		"{presentation.block.five.title}":"Multidisciplinary",
+		"{presentation.block.five.description}":"The new needs that are born with digital technologies force us to question what we consider as granted, and a new world is being created!  My professional experiences led me to work with domains related to <strong>street lighting</strong>, but the innovation part always allowed me to get out of this frame and explore new areas. I built a strong understanding and acquired skills in computer science, with several trainings related to <strong>data analysis</strong>, several <strong>programming languages</strong> and more generally to <strong>software design</strong>."
 
 	},
 	"contact_form":{
+		"{form.maintitle}":"Contact form",
+		"{form.description.one}":"Please fill in this form to contact me.",
+		"{form.description.two}":"I will do my very best to get back in touch with you as soon as possible. ",
+		"{form.fname.label}":"First Name",
+		"{form.lname.label}":"Last Name",
+		"{form.email.label}":"Email address",
+		"{form.attachment.label}":"Add an attachment",
+		"{form.send.button}":"<input type=\"button\" id=\"send-button\" class=\"ColorLight FontSizeFormIntro\" value=\"Send\"/>"
 
 	},
 	"temoignages":{
@@ -45,7 +65,47 @@
 
 	},
 	"education":{
+		"{education.maintitle}":"Education",
 
+		"{education.item.seven.date}":"March 2019 - November 2019",
+		"{education.item.seven.title}":"Data Science Nanodegree",
+		"{education.item.seven.description}":"Nanodegree covering basic concepts of data analysis (vizualisation, python librairies, linear algrebra, statistics, ….)",
+		"{education.item.seven.skill}":"Data analysis (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Computer science and networks</a>)",
+		"{education.item.seven.diploma}":"Nanodegree Udacity",
+
+		"{education.item.six.date}":"July 2015",
+		"{education.item.six.title}":"CISCO CCNA Routing & Switching",
+		"{education.item.six.description}":"CISCO certification entry level, Routing & Switching path",
+		"{education.item.six.skill}":"Networks (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Computer science and networks</a>)",
+		"{education.item.six.diploma}":"CISCO certification(CCNA)",
+
+		"{education.item.five.date}":"January to june 2013",
+		"{education.item.five.title}":"Southampton University – Civil Engineering faculty",
+		"{education.item.five.description}":"ERASMUS civil engineering",
+		"{education.item.five.skill}":"Civil Engineering (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Urban Engineering</a>)",
+
+		"{education.item.four.date}":"September 2011 - August 2014",
+		"{education.item.four.title}":"École des Ingénieurs de la Ville de Paris (EIVP)",
+		"{education.item.four.description}":"Urban Engineering diploma : urbanism and civil engineering",
+		"{education.item.four.skill}":"Urban Engineering (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Urban Engineering</a>)",
+		"{education.item.four.diploma}":"Urban Engineer Diploma",
+
+		"{education.item.three.date}":"September 2009 - Julyt 2011",
+		"{education.item.three.title}":"Prep School",
+		"{education.item.three.description}":"PCSI then PC course (physics and chemistry",
+		"{education.item.three.skill}":"Preparation to the competitive exams of engineering schools (Mines/Ponts, CCP, Centrale SUPELEC)",
+
+		"{education.item.two.date}":"2009",
+		"{education.item.two.title}":"Baccalauréat",
+		"{education.item.two.description}":"Scientific Baccalauréat",
+		"{education.item.two.diploma}":"Baccalauréat with high honors",
+
+		"{education.item.one.date}":"Since 2016",
+		"{education.item.one.title}":"Massive Online Open Course (MOOC)",
+		"{education.item.one.description.one}":"Professional improvement (16 MOOC)",
+		"{education.item.one.description.two}":"Personal improvement (13 MOOC)",
+		"{education.item.one.skill}":"See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Computer science and networks</a> et <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Project Management</a>",
+		"{education.item.one.diploma}":"Certificate of attendance"
 	},
 	"passions":{
 

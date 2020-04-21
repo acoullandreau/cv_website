@@ -173,6 +173,7 @@ body {
 
 .ScrollSnapChild {
 	scroll-snap-align:start;
+	margin-bottom: 5%;
 }
 
 h1 {
@@ -484,10 +485,19 @@ select {
 
 .PresGridElemTen {
 	grid-column: 2;
-  	grid-row-start: 4 / span 3;
+  	grid-row-start: 4;
+  	/*grid-row-end: 8;*/
   	justify-self:stretch;
   	align-self: start;
 }
+
+.PresGridElemTenBis {
+	grid-column: 2;
+  	grid-row-start: 5;
+  	/*justify-self:stretch;*/
+  	align-self: end;
+}
+
 
 .QuoteLeft {
 	justify-self:start;
@@ -1217,7 +1227,7 @@ select {
 /*Specific to Education page*/
 
 .EducGridWrapper {
-	margin-top: 3%;
+	/*margin-top: 3%;*/
 	display: grid;
 	grid-template-columns: repeat(2, 48%);
   	grid-template-rows: repeat(2, 29vh);
@@ -1279,13 +1289,17 @@ select {
 }
 
 .DescriptionContainerElemOne div {
-	width: 85%;
+	width: 75%;
 }
 
 .DescriptionContainerElemTwo {
 	grid-column: 2;
   	justify-self:top;
   	align-self: center;
+}
+
+.DescriptionContainerElemTwo div {
+	width: 75%;
 }
 
 .DescriptionExpand a {

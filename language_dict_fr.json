@@ -24,9 +24,30 @@
 		"{home.navigation.passions.title}":"Passions"
 	},
 	"presentation":{
+		"{presentation.maintitle}":"Présentation",
+
+		"{presentation.block.one.title}":"En bref",
+		"{presentation.block.one.description}":"Jeune ingénieur diplômée en <strong>génie urbain</strong>, je suis passionnée d’Histoire, de littérature, par les sciences et la technologie en particulier.",
+		"{presentation.block.two.title}":"À l’écoute",
+		"{presentation.block.two.description}":"En interaction permanente avec plusieurs métiers, allant du <strong>juridique</strong> au <strong>financier</strong> en passant par <strong>l’expertise technique</strong> et les fournisseurs, j’ai également beaucoup interagis avec les clients. ",
+		"{presentation.block.three.title}":"Analyse des besoins",
+		"{presentation.block.three.description}":"Ma formation en urbanisme me permet de rester vigilante aux besoins des usagers, des utilisateurs finaux, qui demeurent la cible et le cap à suivre pour tout <strong>développement ou déploiement de solution</strong>.",
+		"{presentation.block.four.title}":"Relationnel",
+		"{presentation.block.four.description}":"D’un naturel volontaire et curieux, j’ai eu l’occasion de travailler sur des projets très variés, traitant de près ou de loin des questions de la vie urbaine. Souriante et dynamique, j’ai un <strong>bon relationnel</strong> avec les clients, les fournisseurs, et les collaborateurs avec lesquels je travaille. ",
+		"{presentation.block.five.title}":"Pluri-disciplinaire",
+		"{presentation.block.five.description}":"Les nouveaux usages qui naissent avec le numérique nous font remettre en question beaucoup d’acquis, et un monde nouveau se crée ! Mes expériences professionnelles m’ont conduites à travailler sur des sujets touchant de près ou de loin à <strong>l’éclairage public</strong>, mais la part d’innovation m’a également conduite souvent à sortir de ce cadre et à explorer de nouveaux domaines. J’ai développé de nombreuses compétences dans l’informatique, avec plusieurs formations touchant à <strong>l’analyse des données</strong>, à plusieurs <strong>languages de programmation</strong> et plus généralement à la <strong>conception logicielle</strong>."
 
 	},
 	"contact_form":{
+		"{form.maintitle}":"Formulaire de contact",
+		"{form.description.one}":"Merci de renseigner le formulaire ci-dessous pour toute prise de contact ou correspondance.",
+		"{form.description.two}":"Je ne manquerai pas de vous recontacter dans les plus brefs délais. ",
+		"{form.fname.label}":"Prénom",
+		"{form.lname.label}":"Nom",
+		"{form.email.label}":"Adresse email",
+		"{form.attachment.label}":"Ajouter une pièce jointe",
+		"{form.send.button}":"<input type=\"button\" id=\"send-button\" class=\"ColorLight FontSizeFormIntro\" value=\"Envoyer\"/>"
+
 
 	},
 	"temoignages":{
@@ -46,51 +67,46 @@
 	},
 	"education":{
 		"{education.maintitle}":"Formations",
+
 		"{education.item.seven.date}":"Mars 2019 - Novembre 2019",
 		"{education.item.seven.title}":"Data Science Nanodegree",
 		"{education.item.seven.description}":"Formation certifiante couvrant les concepts de base de l’analyse des données (visualisation, librairies python, algèbre linéaire, statistiques, ….)",
 		"{education.item.seven.skill}":"Analyse de données (Voir <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Informatique et réseaux</a>)",
 		"{education.item.seven.diploma}":"Nanodegree Udacity",
 
-		"{education.item.six.date}":"",
-		"{education.item.six.title}":"",
-		"{education.item.six.description}":"",
-		"{education.item.six.skill}":"",
-		"{education.item.six.diploma}":"",
+		"{education.item.six.date}":"Juillet 2015",
+		"{education.item.six.title}":"CISCO CCNA Routing & Switching",
+		"{education.item.six.description}":"Certification CISCO premier niveau, domaine Routing & Switching",
+		"{education.item.six.skill}":"Réseaux (Voir <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Informatique et réseaux</a>)",
+		"{education.item.six.diploma}":"Certification CISCO (CCNA)",
 
-		"{education.item.five.date}":"",
-		"{education.item.five.title}":"",
-		"{education.item.five.description}":"",
-		"{education.item.five.skill}":"",
-		"{education.item.five.diploma}":"",
+		"{education.item.five.date}":"Janvier à juin 2013",
+		"{education.item.five.title}":"Université de Southampton – Faculté de génie civil",
+		"{education.item.five.description}":"ERASMUS génie civil",
+		"{education.item.five.skill}":"Génie civil (Voir <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Génie urbain</a>)",
 
-		"{education.item.four.date}":"",
-		"{education.item.four.title}":"",
-		"{education.item.four.description}":"",
-		"{education.item.four.skill}":"",
-		"{education.item.four.diploma}":"",
+		"{education.item.four.date}":"Septembre 2011 - Août 2014",
+		"{education.item.four.title}":"École des Ingénieurs de la Ville de Paris (EIVP)",
+		"{education.item.four.description}":"Cursus en génie urbain : urbanisme et génie civil",
+		"{education.item.four.skill}":"Génie urbain (Voir <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Génie urbain</a>)",
+		"{education.item.four.diploma}":"Diplôme d’Ingénieur en Génie Urbain",
 
-		"{education.item.three.date}":"",
-		"{education.item.three.title}":"",
-		"{education.item.three.description}":"",
-		"{education.item.three.skill}":"",
-		"{education.item.three.diploma}":"",
+		"{education.item.three.date}":"Septembre 2009 - Juillet 2011",
+		"{education.item.three.title}":"Classe préparatoire aux grandes écoles",
+		"{education.item.three.description}":"Filière PCSI puis PC (physique-chimie)",
+		"{education.item.three.skill}":"Préparation aux concours Mines/Ponts, CCP, Centrale SUPELEC",
 
-		"{education.item.two.date}":"",
-		"{education.item.two.title}":"",
-		"{education.item.two.description}":"",
-		"{education.item.two.skill}":"",
-		"{education.item.two.diploma}":"",
+		"{education.item.two.date}":"2009",
+		"{education.item.two.title}":"Baccalauréat",
+		"{education.item.two.description}":"Baccalauréat Général filière S",
+		"{education.item.two.diploma}":"Baccalauréat général mention Très bien",
 
-		"{education.item.one.date}":"",
-		"{education.item.one.title}":"",
-		"{education.item.one.description}":"",
-		"{education.item.one.skill}":"",
-		"{education.item.one.diploma}":""
-
-
-
-
+		"{education.item.one.date}":"Depuis 2016",
+		"{education.item.one.title}":"Massive Online Open Course (MOOC)",
+		"{education.item.one.description.one}":"Perfectionnement professionnel (16 MOOC)",
+		"{education.item.one.description.two}":"Perfectionnement personnel (13 MOOC)",
+		"{education.item.one.skill}":"Voir <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Informatique et réseaux</a> et <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Gestion de projets</a>",
+		"{education.item.one.diploma}":"Attestations de suivi avec succès (validation des acquis)"
 	},
 	"passions":{
 
