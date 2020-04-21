@@ -98,10 +98,9 @@ body {
 
 .DatePeriod p {
 	width: 100%;
-	margin-top: 50%;
+	margin-top: 16%;
 	margin-left: 10%;
 	writing-mode: vertical-rl;
-	text-orientation: mixed;
 	transform: rotate(180deg);
 }
 
@@ -1062,7 +1061,7 @@ select {
 
 
 
-/*Specific to Achivements page*/
+/*Specific to Achievements page*/
 
 .AchiveGridWrapper {
 	margin-top: 2%;

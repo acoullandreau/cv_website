@@ -45,6 +45,51 @@
 
 	},
 	"education":{
+		"{education.maintitle}":"Formations",
+		"{education.item.seven.date}":"Mars 2019 - Novembre 2019",
+		"{education.item.seven.title}":"Data Science Nanodegree",
+		"{education.item.seven.description}":"Formation certifiante couvrant les concepts de base de l’analyse des données (visualisation, librairies python, algèbre linéaire, statistiques, ….)",
+		"{education.item.seven.skill}":"Analyse de données (Voir <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Informatique et réseaux</a>)",
+		"{education.item.seven.diploma}":"Nanodegree Udacity",
+
+		"{education.item.six.date}":"",
+		"{education.item.six.title}":"",
+		"{education.item.six.description}":"",
+		"{education.item.six.skill}":"",
+		"{education.item.six.diploma}":"",
+
+		"{education.item.five.date}":"",
+		"{education.item.five.title}":"",
+		"{education.item.five.description}":"",
+		"{education.item.five.skill}":"",
+		"{education.item.five.diploma}":"",
+
+		"{education.item.four.date}":"",
+		"{education.item.four.title}":"",
+		"{education.item.four.description}":"",
+		"{education.item.four.skill}":"",
+		"{education.item.four.diploma}":"",
+
+		"{education.item.three.date}":"",
+		"{education.item.three.title}":"",
+		"{education.item.three.description}":"",
+		"{education.item.three.skill}":"",
+		"{education.item.three.diploma}":"",
+
+		"{education.item.two.date}":"",
+		"{education.item.two.title}":"",
+		"{education.item.two.description}":"",
+		"{education.item.two.skill}":"",
+		"{education.item.two.diploma}":"",
+
+		"{education.item.one.date}":"",
+		"{education.item.one.title}":"",
+		"{education.item.one.description}":"",
+		"{education.item.one.skill}":"",
+		"{education.item.one.diploma}":""
+
+
+
 
 	},
 	"passions":{
