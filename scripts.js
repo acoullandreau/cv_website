@@ -35,7 +35,7 @@ nav_bar_hover_state = {
 
 SwitchPage = function(page_reference) {
 	var target_html_file = page_correspondance[page_reference];
-	
+
 	// triggers change page logic only if the user wants to acces another page
 	if (target_html_file !== current_page) {
 		var content_language = getLanguage();
@@ -53,17 +53,18 @@ SwitchLanguage = function(language) {
 
 OpenOverlay = function(section_reference, element_reference) {
 	var overlay_template = 'overlay_template.html';
-	var overlay_json = 'overlay_content.json';
-
-	promise_json = fetch(overlay_json).then(function(response) {
-		return response.json();
-	})
+	// var overlay_json = 'overlay_content.json';
+	var language = getLanguage()
+	promise_json = getLanguageJson(language)
+	// fetch(overlay_json).then(function(response) {
+	// 	return response.json();
+	// })
 	promise_html = fetch(overlay_template).then(function(response) {
 		return response.text();
 	})
 
 	Promise.all([promise_json, promise_html]).then(function(values) {
-  		var json = values[0];
+  		var json = values[0]['overlay_content'];
   		var html = values[1];
   		var overlay_content = document.getElementById("overlay-content");
   		var content = "";

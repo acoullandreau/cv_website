@@ -43,7 +43,7 @@ loadTranslatedContent = function(language, page) {
   		var page_content = lang_json[page];
   		for (var i in page_content) {
   			var page_elem = page_content[i];
-  			page_html = page_html.replace(i, page_elem);
+  			page_html = page_html.replace(new RegExp(i, "g"), page_elem);
   		}
   		document.getElementById("content").innerHTML = page_html;
 

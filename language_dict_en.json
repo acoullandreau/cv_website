@@ -53,6 +53,31 @@
 
 	},
 	"exp-pro":{
+		"{exppro.maintitle}":"Professional experiences",
+		"{exppro.mission.title}":"Missions and activities",
+		"{exppro.skill.title}":"Required and acquired skills",
+		"{exppro.achievement.title}":"Achievements",
+
+		"{exppro.item.seven.date}":"Since march 2019",
+		"{exppro.item.seven.title}":"Product owner - software design and data analysis",
+
+		"{exppro.item.six.date}":"May 2018 - March 2019",
+		"{exppro.item.six.title}":"Project manager - Scrum Master",
+
+		"{exppro.item.five.date}":"May 2017 - May 2018",
+		"{exppro.item.five.title}":"Project manager / Operations manager",
+
+		"{exppro.item.four.date}":"Mai 2016 - Mai 2017",
+		"{exppro.item.four.title}":"Project manager",
+
+		"{exppro.item.three.date}":"Janvier 2014 - Avril 2016",
+		"{exppro.item.three.title}":"Project engineer",
+
+		"{exppro.item.two.date}":"Juin à Septembre 2013",
+		"{exppro.item.two.title}":"Research internship",
+
+		"{exppro.item.one.date}":"Juillet à Août 2012",
+		"{exppro.item.one.title}":"Site manager internship"
 
 	},
 	"competences":{
@@ -109,6 +134,160 @@
 	},
 	"passions":{
 
+	},
+	"overlay_content": {
+		"current_activity": {
+			"missions": [
+				{
+				"title":"Missions and activities",
+				"list":["I currently work on the design and development of an IoT management software solution."]
+				}
+			],
+			"competences": [
+				{
+					"title":"Required skills",
+					"list":["Python, SQL databases", "UI/UX design", "Planning and project management"]
+				},
+				{
+					"title":"Acquired skills",
+					"list":["JavaScript, HTML/CSS, Spark", "Machine learning and data science python libraries", "UI/UX design"]
+				}
+			]			
+		},
+		"paradox": {
+			"missions": [
+				{
+					"title":"Missions and activities",
+					"list":["Scrum master", "Objectives definition, description and organisation of the tasks to be executed by the CMS developers team (sprint management on JIRA, mock-ups, inter-team communication)",
+				"Tests and system validation design", "User experience evaluation", "Project documentation redaction"]
+				}
+			],
+			"competences": [
+				{
+					"title":"Required skills",
+					"list":["Planning and project management", "Identification of the user needs and user interface mock-up design", "Interface between Product Owner and developers team",
+					"Project documentation redaction"]
+				},
+				{
+					"title":"Acquired skills",
+					"list":["AGILE method (Scrum)", "Software design : mock-up, user interface design and front-end/back-end interface design",
+					"Communication facilitator and referent for the front-end/back-end developers", "Test program definition", "System validation and user experience analysis"]
+				}
+			]
+		},
+		"nomosphere": {
+			"missions": [
+				{
+					"title":"Missions and activities",
+					"list":["Technical, budget and planning supervision, Wi-Fi networks operation", "Technical assistance to sales team during the pre-sales phase", 
+				"Public Wi-Fi networks", "Project referent, client support", "Management of the operations team (engineers, technical support, field technicians)"]
+				}
+			],
+			"competences": [
+				{
+					"title":"Required skills",
+					"list":["Planning and project management", "Project progress monitoring", "Communication with client and technical support", "Understanding of how a wireless network works"]
+				},
+				{
+					"title":"Acquired skills",
+					"list":["Privileged interface with the client, and between the different actors involved in the project",
+					"Pre-sales architecture design (techncal visits, sizing, architectural diagrams…)"]
+				}
+			]
+		},
+		"citelum": {
+			"missions": [
+				{
+					"title":"Missions and activities",
+					"list":["Coordination of response to tenders, and spontaneous offers", "Street lighting area, industrial lighting and associated digital urban services", 
+				"Qualification of smart city solutions and development of the offer of Citelum in the area"]
+				}
+			],
+			"competences": [
+				{
+					"title":"Required skills",
+					"list":["Planning and project management", "Project progress monitoring", "Understanding of how a communication and electrical networks work"]
+				},
+				{
+					"title":"Acquired skills",
+					"list":["Project management at the intersection of several professions without hierarchical relationship", "Cost evaluation", "Construction of an offer in response to a tender (public or private)", 
+					"Industrial lighting", "Connected services : parking management, noise monitoring, Li-Fi"]
+				}
+			]
+		},
+		"evesa": {
+			"missions": [
+				{
+					"title":"Missions and activities",
+					"list":["Organization, monitoring and analysis of the performance tests of two POC (proof of concept) for remote management and digital services (street lighting control, traffic light control, wireless network)", 
+				"Technical descriptions of needs in terms of remote management and control, and digital services", "Qualification of systems meeting these needs", 
+				"Redaction of specifications for hardware and software of the remote management solution for street lighting", "Monitoring of the design and development of the definitive solution, tests", 
+				"Configuration and preparation of devices prior to their installation"]
+				}
+			],
+			"competences": [
+				{
+					"title":"Required skills",
+					"list":["Planning and project management", "Project progress monitoring", "Analysis of customer needs and translation into technical needs", 
+					"Management of a team of 2 to 5 technicians and interns"]
+				},
+				{
+					"title":"Acquired skills",
+					"list":["Understanding of the way electrical and communication networks work", "CISCO certification CCNA Routing&Switching", "Connected services : street lighting remote control, traffic lights", 
+					"Configuration of devices prior to their installation: functional tests, deployment monitoring and troubleshooting"]
+				}
+			]
+		},
+		"shanghai": {
+			"missions": [
+				{
+					"title":"Missions and activities",
+					"list":["Smart City Institute", "3D modelisation of an area of Shanghai: reproduction and modification of a base map of the region, creation of 3D structures respecting various constraints (established from the knowledge of urban planning concepts)", 
+				"Contribution to the implementation of a tool to generate \"randomly\" buildings (3D structures used for the modelisation), matching the constraints specified", 
+				"Transport simulation using the previously built map and analysis of the results obtaines"]
+				}
+			],
+			"competences": [
+				{
+					"title":"Required skills",
+					"list":["Urban space modelisation", "Analysis of urban constraints and functional needs", "Transport simulation"]
+				},
+				{
+					"title":"Acquired skills",
+					"list":["Support of a developer in the implementation of a tool to randomly create building on an AutoCAD map", "Transport simulation tool (SUMO)"]
+				}
+			]
+		},
+		"cbc": {
+			"missions": [
+				{
+					"title":"Missions and activities",
+					"list":["Assistant site manager", "Planning of work phases", "Management of a team of 30 people", "Validation of the execution plans of three buildings (6-stories buildings, housing)", 
+				"Suivi de chantier"]
+				}
+			],
+			"competences": [
+				{
+					"title":"Required skills",
+					"list":["Organisation", "Good relations", "Understanding of the construction site constraints and execution rules"]
+				},
+				{
+					"title":"Acquired skills",
+					"list":["Team management (contractors)", "Task organisation to respect project planning"]
+				}
+			]
+		},
+		"mooc": {
+			"perfectionnement_professionnel": [
+				{
+					"title":"Professional improvement",
+					"list":["Villes intelligentes : défis technologiques et sociétaux (INRIA)", "Web sémantique et Web de données (INRIA)", "Du manager au leader agile (CNAM)", 
+				"Systèmes embarqués et objets connectés (Univ Toulouse)", "Routage et qualité de service dans l’Internet (Mines Telecom)", "Comprendre la 4G (Mines Telecom)", 
+				"Objectif IPv6 (Mines Telecom)", "L’essentiel pour maîtriser Linux (UCarthage)", "Python (codecademy, Udacity)", "Programming foundations with Python (Udacity)", "HTML & CSS (codecademy)", 
+				"Make a website (codecademy)", "JavaScript (codecademy, Udacity)", "Big Data (Udacity)", "UI/UX (Udacity)"]
+				}
+			]
+		}
 	}
 
 }
