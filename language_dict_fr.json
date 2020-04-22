@@ -141,6 +141,41 @@
 
 	},
 	"exp_pers":{
+		"{exppers.maintitle}":"Expériences personnelles",
+		"{exppers.skills.title}":"Savoirs acquis",
+
+		"{exppers.item.one.date}":"Mai 2018 - Mars 2019",
+		"{exppers.item.one.title}":"Expatriation en Italie",
+		"{exppers.item.one.description}":"Opportunité professionnelle en Suisse à la frontière italienne",
+		"{exppers.item.one.skills.list.item.one}":"Sortir de sa zone de confort",
+		"{exppers.item.one.skills.list.item.two}":"Ouverture d’esprit",
+		"{exppers.item.one.skills.list.item.three}":"Niveau intermédiaire en italien",
+		"{exppers.item.one.skills.list.item.four}":"Découverte d’une autre culture",
+		"{exppers.item.one.skills.list.item.five}":"Exposition à d’autres manières d’organiser la vie quotidienne et le travail",
+
+		"{exppers.item.two.date}":"Janvier à décembre 2012",
+		"{exppers.item.two.title}":"Membre d’associations EIVP",
+		"{exppers.item.two.description}":"Trésorière du bureau des élèves (BDE) <br>Secrétaire du bureau du développement durable",
+		"{exppers.item.two.skills.list.item.one}":"Rigueur, disponibilité, bon relationnel avec les élèves",
+		"{exppers.item.two.skills.list.item.two}":"Planification",
+		"{exppers.item.two.skills.list.item.three}":"Gestion d’un budget - Recherche de financements",
+		"{exppers.item.two.skills.list.item.four}":"Énergie solaire",
+
+		"{exppers.item.three.date}":"Octobre 2006 - juillet 2008 <br>Juin à septembre 2013",
+		"{exppers.item.three.title}":"Expatriation en Chine",
+		"{exppers.item.three.description}":"Expatriation familiale à Wuhan (Hubei) <br>Stage étude et recherche (Voir <a href=\"#\" onclick=\"SwitchPage(4)\" class=\"Underline\">expériences professionnelles</a>)",
+		"{exppers.item.three.skills.list.item.one}":"Sortir de sa zone de confort",
+		"{exppers.item.three.skills.list.item.two}":"Ouverture d’esprit  - découverture d’une autre culture",
+		"{exppers.item.three.skills.list.item.three}":"Niveau débutant en chinois",
+		"{exppers.item.three.skills.list.item.four}":"Envie de comprendre le fonctionnement d’une ville (Wuhan ville de 8M d’habitants qui se déconstruisait et se reconstruisait très rapidement !)",
+
+		"{exppers.item.four.date}":"Depuis 1998",
+		"{exppers.item.four.title}":"Pratique du violon",
+		"{exppers.item.four.description}":"12 ans au conservatoire (orchestre, solfège, cours particuliers) <br>Tournée au Québec (groupe de chants de marins) en 2014 <br>Réintégration de l’orchestre du conservatoire en 2019 (après 10 ans d’interruption)",
+		"{exppers.item.four.skills.list.item.one}":"Persévérance, rigueur, patience",
+		"{exppers.item.four.skills.list.item.two}":"Coordination et travail de groupe",
+		"{exppers.item.four.skills.list.item.three}":"Écoute",
+		"{exppers.item.four.skills.list.item.four}":"Sens artistique"
 
 	},
 	"education":{

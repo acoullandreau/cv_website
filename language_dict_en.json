@@ -140,7 +140,41 @@
 
 	},
 	"exp_pers":{
+		"{exppers.maintitle}":"Personal experiences",
+		"{exppers.skills.title}":"Acquired knowledge",
 
+		"{exppers.item.one.date}":"May 2018 - March 2019",
+		"{exppers.item.one.title}":"Expatriation in Italy",
+		"{exppers.item.one.description}":"Professional opportunity in Switzerland, at the italian border",
+		"{exppers.item.one.skills.list.item.one}":"Getting out of your comfort zone",
+		"{exppers.item.one.skills.list.item.two}":"Open-mindedness",
+		"{exppers.item.one.skills.list.item.three}":"Intermediate level in italian",
+		"{exppers.item.one.skills.list.item.four}":"Discovery of a new culture",
+		"{exppers.item.one.skills.list.item.five}":"Exposure to other ways of organizing daily life and work",
+
+		"{exppers.item.two.date}":"January to december 2012",
+		"{exppers.item.two.title}":"Member of EIVP associations",
+		"{exppers.item.two.description}":"Student Office Treasurer <br>Secretary of the sustainable development office",
+		"{exppers.item.two.skills.list.item.one}":"Rigor, availability, good relationship with students",
+		"{exppers.item.two.skills.list.item.two}":"Planning",
+		"{exppers.item.two.skills.list.item.three}":"Budget management - Fundraising",
+		"{exppers.item.two.skills.list.item.four}":"Solar energy",
+
+		"{exppers.item.three.date}":"October 2006 - july 2008 <br>June to september 2013",
+		"{exppers.item.three.title}":"Expatriation in China",
+		"{exppers.item.three.description}":"Family expatriation in Wuhan (Hubei) <br>Research internship (See <a href=\"#\" onclick=\"SwitchPage(4)\" class=\"Underline\">professional experiences</a>)",
+		"{exppers.item.three.skills.list.item.one}":"Getting out of your comfort zone",
+		"{exppers.item.three.skills.list.item.two}":"Open-mindedness  - discovery of a new culture",
+		"{exppers.item.three.skills.list.item.three}":"Beginner level in chinese",
+		"{exppers.item.three.skills.list.item.four}":"Will to understand how a city works (Wuhan was a city of 8 million inhabitants being unbuilt/rebuilt very quickly!)",
+
+		"{exppers.item.four.date}":"Since 1998",
+		"{exppers.item.four.title}":"Practise of the violin",
+		"{exppers.item.four.description}":"12 years at amusic school (orchestra, music theory, private lessons) <br>Tour in Quebec (group of sailors' songs) in 2014 <br>Joined again the music school's orchestra in 2019 (after 10 years of interruption)",
+		"{exppers.item.four.skills.list.item.one}":"Perseverance, rigor, patience",
+		"{exppers.item.four.skills.list.item.two}":"Coordination and group work",
+		"{exppers.item.four.skills.list.item.three}":"Listening",
+		"{exppers.item.four.skills.list.item.four}":"Artistical sense"
 	},
 	"education":{
 		"{education.maintitle}":"Education",
