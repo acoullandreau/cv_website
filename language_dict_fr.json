@@ -134,7 +134,20 @@
 		"{education.item.one.diploma}":"Attestations de suivi avec succès (validation des acquis)"
 	},
 	"passions":{
+		"{passions.maintitle}":"Passions",
+		"{passions.why.title}":"Pourquoi ?",
 
+		"{passions.item.one.title}":"Technologie",
+		"{passions.item.one.description}":"Principalement ce qui permet l’automatisation des tâches, la multiplication des échanges entre systèmes et personnes (réseaux, IoT, IHM (Interface Homme Machine) entre autres)",
+		"{passions.item.one.why}":"Parce que le monde évolue, et parce que ces innovations nous font remettre en question nos rapport à l’autre et à notre environnement",
+
+		"{passions.item.two.title}":"Loisirs",
+		"{passions.item.two.description}":"Sport : yoga, méditation, marche, fitness <br>Musique : violon <br>Travaux manuels : broderie, tricot, couture",
+		"{passions.item.two.why}":"Parce que c’est important pour le moral, pour évacuer le stress, pour être en bonne santé, pour éprouver ses limites, et pour tous les bénéfices liés à la concentration, à la préparation du travail (rigueur, précision), et à la patience ",
+		
+		"{passions.item.three.title}":"Histoire et Littérature",
+		"{passions.item.three.description}":"Romans historiques (courant naturaliste), biographies, analyses historiques, littérature française ou étrangère <br>Période historique à partir du XVIII-XIX siècles, en France, Occident et dans le monde",
+		"{passions.item.three.why}":"Parce que c’est une source de savoir immense à explorer, un moyen de voir le monde et son histoire, pour comprendre le monde dans lequel nous vivons"
 	},
 	"overlay_content": {
 		"current_activity": {
