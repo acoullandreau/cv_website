@@ -22,6 +22,17 @@ nav_bar_correspondance = {
 	7:'nav-bar-passions',
 }
 
+nav_bar_hover_state = {
+	0:false,
+	1:false,
+	2:false,
+	3:false,
+	4:false,
+	5:false,
+	6:false,
+	7:false,
+}
+
 SwitchPage = function(page_reference) {
 	var html_file = page_correspondance[page_reference];
 	var content_language = getLanguage();
@@ -83,10 +94,17 @@ NavBarHover = function(element_reference, action) {
 	var elem_ref = nav_bar_correspondance[element_reference];
 	var elem_to_edit = document.getElementById(elem_ref);
 
-	if (action == 1) {
-		elem_to_edit.style.display = "inline-block";
-	} else {
-		elem_to_edit.style.display = "none";
+	for (nav_bar_elem in nav_bar_hover_state) {
+		nav_bar_hover_state[nav_bar_elem] = false;
+		var elem_to_hide = document.getElementById(nav_bar_correspondance[nav_bar_elem]);
+		elem_to_hide.style.display = "none";
 	}
+
+	if (action == 1) {
+		nav_bar_hover_state[element_reference] = true;
+		elem_to_edit.style.display = "inline-block";
+	} 
+
+
 	
 }
