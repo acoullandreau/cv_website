@@ -121,27 +121,62 @@ NavBarHover = function(element_reference, action) {
 	} 
 }
 
+// FormSubmit = function() {
+// 	// retrieve the content of the form
+// 	var form = document.getElementById("contact-form");
+// 	var fname = form.elements[0].value;
+// 	var lname = form.elements[1].value;
+// 	var email = form.elements[2].value;
+// 	var message = form.elements[3].value;
+
+// 	// check integrity of email address
+// 	var email_regex = /\S+@\S+\.\S+/;
+// 	if (email_regex.test(email) == true) {
+// 		console.log(fname, lname, email, message)
+// 		// display an acknowledgment message for the form submission
+// 		OpenOverlay('form', 'success');
+// 	} else {
+// 		// display an error message for the form submission
+// 		OpenOverlay('form', 'email_error');
+// 	}
+	
+// }
+
+
 FormSubmit = function() {
+	var target_url = 'index.html';
 	// retrieve the content of the form
 	var form = document.getElementById("contact-form");
-	var fname = form.elements[0].value;
-	var lname = form.elements[1].value;
-	var email = form.elements[2].value;
-	var message = form.elements[3].value;
+	var form_content = {
+		'fname':form.elements[0].value,
+		'lname':form.elements[1].value,
+		'email':form.elements[2].value,
+		'message':form.elements[3].value
+	}
 
 	// check integrity of email address
 	var email_regex = /\S+@\S+\.\S+/;
-	if (email_regex.test(email) == true) {
-		console.log(fname, lname, email, message)
+	if (email_regex.test(form_content['email']) == true) {
+		var post_request = new Request(target_url, {
+			method: 'POST',
+			body: JSON.stringify(form_content),
+			headers: new Headers({
+			    'Content-Type': 'application/json'
+			})
+		});
+
+		// post form content
+		fetch(post_request).then(function(response) {
+			return response.json();
+		}).catch(function (err) {
+			console.warn('Something went wrong.', err);
+		})
+
 		// display an acknowledgment message for the form submission
 		OpenOverlay('form', 'success');
 	} else {
+		// display an error message for the form submission
 		OpenOverlay('form', 'email_error');
 	}
 	
-
-	
-
 }
-
-
