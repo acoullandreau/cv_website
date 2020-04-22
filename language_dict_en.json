@@ -81,7 +81,60 @@
 
 	},
 	"competences":{
+		"{skills.maintitle}":"Skills",
+		"{skills.scale.notions}":"Notions",
+		"{skills.scale.theoretical}":"Theoretical",
+		"{skills.scale.practical}":"Practical",
+		"{skills.scale.deepened}":"Deepened",
+		"{skills.scale.mastery}":"Mastery",
 
+		"{skills.computer.title}":"Computer science and networks",
+		"{skills.computer.group.red.item.one}":"Office software (Word, Excel, MsProject, ….)",
+		"{skills.computer.group.red.item.two}":"JIRA",
+		"{skills.computer.group.orange.item.one}":"CAD software (InDesign, XD, Illustrator, AutoCAD….)",
+		"{skills.computer.group.orange.item.two}":"Data analysis (Pandas, Numpy, Spark….)",
+		"{skills.computer.group.orange.item.three}":"Python",
+		"{skills.computer.group.orange.item.four}":"Communication networks",
+		"{skills.computer.group.orange.item.five}":"HTML/CSS",
+		"{skills.computer.group.orange.item.six}":"Bash/CLI",
+		"{skills.computer.group.orange.item.seven}":"Connected objects (IoT)",
+		"{skills.computer.group.orange.item.eight}":"Design UI/UX",
+		"{skills.computer.group.yellow.item.one}":"Databases (SQL)",
+		"{skills.computer.group.yellow.item.two}":"VBA",
+		"{skills.computer.group.yellow.item.three}":"JavaScript",
+
+		"{skills.urban.title}":"Urban engineering",
+		"{skills.urban.group.orange.item.one}":"Analysis of user needs",
+		"{skills.urban.group.yellow.item.one}":"Planning of urban spaces",
+		"{skills.urban.group.green.item.one}":"Civil engineering",
+		"{skills.urban.group.green.item.two}":"Environmental and sustainable management",
+		"{skills.urban.group.green.item.three}":"Urbanism",
+		"{skills.urban.group.green.item.four}":"Flow management (urban mobility)",
+
+
+		"{skills.project.title}":"Project management",
+		"{skills.project.group.red.item.one}":"AGILE method (SCRUM)",
+		"{skills.project.group.red.item.two}":"Team management",
+		"{skills.project.group.orange.item.one}":"Operational management",
+		"{skills.project.group.yellow.item.one}":"Quality management, health and safety at work",
+		"{skills.project.group.yellow.item.two}":"Cost evaluation and business financial strategy",
+		"{skills.project.group.yellow.item.three}":"Law and public tenders",
+
+		"{skills.language.title}":"Languages",
+		"{skills.language.group.red.item.one}":"French (mother tongue)",
+		"{skills.language.group.red.item.two}":"English (C1 - CERL)",
+		"{skills.language.group.orange.item.one}":"Portuguese (B2 - CERL)",
+		"{skills.language.group.yellow.item.one}":"Italian (A2 - CERL)",
+		"{skills.language.group.blue.item.one}":"Chinese (A1 - CERL)",
+
+		"{skills.personality.title}":"Personality",
+		"{skills.personality.item.one}":"Dynamic",
+		"{skills.personality.item.two}":"Rigourous et perseverant",
+		"{skills.personality.item.three}":"Organised and structured",
+		"{skills.personality.item.four}":"Communicate easily and clearly",
+		"{skills.personality.item.five}":"Pedagogue",
+		"{skills.personality.item.six}":"Demanding",
+		"{skills.personality.item.seven}":"Learn fast, react fast and get impatient quickly"
 	},
 	"accomplissements":{
 

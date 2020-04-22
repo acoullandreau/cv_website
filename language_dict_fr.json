@@ -82,7 +82,60 @@
 
 	},
 	"competences":{
+		"{skills.maintitle}":"Compétences",
+		"{skills.scale.notions}":"Notions",
+		"{skills.scale.theoretical}":"Théorique",
+		"{skills.scale.practical}":"Pratique",
+		"{skills.scale.deepened}":"Approfonfi",
+		"{skills.scale.mastery}":"Maîtrise",
 
+		"{skills.computer.title}":"Informatique et réseaux",
+		"{skills.computer.group.red.item.one}":"Logiciels de bureautique (Word, Excel, MsProject, ….)",
+		"{skills.computer.group.red.item.two}":"JIRA",
+		"{skills.computer.group.orange.item.one}":"Logiciels de CAO/DAO (InDesign, XD, Illustrator, AutoCAD….)",
+		"{skills.computer.group.orange.item.two}":"Analyse de données (Pandas, Numpy, Spark….)",
+		"{skills.computer.group.orange.item.three}":"Python",
+		"{skills.computer.group.orange.item.four}":"Réseaux de communication",
+		"{skills.computer.group.orange.item.five}":"HTML/CSS",
+		"{skills.computer.group.orange.item.six}":"Bash/CLI",
+		"{skills.computer.group.orange.item.seven}":"Objets connectés (IoT)",
+		"{skills.computer.group.orange.item.eight}":"Design UI/UX",
+		"{skills.computer.group.yellow.item.one}":"Bases de données (SQL)",
+		"{skills.computer.group.yellow.item.two}":"VBA",
+		"{skills.computer.group.yellow.item.three}":"JavaScript",
+
+		"{skills.urban.title}":"Génie urbain",
+		"{skills.urban.group.orange.item.one}":"Analyse des besoins des usagers",
+		"{skills.urban.group.yellow.item.one}":"Aménagement des espaces publics",
+		"{skills.urban.group.green.item.one}":"Génie civil",
+		"{skills.urban.group.green.item.two}":"Gestion environnementale et durable",
+		"{skills.urban.group.green.item.three}":"Urbanisme",
+		"{skills.urban.group.green.item.four}":"Gestion des flux (mobilité urbaine)",
+
+
+		"{skills.project.title}":"Gestion de projets",
+		"{skills.project.group.red.item.one}":"Méthode AGILE (SCRUM)",
+		"{skills.project.group.red.item.two}":"Encadrement d'équipes",
+		"{skills.project.group.orange.item.one}":"Pilotage opérationnel",
+		"{skills.project.group.yellow.item.one}":"Gestion qualité, santé et sécurité au travail",
+		"{skills.project.group.yellow.item.two}":"Chiffrage et stratégie financière en entreprise",
+		"{skills.project.group.yellow.item.three}":"Droit et marchés publics",
+
+		"{skills.language.title}":"Langes",
+		"{skills.language.group.red.item.one}":"Français (langue maternelle)",
+		"{skills.language.group.red.item.two}":"Anglais (C1 - CERL)",
+		"{skills.language.group.orange.item.one}":"Portugais (B2 - CERL)",
+		"{skills.language.group.yellow.item.one}":"Italien (A2 - CERL)",
+		"{skills.language.group.blue.item.one}":"Chinois (A1 - CERL)",
+
+		"{skills.personality.title}":"Traits de caractère",
+		"{skills.personality.item.one}":"Dynamique",
+		"{skills.personality.item.two}":"Rigoureuse et persévérante",
+		"{skills.personality.item.three}":"Organisée et structurée",
+		"{skills.personality.item.four}":"Communique aisément et clairement",
+		"{skills.personality.item.five}":"Pédagogue",
+		"{skills.personality.item.six}":"Exigente",
+		"{skills.personality.item.seven}":"Apprend vite, réagit vite et s’impatiente vite"
 	},
 	"accomplissements":{
 

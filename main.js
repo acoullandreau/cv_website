@@ -31,8 +31,8 @@ var train_state = {
 	1: {position: 250, duration: 500},
 	2: {position: 500, duration: 500},
 	3: {position: 750, duration: 500},
-	4: {position: 1000, duration: 500},
-	5: {position: 1150, duration: 500},
+	4: {position: 900, duration: 500},
+	5: {position: 1200, duration: 500},
 	6: {position: 1300, duration: 500},
 	7: {position: 1400, duration: 500},
 	8: {position: 1500, duration: 500}
