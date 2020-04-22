@@ -128,11 +128,19 @@ FormSubmit = function() {
 	var lname = form.elements[1].value;
 	var email = form.elements[2].value;
 	var message = form.elements[3].value;
-	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! missing the attachment !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	console.log(fname, lname, email, message)
 
-	// display an acknowledgment message for the form submission
-	OpenOverlay('form', 'success');
+	// check integrity of email address
+	var email_regex = /\S+@\S+\.\S+/;
+	if (email_regex.test(email) == true) {
+		console.log(fname, lname, email, message)
+		// display an acknowledgment message for the form submission
+		OpenOverlay('form', 'success');
+	} else {
+		OpenOverlay('form', 'email_error');
+	}
+	
+
+	
 
 }
 

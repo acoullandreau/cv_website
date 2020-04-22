@@ -295,6 +295,12 @@
 					"title":"Merci !",
 					"text": "Votre message a bien été pris en compte."
 				}
+			],
+			"email_error":[
+				{
+					"title":"Oups !",
+					"text": "Votre adresse email ne semble pas avoir le bon format, et je ne serai pas en mesure de vous recontacter. Merci de renseigner une adresse valide."
+				}
 			]
 		}
 	}

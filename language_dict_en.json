@@ -294,6 +294,12 @@
 					"title":"Thank you !",
 					"text":"Your message has been successfully sent."
 				}
+			],
+			"email_error":[
+				{
+					"title":"Oops !",
+					"text": "Your email address doesn't seem to have the right format, and I will not be able to get back in touch with you. Please enter a valid address."
+				}
 			]
 		}
 	}
