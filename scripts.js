@@ -34,11 +34,15 @@ nav_bar_hover_state = {
 }
 
 SwitchPage = function(page_reference) {
-	var html_file = page_correspondance[page_reference];
-	var content_language = getLanguage();
-	scene.changePage(page_reference, function() {
-		loadTranslatedContent(content_language, html_file)
-	});
+	var target_html_file = page_correspondance[page_reference];
+	
+	// triggers change page logic only if the user wants to acces another page
+	if (target_html_file !== current_page) {
+		var content_language = getLanguage();
+		scene.changePage(page_reference, function() {
+			loadTranslatedContent(content_language, target_html_file)
+		});
+	}
 }
 
 SwitchLanguage = function(language) {
