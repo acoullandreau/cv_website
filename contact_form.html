@@ -6,7 +6,7 @@
 		<p>{form.description.one}</p>
 		<p>{form.description.two}</p>
 	</div>
-	<form class="Form Bold FontSizeFormFields">
+	<form id="contact-form" class="Form Bold FontSizeFormFields">
 		<div id="form-fields">
 			<div class="FormField">
 				<p>{form.fname.label}</p>
@@ -27,6 +27,6 @@
 		<div id="form-attachment" class="FontSizeParagraph">
 			<label><input type="file" id="attachment-input" name="attachment" accept=".jpg, .png, .pdf, .doc, .docx, .xslx, .xsl, .txt, .json">{form.attachment.label}</label>
 		</div>
-		<div id="form-button">{form.send.button}</div>
+		<div id="form-button" onclick="FormSubmit()">{form.send.button}</div>
 	</form>
 </div>

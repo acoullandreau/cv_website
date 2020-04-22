@@ -55,7 +55,6 @@ loadTranslatedContent = function(language, page) {
 		nav_menu_pdf_translated = nav_menu_pdf_translated.replace('{cv_name}', nav_bar_lang['{cv_name}']);
 
 		var nav_menu_left_bar_translated = nav_menu_left_bar.repeat(1);
-
   		for (k in nav_bar_lang) {
   			nav_menu_left_bar_translated = nav_menu_left_bar_translated.replace(k, nav_bar_lang[k]);
   		}
@@ -63,7 +62,6 @@ loadTranslatedContent = function(language, page) {
 		document.getElementById("contact-text").innerHTML=nav_menu_contact_translated;
 		document.getElementById("left-nav-bar-text").innerHTML=nav_menu_left_bar_translated;
 		document.getElementById("cv-file").innerHTML=nav_menu_pdf_translated;
-
 
 	}).catch(function (err) {
 		console.warn('Something went wrong.', err);

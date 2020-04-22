@@ -53,12 +53,9 @@ SwitchLanguage = function(language) {
 
 OpenOverlay = function(section_reference, element_reference) {
 	var overlay_template = 'overlay_template.html';
-	// var overlay_json = 'overlay_content.json';
 	var language = getLanguage()
+	
 	promise_json = getLanguageJson(language)
-	// fetch(overlay_json).then(function(response) {
-	// 	return response.json();
-	// })
 	promise_html = fetch(overlay_template).then(function(response) {
 		return response.text();
 	})
@@ -68,6 +65,7 @@ OpenOverlay = function(section_reference, element_reference) {
   		var html = values[1];
   		var overlay_content = document.getElementById("overlay-content");
   		var content = "";
+  		var overlay_type;
 
   		for (var i in json[section_reference][element_reference]) {
   			var elem = json[section_reference][element_reference][i];
@@ -76,15 +74,27 @@ OpenOverlay = function(section_reference, element_reference) {
   			
   			var list = "";
   			// can add an if to check if list exists
-  			for (var k in elem['list']) {
-  				var list_elem = elem['list'][k];
-  				list += '<li>' + list_elem + '</li>'
+  			if ('list' in elem) {
+  				overlay_type = 'list';
+	  			for (var k in elem['list']) {
+	  				var list_elem = elem['list'][k];
+	  				list += '<li>' + list_elem + '</li>'
+	  			}
+  				template = template.replace('{list}', list);
+  			} else if ('text' in elem) {
+  				//currently specific to the contact form submit message
+  				overlay_type = 'message';
+  				template = template.replace('{list}', elem['text']);
+
   			}
-  			template = template.replace('{list}', list);
   			content+=template;
   		}
   		overlay_content.innerHTML = content;
   		document.getElementById("overlay").style.display = "block";
+  		if (overlay_type == 'message') {
+			document.getElementById("overlay-quote-left").style.display = "none";
+			document.getElementById("overlay-quote-right").style.display = "none";
+  		}
 	}).catch(function (err) {
 		console.warn('Something went wrong.', err);
 	})
@@ -109,7 +119,21 @@ NavBarHover = function(element_reference, action) {
 		nav_bar_hover_state[element_reference] = true;
 		elem_to_edit.style.display = "inline-block";
 	} 
-
-
-	
 }
+
+FormSubmit = function() {
+	// retrieve the content of the form
+	var form = document.getElementById("contact-form");
+	var fname = form.elements[0].value;
+	var lname = form.elements[1].value;
+	var email = form.elements[2].value;
+	var message = form.elements[3].value;
+	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! missing the attachment !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	console.log(fname, lname, email, message)
+
+	// display an acknowledgment message for the form submission
+	OpenOverlay('form', 'success');
+
+}
+
+

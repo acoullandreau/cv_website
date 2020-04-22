@@ -288,6 +288,14 @@
 				"Make a website (codecademy)", "JavaScript (codecademy, Udacity)", "Big Data (Udacity)", "UI/UX (Udacity)"]
 				}
 			]
+		},
+		"form": {
+			"success":[
+				{
+					"title":"Merci !",
+					"text": "Votre message a bien été pris en compte."
+				}
+			]
 		}
 	}
 

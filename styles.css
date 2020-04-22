@@ -249,6 +249,7 @@ select {
 
 #nav-menu {
 	position: relative;
+	min-width:1360px;
 }
 
 #right-nav-bar {
@@ -1031,8 +1032,8 @@ select {
 	position: absolute;
 	width: auto;
 	height: auto;
-	min-height: 30vh;
-	min-width: 50vh;
+	/*min-height: 30vh;*/
+	min-width: 30vh;
 	max-width: 50vh;
 	margin-right: auto;
 	margin-left: 30%;
