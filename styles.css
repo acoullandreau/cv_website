@@ -115,7 +115,13 @@ body {
 }
 
 .ContentBlock {
+	height: 100%;
 	margin-left: 5%;
+}
+
+.ContentBlockScroll {
+	height: 58%;
+	overflow-y: scroll;
 }
 
 .Description {
