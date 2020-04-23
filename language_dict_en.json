@@ -137,6 +137,39 @@
 		"{skills.personality.item.seven}":"Learn fast, react fast and get impatient quickly"
 	},
 	"accomplissements":{
+		"{achievements.maintitle}":"Achievements",
+		"{achievements.keyword.title}":"Keywords",
+		"{achievements.link.title}":"Links",
+
+		"{achievements.item.seven.date}":"March to April 2020",
+		"{achievements.item.seven.title}":"Web development - this website!",
+		"{achievements.item.seven.description.item.one}":"In order to practise the theoretical skills I acquired in HTML/CSS and JavaScript, as well as to have an effective communication support for my CV, I decided to builf this website! <br> This project was divided into three main phases:",
+		"{achievements.item.seven.description.item.two}":"the design : website prototype, visual design (UI/UX)",
+		"{achievements.item.seven.description.item.three}":"the implementation",
+		"{achievements.item.seven.description.item.four}":"the deployment",
+		"{achievements.item.seven.description.item.five}":"Note : the background graphism was made by <strong>Michelli Buzogany Eboli</strong> (see her <a class=\"Underline\" href=\"Behance.net/chellbuzogany\">Behance</a> profile)",
+		"{achievements.item.seven.keyword}":"UI/UX, communication, JavaScript, HTML/CSS",
+		"{achievements.item.seven.link}":"Source code: <a class=\"Underline\" href=\"https://github.com/acoullandreau/cv_website\">https://github.com/acoullandreau/cv_website</a><br><br><br>",
+
+		"{achievements.item.six.date}":"October à November 2019",
+		"{achievements.item.six.title}":"Data science - churn prediction",
+		"{achievements.item.six.description.item.one}":"Project part of the Data Scientist Nanodegree (See <a href=\"#\" onclick=\"SwitchPage(8)\" class=\"Underline\">Education</a>). Supervised learning classification model of time series data. <br><br> The objective of the project was to demonstrate my ability to analyse a large volume of data usnig the Spark framework, and build a model to predict user churn for a music streaming platform called Sparkify.",
+		"{achievements.item.six.keyword}":"big data, data analysis, vizualisation, python, Spark, prediction, classification, supervised learning",
+		"{achievements.item.six.link.one}":"Publication of the results:<a class=\"Underline\" href=\"https://medium.com/@mozart38\">https://medium.com/@mozart38</a>",
+		"{achievements.item.six.link.two}":"Source code: <a class=\"Underline\" href=\"https://github.com/acoullandreau/capstone_sparkify\">https://github.com/acoullandreau/capstone_sparkify</a><br><br>",
+
+		"{achievements.item.five.date}":"August 2019",
+		"{achievements.item.five.title}":"Data science - analysis of the taxi trips in New York in 2018",
+		"{achievements.item.five.description.item.one}":"Project part of the Data Scientist Nanodegree (See <a href=\"#\" onclick=\"SwitchPage(8)\" class=\"Underline\">Education</a>). Data analysis and observation restitution using appropriate visualisation tools.<br>The objective of the project was to demonstrate my ability to observe, manipulate and transform data from the dataset of my choice. <br><br>I chose to analyse part of the dataset of the New York taxi trips for the year 2018 (about 99 millions de points).<br>My analysis focused on four main axes:",
+		"{achievements.item.five.description.item.two}":"Can we see trends in the flow of passengers in 2018?",
+		"{achievements.item.five.description.item.three}":"Is there a difference on holidays, hottest or coldest day of the year?",
+		"{achievements.item.five.description.item.four}":"Is there a difference between weekdays and weekends?",
+		"{achievements.item.five.description.item.five}":"Depending on the zone we look at, where are people most likely to come from? To go to? Is it different between weekdays and weekends?",
+		"{achievements.item.five.keyword}":"data analysis, vizualisation, python, OpenCV",
+		"{achievements.item.five.link.one}":"Dataset: <a class=\"Underline\" href=\"https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page\">https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page</a>",
+		"{achievements.item.five.link.two}":"Publication of the results:<a class=\"Underline\" href=\"https://medium.com/@mozart38\">https://medium.com/@mozart38</a>",
+		"{achievements.item.five.link.three}":"Source code: <a class=\"Underline\" href=\"https://github.com/acoullandreau/nyc_taxi_trips\">https://github.com/acoullandreau/nyc_taxi_trips</a>"
+
 
 	},
 	"exp_pers":{
@@ -169,7 +202,7 @@
 		"{exppers.item.three.skills.list.item.four}":"Will to understand how a city works (Wuhan was a city of 8 million inhabitants being unbuilt/rebuilt very quickly!)",
 
 		"{exppers.item.four.date}":"Since 1998",
-		"{exppers.item.four.title}":"Practise of the violin",
+		"{exppers.item.four.title}":"Violonist",
 		"{exppers.item.four.description}":"12 years at amusic school (orchestra, music theory, private lessons) <br>Tour in Quebec (group of sailors' songs) in 2014 <br>Joined again the music school's orchestra in 2019 (after 10 years of interruption)",
 		"{exppers.item.four.skills.list.item.one}":"Perseverance, rigor, patience",
 		"{exppers.item.four.skills.list.item.two}":"Coordination and group work",

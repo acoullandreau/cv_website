@@ -138,6 +138,65 @@
 		"{skills.personality.item.seven}":"Apprend vite, réagit vite et s’impatiente vite"
 	},
 	"accomplissements":{
+		"{achievements.maintitle}":"Accomplissements",
+		"{achievements.keyword.title}":"Mot-clefs",
+		"{achievements.link.title}":"Liens",
+
+		"{achievements.item.seven.date}":"Mars à Avril 2020",
+		"{achievements.item.seven.title}":"Développement web - ce site !",
+		"{achievements.item.seven.description.item.one}":"Afin de mettre en pratique les connaissances théoriques que j’ai acquises en HTML/CSS et JavaScript, et également afin d’avoir un support de communication efficace pour mon CV, j’ai décidé de construire ce site internet ! <br>Ce projet s’est divisé en trois phases principales:",
+		"{achievements.item.seven.description.item.two}":"la conception : prototype du site, conception graphique (UI/UX)",
+		"{achievements.item.seven.description.item.three}":"l’implementation",
+		"{achievements.item.seven.description.item.four}":"le déploiement",
+		"{achievements.item.seven.description.item.five}":"Note : le graphisme d’arrière plan a été réalisé par <strong>Michelli Buzogany Eboli</strong> (voir son profil <a class=\"Underline\" href=\"Behance.net/chellbuzogany\">Behance</a>)",
+		"{achievements.item.seven.keyword}":"UI/UX, communication, JavaScript, HTML/CSS",
+		"{achievements.item.seven.link}":"Code source : <a class=\"Underline\" href=\"https://github.com/acoullandreau/cv_website\">https://github.com/acoullandreau/cv_website</a><br><br><br>",
+
+		"{achievements.item.six.date}":"Octobre à Novembre 2019",
+		"{achievements.item.six.title}":"Data science - prédiction du départ d’un client",
+		"{achievements.item.six.description.item.one}":"Projet réalisé dans le cadre du Nanodegree Data Scientist (voir <a href=\"#\" onclick=\"SwitchPage(8)\" class=\"Underline\">Formations</a>). Modèle d’apprentissage supervisé de classification de données temporelles.<br><br>L’objectif du projet était de démontrer ma capacité à analyser un grand volume de données à l’aide du framework Spark, et de construire un modèle pour prédire le départ d’un utilisateur d’un service de diffusion de musique nommé Sparkify.",
+		"{achievements.item.six.keyword}":"big data, analyse de données, visualisation, python, Spark, prédiction, classification, apprentissage supervisé",
+		"{achievements.item.six.link.one}":"Publication des résultats : <a class=\"Underline\" href=\"https://medium.com/@mozart38\">https://medium.com/@mozart38</a>",
+		"{achievements.item.six.link.two}":"Code source : <a class=\"Underline\" href=\"https://github.com/acoullandreau/capstone_sparkify\">https://github.com/acoullandreau/capstone_sparkify</a><br><br>",
+
+		"{achievements.item.five.date}":"Août 2019",
+		"{achievements.item.five.title}":"Data science - analyse des courses de taxi à New York en 2018",
+		"{achievements.item.five.description.item.one}":"Projet réalisé dans le cadre du Nanodegree Data Scientist (voir <a href=\"#\" onclick=\"SwitchPage(8)\" class=\"Underline\">Formations</a>). Analyse de données et restitution des observations à l’aide d’outils de visualisation appropriés.<br>L’objectif du projet était de démontrer ma capacité à observer, manipuler et transformer les données d’une série de mon choix. <br><br>J’ai choisi d’analyser une portion des courses des taxis jaunes de New York sur l’année 2018 (environ 99 millions de points).<br>Mon analyse s’est articulée autour de quatre axes principaux :",
+		"{achievements.item.five.description.item.two}":"Y a-t-il des tendances dans les déplacements des passagers en 2018 ?",
+		"{achievements.item.five.description.item.three}":"Y a-t-il une différence les jours fériés, le jour le plus chaud et le jour le plus froid de l’année ?",
+		"{achievements.item.five.description.item.four}":"Y a-t-il une différence entre la semaine et le weekend ?",
+		"{achievements.item.five.description.item.five}":"En fonction de la région observée, d’où viennent principalement les passagers ? Où vont-ils majoritairement ? Y a-t-il une différence entre jours de la semaine et weekend ?",
+		"{achievements.item.five.keyword}":"analyse de données, visualisation, python, OpenCV",
+		"{achievements.item.five.link.one}":"Dataset: <a class=\"Underline\" href=\"https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page\">https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page</a>",
+		"{achievements.item.five.link.two}":"Publication des résultats : <a class=\"Underline\" href=\"https://medium.com/@mozart38\">https://medium.com/@mozart38</a>",
+		"{achievements.item.five.link.three}":"Code source : <a class=\"Underline\" href=\"https://github.com/acoullandreau/nyc_taxi_trips\">https://github.com/acoullandreau/nyc_taxi_trips</a>",
+
+		"{achievements.item.four.date}":"",
+		"{achievements.item.four.title}":"",
+		"{achievements.item.four.description.item.one}":"",
+		"{achievements.item.four.keyword}":"",
+		"{achievements.item.four.link}":"",
+
+		"{achievements.item.three.date}":"",
+		"{achievements.item.three.title}":"",
+		"{achievements.item.three.description.item.one}":"",
+		"{achievements.item.three.keyword}":"",
+		"{achievements.item.three.link}":"",
+
+		"{achievements.item.two.date}":"",
+		"{achievements.item.two.title}":"",
+		"{achievements.item.two.description.item.one}":"",
+		"{achievements.item.two.keyword}":"",
+		"{achievements.item.two.link}":"",
+
+		"{achievements.item.one.date}":"",
+		"{achievements.item.one.title}":"",
+		"{achievements.item.one.description.item.one}":"",
+		"{achievements.item.one.keyword}":"",
+		"{achievements.item.one.link}":""
+
+
+
 
 	},
 	"exp_pers":{
@@ -170,7 +229,7 @@
 		"{exppers.item.three.skills.list.item.four}":"Envie de comprendre le fonctionnement d’une ville (Wuhan ville de 8M d’habitants qui se déconstruisait et se reconstruisait très rapidement !)",
 
 		"{exppers.item.four.date}":"Depuis 1998",
-		"{exppers.item.four.title}":"Pratique du violon",
+		"{exppers.item.four.title}":"Violoniste",
 		"{exppers.item.four.description}":"12 ans au conservatoire (orchestre, solfège, cours particuliers) <br>Tournée au Québec (groupe de chants de marins) en 2014 <br>Réintégration de l’orchestre du conservatoire en 2019 (après 10 ans d’interruption)",
 		"{exppers.item.four.skills.list.item.one}":"Persévérance, rigueur, patience",
 		"{exppers.item.four.skills.list.item.two}":"Coordination et travail de groupe",

@@ -265,7 +265,7 @@ function Animation(object, from, to, target, animation_duration, end_callback) {
 				this.object.current_position = this.from + offset_pixels;
 			} else if (this.target == 'opacity') {
 				var offset_opacity = this.offsetValue();
-				this.object.opacity = this.from + offset_opacity +'%';
+				this.object.opacity = (this.from + offset_opacity) * 0.01;
 			}
 		}
 	}
