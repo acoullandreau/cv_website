@@ -50,7 +50,7 @@
 
 	},
 	"temoignages":{
-
+		"{testimony.maintitle}":"Testimony"
 	},
 	"exp-pro":{
 		"{exppro.maintitle}":"Professional experiences",
@@ -59,24 +59,24 @@
 		"{exppro.achievement.title}":"Achievements",
 
 		"{exppro.item.seven.date}":"Since march 2019",
-		"{exppro.item.seven.title}":"Product owner - software design, data analysis",
+		"{exppro.item.seven.title}":"Software design, data analysis",
 
-		"{exppro.item.six.date}":"May 2018 - March 2019",
+		"{exppro.item.six.date}":"May 2018 - Mar 2019",
 		"{exppro.item.six.title}":"Project manager - Scrum Master",
 
 		"{exppro.item.five.date}":"May 2017 - May 2018",
 		"{exppro.item.five.title}":"Project manager / Operations manager",
 
-		"{exppro.item.four.date}":"Mai 2016 - Mai 2017",
+		"{exppro.item.four.date}":"May 2016 - May 2017",
 		"{exppro.item.four.title}":"Project manager",
 
-		"{exppro.item.three.date}":"Janvier 2014 - Avril 2016",
+		"{exppro.item.three.date}":"Jan 2014 - Apr 2016",
 		"{exppro.item.three.title}":"Project engineer",
 
-		"{exppro.item.two.date}":"Juin à Septembre 2013",
+		"{exppro.item.two.date}":"Jun - Sep 2013",
 		"{exppro.item.two.title}":"Research internship",
 
-		"{exppro.item.one.date}":"Juillet à Août 2012",
+		"{exppro.item.one.date}":"Jul - Aug 2012",
 		"{exppro.item.one.title}":"Site manager internship"
 
 	},
@@ -141,7 +141,7 @@
 		"{achievements.keyword.title}":"Keywords",
 		"{achievements.link.title}":"Links",
 
-		"{achievements.item.seven.date}":"March to April 2020",
+		"{achievements.item.seven.date}":"Mar - Apr 2020",
 		"{achievements.item.seven.title}":"Web development - this website!",
 		"{achievements.item.seven.description.item.one}":"In order to practise the theoretical skills I acquired in HTML/CSS and JavaScript, as well as to have an effective communication support for my CV, I decided to builf this website! <br> This project was divided into three main phases:",
 		"{achievements.item.seven.description.item.two}":"the design : website prototype, visual design (UI/UX)",
@@ -151,14 +151,14 @@
 		"{achievements.item.seven.keyword}":"UI/UX, communication, JavaScript, HTML/CSS",
 		"{achievements.item.seven.link}":"Source code: <a class=\"Underline\" href=\"https://github.com/acoullandreau/cv_website\">https://github.com/acoullandreau/cv_website</a><br><br><br>",
 
-		"{achievements.item.six.date}":"October à November 2019",
+		"{achievements.item.six.date}":"Oct - Nov 2019",
 		"{achievements.item.six.title}":"Data science - churn prediction",
 		"{achievements.item.six.description.item.one}":"Project part of the Data Scientist Nanodegree (See <a href=\"#\" onclick=\"SwitchPage(8)\" class=\"Underline\">Education</a>). Supervised learning classification model of time series data. <br><br> The objective of the project was to demonstrate my ability to analyse a large volume of data usnig the Spark framework, and build a model to predict user churn for a music streaming platform called Sparkify.",
 		"{achievements.item.six.keyword}":"big data, data analysis, vizualisation, python, Spark, prediction, classification, supervised learning",
 		"{achievements.item.six.link.one}":"Publication of the results:<a class=\"Underline\" href=\"https://medium.com/@mozart38\">https://medium.com/@mozart38</a>",
 		"{achievements.item.six.link.two}":"Source code: <a class=\"Underline\" href=\"https://github.com/acoullandreau/capstone_sparkify\">https://github.com/acoullandreau/capstone_sparkify</a><br><br>",
 
-		"{achievements.item.five.date}":"August 2019",
+		"{achievements.item.five.date}":"Aug 2019",
 		"{achievements.item.five.title}":"Data science - analysis of the taxi trips in New York in 2018",
 		"{achievements.item.five.description.item.one}":"Project part of the Data Scientist Nanodegree (See <a href=\"#\" onclick=\"SwitchPage(8)\" class=\"Underline\">Education</a>). Data analysis and observation restitution using appropriate visualisation tools.<br>The objective of the project was to demonstrate my ability to observe, manipulate and transform data from the dataset of my choice. <br><br>I chose to analyse part of the dataset of the New York taxi trips for the year 2018 (about 99 millions de points).<br>My analysis focused on four main axes:",
 		"{achievements.item.five.description.item.two}":"Can we see trends in the flow of passengers in 2018?",
@@ -170,7 +170,7 @@
 		"{achievements.item.five.link.two}":"Publication of the results:<a class=\"Underline\" href=\"https://medium.com/@mozart38\">https://medium.com/@mozart38</a>",
 		"{achievements.item.five.link.three}":"Source code: <a class=\"Underline\" href=\"https://github.com/acoullandreau/nyc_taxi_trips\">https://github.com/acoullandreau/nyc_taxi_trips</a>",
 
-		"{achievements.item.four.date}":"June 2018 - March 2019",
+		"{achievements.item.four.date}":"Jun 2018 - Mar 2019",
 		"{achievements.item.four.title}":"Paradox Engineering - implementation of a CMS to control digital urban services",
 		"{achievements.item.four.description.item.one}":"I joined Paradox Engineering mid-2018, while the implementation of a new version of their CMS (stands for Content Management System) was on-going. I quickly identified several difficulties, and after being promoted Scrum Master I was in particular:",
 		"{achievements.item.four.description.item.two}":"in charge of the coordination of the software development teams (assimilated role of the Scrum Master)",
@@ -185,7 +185,7 @@
 		"{achievements.item.four.description.item.eleven}":"user experience analysis",
 		"{achievements.item.four.keyword}":"CMS, IoT, SCRUM, project management, UI/UX, communication, software design",
 
-		"{achievements.item.three.date}":"June 2017 - May 2018",
+		"{achievements.item.three.date}":"Jun 2017 - May 2018",
 		"{achievements.item.three.title}":"NomoSphère - deployment and operation of the public Wi-Fi network in SNCF train stations",
 		"{achievements.item.three.description.item.one}":"Very large-scale project that had been carried out for more than three consecutive years, between the first deployment and the last station equipped. <br><br> I joined NomoSphère while the project was already on-going for quite some time, and I took over from another project management on one segment of the project (national train stations). I was in charge of :",
 		"{achievements.item.three.description.item.two}":"validating the deployment studies according to the expectations of the customer (depending on the target station, betwee 2 and 30 access points were installed)",
@@ -199,7 +199,7 @@
 		"{achievements.item.three.description.item.ten}":"technical knowledge related to a wireless network infrastructures (device configuration (router, switch, Wi-Fi AP), remote or on-site troubleshooting, architecture diagrams and studies)",
 		"{achievements.item.three.keyword}":"project management, public Wi-FI, deployment, preventive and corrective maintenance, supervision, communication, analysis of needs",
 
-		"{achievements.item.two.date}":"May 2016 - December 2016",
+		"{achievements.item.two.date}":"May 2016 - Dec 2016",
 		"{achievements.item.two.title}":"Citelum - tender for the renovation of the industrial lighting of the Renault factories in France",
 		"{achievements.item.two.description.item.one}":"I joined Citelum at the moment the consultation initiated by Renault for the renovation of the lighting of their factories in France was launched. The importance of this project as well as its application domain (industrial lighting) were new for the company, and the close collaboration with EDF experts allowed to construct an offer that was selected after seven months of consultation. <br><br> As project manager, I was in charge of:",
 		"{achievements.item.two.description.item.two}":"the construction of the offer: cost evaluation, coordination of the experts (technical, legal, purchasing, works, financial, etc.), preparation of the presentation of the offer",
@@ -212,7 +212,7 @@
 		"{achievements.item.two.description.item.nine}":"cost and financial analysis of the project",
 		"{achievements.item.two.keyword}":"tenders, industrial lighting, project management, deployment, preventive and corrective maintenance, communication",
 
-		"{achievements.item.one.date}":"January 2014 - April 2016",
+		"{achievements.item.one.date}":"Jan 2014 - Apr 2016",
 		"{achievements.item.one.title}":"EVESA - Paris street lighting and traffic lights remote control",
 		"{achievements.item.one.description.item.one}":"I joined EVESA as an intern. I was in charge of the qualification of a technical solution dedicated to the remote control of the street lights and traffic lights networks of the city of Paris. I was in charge of two pilots (POC - proof of concept), which meant deploying, describing and monitoring the metrics that would allow us to choose among the two solutions. <br><br> By the end of my internship, one of the two solutions was chosen, and I was hired to prepare its deployment (approximately 20 000 devices to install). This second phase, in which I played a major role, consisted in:",
 		"{achievements.item.one.description.item.two}":"establishing the terms of the contract which linked EVESA and the city of Paris to the supplier",
@@ -232,7 +232,7 @@
 		"{exppers.maintitle}":"Personal experiences",
 		"{exppers.skills.title}":"Acquired knowledge",
 
-		"{exppers.item.one.date}":"May 2018 - March 2019",
+		"{exppers.item.one.date}":"May 2018 - Mar 2019",
 		"{exppers.item.one.title}":"Expatriation in Italy",
 		"{exppers.item.one.description}":"Professional opportunity in Switzerland, at the italian border",
 		"{exppers.item.one.skills.list.item.one}":"Getting out of your comfort zone",
@@ -241,7 +241,7 @@
 		"{exppers.item.one.skills.list.item.four}":"Discovery of a new culture",
 		"{exppers.item.one.skills.list.item.five}":"Exposure to other ways of organizing daily life and work",
 
-		"{exppers.item.two.date}":"January to december 2012",
+		"{exppers.item.two.date}":"Jan - Dec 2012",
 		"{exppers.item.two.title}":"Member of EIVP associations",
 		"{exppers.item.two.description}":"Student Office Treasurer <br>Secretary of the sustainable development office",
 		"{exppers.item.two.skills.list.item.one}":"Rigor, availability, good relationship with students",
@@ -249,7 +249,7 @@
 		"{exppers.item.two.skills.list.item.three}":"Budget management - Fundraising",
 		"{exppers.item.two.skills.list.item.four}":"Solar energy",
 
-		"{exppers.item.three.date}":"October 2006 - july 2008 <br>June to september 2013",
+		"{exppers.item.three.date}":"Oct 2006 - Jul 2008 / Jun - Sep 2013",
 		"{exppers.item.three.title}":"Expatriation in China",
 		"{exppers.item.three.description}":"Family expatriation in Wuhan (Hubei) <br>Research internship (See <a href=\"#\" onclick=\"SwitchPage(4)\" class=\"Underline\">professional experiences</a>)",
 		"{exppers.item.three.skills.list.item.one}":"Getting out of your comfort zone",
@@ -268,30 +268,30 @@
 	"education":{
 		"{education.maintitle}":"Education",
 
-		"{education.item.seven.date}":"March 2019 - November 2019",
+		"{education.item.seven.date}":"Mar 2019 - Nov 2019",
 		"{education.item.seven.title}":"Data Science Nanodegree",
 		"{education.item.seven.description}":"Nanodegree covering basic concepts of data analysis (vizualisation, python librairies, linear algrebra, statistics, ….)",
 		"{education.item.seven.skill}":"Data analysis (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Computer science and networks</a>)",
 		"{education.item.seven.diploma}":"Nanodegree Udacity",
 
-		"{education.item.six.date}":"July 2015",
+		"{education.item.six.date}":"Jul 2015",
 		"{education.item.six.title}":"CISCO CCNA Routing & Switching",
 		"{education.item.six.description}":"CISCO certification entry level, Routing & Switching path",
 		"{education.item.six.skill}":"Networks (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Computer science and networks</a>)",
 		"{education.item.six.diploma}":"CISCO certification(CCNA)",
 
-		"{education.item.five.date}":"January to june 2013",
+		"{education.item.five.date}":"Jan - Jun 2013",
 		"{education.item.five.title}":"Southampton University – Civil Engineering faculty",
 		"{education.item.five.description}":"ERASMUS civil engineering",
 		"{education.item.five.skill}":"Civil Engineering (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Urban Engineering</a>)",
 
-		"{education.item.four.date}":"September 2011 - August 2014",
+		"{education.item.four.date}":"Sep 2011 - Aug 2014",
 		"{education.item.four.title}":"École des Ingénieurs de la Ville de Paris (EIVP)",
 		"{education.item.four.description}":"Urban Engineering diploma : urbanism and civil engineering",
 		"{education.item.four.skill}":"Urban Engineering (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Urban Engineering</a>)",
 		"{education.item.four.diploma}":"Urban Engineer Diploma",
 
-		"{education.item.three.date}":"September 2009 - Julyt 2011",
+		"{education.item.three.date}":"Sep 2009 - Jul 2011",
 		"{education.item.three.title}":"Prep School",
 		"{education.item.three.description}":"PCSI then PC course (physics and chemistry",
 		"{education.item.three.skill}":"Preparation to the competitive exams of engineering schools (Mines/Ponts, CCP, Centrale SUPELEC)",

@@ -51,7 +51,7 @@
 
 	},
 	"temoignages":{
-
+		"{testimony.maintitle}":"Témoignages"
 	},
 	"exp-pro":{
 		"{exppro.maintitle}":"Expériences professionnelles",
@@ -59,10 +59,10 @@
 		"{exppro.skill.title}":"Compétences mobilisées et acquises",
 		"{exppro.achievement.title}":"Accomplissements",
 
-		"{exppro.item.seven.date}":"Depuis mars 2019",
-		"{exppro.item.seven.title}":"Chef de produit - conception logicielle, analyse de données",
+		"{exppro.item.seven.date}":"Depuis Mars 2019",
+		"{exppro.item.seven.title}":"Conception logicielle, analyse de données",
 
-		"{exppro.item.six.date}":"Mai 2018 - Mars 2019",
+		"{exppro.item.six.date}":"Mai 2018 - Mar 2019",
 		"{exppro.item.six.title}":"Chef de projets - Scrum Master",
 
 		"{exppro.item.five.date}":"Mai 2017 - Mai 2018",
@@ -71,13 +71,13 @@
 		"{exppro.item.four.date}":"Mai 2016 - Mai 2017",
 		"{exppro.item.four.title}":"Chef de projets",
 
-		"{exppro.item.three.date}":"Janvier 2014 - Avril 2016",
+		"{exppro.item.three.date}":"Jan 2014 - Avr 2016",
 		"{exppro.item.three.title}":"Ingénieur responsable de projets",
 
-		"{exppro.item.two.date}":"Juin à Septembre 2013",
+		"{exppro.item.two.date}":"Juin - Sept 2013",
 		"{exppro.item.two.title}":"Stage ingénieur étude",
 
-		"{exppro.item.one.date}":"Juillet à Août 2012",
+		"{exppro.item.one.date}":"Juil - Août 2012",
 		"{exppro.item.one.title}":"Stage conducteur de travaux"
 
 	},
@@ -142,7 +142,7 @@
 		"{achievements.keyword.title}":"Mot-clefs",
 		"{achievements.link.title}":"Liens",
 
-		"{achievements.item.seven.date}":"Mars à Avril 2020",
+		"{achievements.item.seven.date}":"Mar - Avr 2020",
 		"{achievements.item.seven.title}":"Développement web - ce site !",
 		"{achievements.item.seven.description.item.one}":"Afin de mettre en pratique les connaissances théoriques que j’ai acquises en HTML/CSS et JavaScript, et également afin d’avoir un support de communication efficace pour mon CV, j’ai décidé de construire ce site internet ! <br>Ce projet s’est divisé en trois phases principales:",
 		"{achievements.item.seven.description.item.two}":"la conception : prototype du site, conception graphique (UI/UX)",
@@ -152,7 +152,7 @@
 		"{achievements.item.seven.keyword}":"UI/UX, communication, JavaScript, HTML/CSS",
 		"{achievements.item.seven.link}":"Code source : <a class=\"Underline\" href=\"https://github.com/acoullandreau/cv_website\">https://github.com/acoullandreau/cv_website</a><br><br><br>",
 
-		"{achievements.item.six.date}":"Octobre à Novembre 2019",
+		"{achievements.item.six.date}":"Oct - Nov 2019",
 		"{achievements.item.six.title}":"Data science - prédiction du départ d’un client",
 		"{achievements.item.six.description.item.one}":"Projet réalisé dans le cadre du Nanodegree Data Scientist (voir <a href=\"#\" onclick=\"SwitchPage(8)\" class=\"Underline\">Formations</a>). Modèle d’apprentissage supervisé de classification de données temporelles.<br><br>L’objectif du projet était de démontrer ma capacité à analyser un grand volume de données à l’aide du framework Spark, et de construire un modèle pour prédire le départ d’un utilisateur d’un service de diffusion de musique nommé Sparkify.",
 		"{achievements.item.six.keyword}":"big data, analyse de données, visualisation, python, Spark, prédiction, classification, apprentissage supervisé",
@@ -171,7 +171,7 @@
 		"{achievements.item.five.link.two}":"Publication des résultats : <a class=\"Underline\" href=\"https://medium.com/@mozart38\">https://medium.com/@mozart38</a>",
 		"{achievements.item.five.link.three}":"Code source : <a class=\"Underline\" href=\"https://github.com/acoullandreau/nyc_taxi_trips\">https://github.com/acoullandreau/nyc_taxi_trips</a>",
 
-		"{achievements.item.four.date}":"Juin 2018 - Mars 2019",
+		"{achievements.item.four.date}":"Juin 2018 - Mar 2019",
 		"{achievements.item.four.title}":"Paradox Engineering - implémentation d’un CMS dédié au pilotage de services urbains numériques",
 		"{achievements.item.four.description.item.one}":"J’ai rejoint Paradox Engineering mi-2018, alors que l’implémentation d’une nouvelle version de leur CMS (pour Content Management System – système de gestion de contenu) était en cours. J’ai rapidement identifié plusieurs difficultés, et après avoir été nommée scrum master j’étais notamment :",
 		"{achievements.item.four.description.item.two}":"en charge de la coordination des équipes de développement (rôle assimilé de scrum master)",
@@ -200,7 +200,7 @@
 		"{achievements.item.three.description.item.ten}":"connaissances techniques liées à une infrastructure réseau sans fil (configuration des équipements (routeur, switch, bornes Wi-Fi), diagnostic à distance ou sur site, études d’implantation et de dimensionnement)",
 		"{achievements.item.three.keyword}":"gestion de projet, Wi-FI public, déploiement, maintenance préventive et corrective, supervision, communication, analyse des usages",
 
-		"{achievements.item.two.date}":"Mai 2016 - Décembre 2016",
+		"{achievements.item.two.date}":"Mai 2016 - Déc 2016",
 		"{achievements.item.two.title}":"Citelum - consultation éclairage industriel pour la rénovation des usines Renault en France",
 		"{achievements.item.two.description.item.one}":"J’ai rejoint Citelum au moment où débutait la consultation lancée par Renault pour la rénovation de l’éclairage de leurs usines en France. L’ampleur du projet ainsi que son domaine d’application (éclairage industriel) étaient nouveaux pour l’entreprise, et la collaboration étroite avec des experts EDF ont permis de mettre au point une offre finale qui a finalement été retenue à l’issue de sept moins de consultation. <br><br>En tant que chef de projet, j’étais responsable :",
 		"{achievements.item.two.description.item.two}":"Du montage de l’offre : chiffrage, coordination des experts (technique, juridique, achat, travaux, financier….), préparation des mémoires et des soutenances",
@@ -213,7 +213,7 @@
 		"{achievements.item.two.description.item.nine}":"chiffrage et analyse financière du projet",
 		"{achievements.item.two.keyword}":"consultation appel d’offre, éclairage industriel, gestion de projet, déploiement, maintenance préventive et corrective, communication",
 
-		"{achievements.item.one.date}":"Janvier 2014 - Avril 2016",
+		"{achievements.item.one.date}":"Jan 2014 - Avr 2016",
 		"{achievements.item.one.title}":"EVESA - asservissement de l’éclairage public et de la signalisation lumineuse tricolore de la ville de Paris",
 		"{achievements.item.one.description.item.one}":"J’ai rejoint EVESA  en tant que stagiaire. J’étais en charge de la qualification d’une solution technique dédiée au pilotage à distance (asservissement) du réseau d’éclairage public et de signalisation lumineuse tricolore de la ville de Paris. J’étais responsable de la mise en place de deux pilotes, ainsi que du suivi des métriques permettant de retenir une solution. <br><br>À l’issue de mon stage, une des deux solutions a été retenue, et j’ai été recrutée pour la préparation du déploiement de cette solution (environ 20 000 équipements à déployer). Cette seconde phase, dans laquelle j’ai joué un rôle principal, consistait à :",
 		"{achievements.item.one.description.item.two}":"établir les termes du contrat qui liait EVESA et la ville de Paris au fournisseur",
@@ -233,7 +233,7 @@
 		"{exppers.maintitle}":"Expériences personnelles",
 		"{exppers.skills.title}":"Savoirs acquis",
 
-		"{exppers.item.one.date}":"Mai 2018 - Mars 2019",
+		"{exppers.item.one.date}":"Mai 2018 - Mar 2019",
 		"{exppers.item.one.title}":"Expatriation en Italie",
 		"{exppers.item.one.description}":"Opportunité professionnelle en Suisse à la frontière italienne",
 		"{exppers.item.one.skills.list.item.one}":"Sortir de sa zone de confort",
@@ -242,7 +242,7 @@
 		"{exppers.item.one.skills.list.item.four}":"Découverte d’une autre culture",
 		"{exppers.item.one.skills.list.item.five}":"Exposition à d’autres manières d’organiser la vie quotidienne et le travail",
 
-		"{exppers.item.two.date}":"Janvier à décembre 2012",
+		"{exppers.item.two.date}":"Jan - Déc 2012",
 		"{exppers.item.two.title}":"Membre d’associations EIVP",
 		"{exppers.item.two.description}":"Trésorière du bureau des élèves (BDE) <br>Secrétaire du bureau du développement durable",
 		"{exppers.item.two.skills.list.item.one}":"Rigueur, disponibilité, bon relationnel avec les élèves",
@@ -250,7 +250,7 @@
 		"{exppers.item.two.skills.list.item.three}":"Gestion d’un budget - Recherche de financements",
 		"{exppers.item.two.skills.list.item.four}":"Énergie solaire",
 
-		"{exppers.item.three.date}":"Octobre 2006 - juillet 2008 <br>Juin à septembre 2013",
+		"{exppers.item.three.date}":"Oct 2006 - Juil 2008 / Juin - Sept 2013",
 		"{exppers.item.three.title}":"Expatriation en Chine",
 		"{exppers.item.three.description}":"Expatriation familiale à Wuhan (Hubei) <br>Stage étude et recherche (Voir <a href=\"#\" onclick=\"SwitchPage(4)\" class=\"Underline\">expériences professionnelles</a>)",
 		"{exppers.item.three.skills.list.item.one}":"Sortir de sa zone de confort",
@@ -270,30 +270,30 @@
 	"education":{
 		"{education.maintitle}":"Formations",
 
-		"{education.item.seven.date}":"Mars 2019 - Novembre 2019",
+		"{education.item.seven.date}":"Mar 2019 - Nov 2019",
 		"{education.item.seven.title}":"Data Science Nanodegree",
 		"{education.item.seven.description}":"Formation certifiante couvrant les concepts de base de l’analyse des données (visualisation, librairies python, algèbre linéaire, statistiques, ….)",
 		"{education.item.seven.skill}":"Analyse de données (Voir <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Informatique et réseaux</a>)",
 		"{education.item.seven.diploma}":"Nanodegree Udacity",
 
-		"{education.item.six.date}":"Juillet 2015",
+		"{education.item.six.date}":"Juil 2015",
 		"{education.item.six.title}":"CISCO CCNA Routing & Switching",
 		"{education.item.six.description}":"Certification CISCO premier niveau, domaine Routing & Switching",
 		"{education.item.six.skill}":"Réseaux (Voir <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Informatique et réseaux</a>)",
 		"{education.item.six.diploma}":"Certification CISCO (CCNA)",
 
-		"{education.item.five.date}":"Janvier à juin 2013",
+		"{education.item.five.date}":"Jan - Juin 2013",
 		"{education.item.five.title}":"Université de Southampton – Faculté de génie civil",
 		"{education.item.five.description}":"ERASMUS génie civil",
 		"{education.item.five.skill}":"Génie civil (Voir <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Génie urbain</a>)",
 
-		"{education.item.four.date}":"Septembre 2011 - Août 2014",
+		"{education.item.four.date}":"Sept 2011 - Août 2014",
 		"{education.item.four.title}":"École des Ingénieurs de la Ville de Paris (EIVP)",
 		"{education.item.four.description}":"Cursus en génie urbain : urbanisme et génie civil",
 		"{education.item.four.skill}":"Génie urbain (Voir <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Génie urbain</a>)",
 		"{education.item.four.diploma}":"Diplôme d’Ingénieur en Génie Urbain",
 
-		"{education.item.three.date}":"Septembre 2009 - Juillet 2011",
+		"{education.item.three.date}":"Sept 2009 - Juil 2011",
 		"{education.item.three.title}":"Classe préparatoire aux grandes écoles",
 		"{education.item.three.description}":"Filière PCSI puis PC (physique-chimie)",
 		"{education.item.three.skill}":"Préparation aux concours Mines/Ponts, CCP, Centrale SUPELEC",
