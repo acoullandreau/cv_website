@@ -14,9 +14,11 @@ getLanguageJson = function(language) {
 
 	if (language.includes('fr')) {
 		lang_json_name = 'language_dict_fr.json';
-	} else if (language.includes('pt')) {
-		lang_json_name = 'language_dict_pt.json';
-	} else {
+	} 
+	// else if (language.includes('pt')) {
+	// 	lang_json_name = 'language_dict_pt.json';
+	// } 
+	else {
 		lang_json_name = 'language_dict_en.json';
 	}
 	var lang_json_promise = fetch(lang_json_name).then(function(response) {
@@ -63,7 +65,7 @@ loadTranslatedContent = function(language, page) {
 		document.getElementById("cv-file").innerHTML=nav_menu_pdf_translated;
 		
 		current_page = page;
-		
+
 	}).catch(function (err) {
 		console.warn('Something went wrong.', err);
 	})
