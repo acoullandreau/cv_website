@@ -28,7 +28,6 @@ getLanguageJson = function(language) {
 }
 
 loadTranslatedContent = function(language, page) {
-	current_page = page;
 	//get the language dict and the target html content to translate and load
 	promise_json = getLanguageJson(language);
 	promise_html_content = fetch(page +'.html').then(function(response) {
@@ -62,7 +61,9 @@ loadTranslatedContent = function(language, page) {
 		document.getElementById("contact-text").innerHTML=nav_menu_contact_translated;
 		document.getElementById("left-nav-bar-text").innerHTML=nav_menu_left_bar_translated;
 		document.getElementById("cv-file").innerHTML=nav_menu_pdf_translated;
-
+		
+		current_page = page;
+		
 	}).catch(function (err) {
 		console.warn('Something went wrong.', err);
 	})

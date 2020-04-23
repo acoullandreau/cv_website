@@ -158,11 +158,13 @@ function Scene() {
 			new_state = 7;
 		} else if (page_reference === 9) {
 			new_state = 8;
-		} else if (page_reference === 0 | page_reference === 2){
+		} else if (page_reference === 0 || page_reference === 2){
 			new_state = 0;
 		}
 
 		if (new_state !== undefined) {
+			// we set back the current animation index to 0 to make sure we always start by fading out whatever content was loaded
+			this.current_animation_index = 0;
 			var slide_animations = []
 			for (var index in this.elements_list) {
 				var to_pixel = this.elements_list[index].state_dict[new_state]['position'];
@@ -193,8 +195,14 @@ function Scene() {
 	}
 	this.updateAnimationList = function(slide_animations, callback) {
 		var content_to_fade = document.getElementById("content-container").style;
-		var fade_out_animation = new Animation(content_to_fade, 100, 0, 'opacity', 500, callback);
-		var fade_in_animation = new Animation(content_to_fade, 0, 100, 'opacity', 500);
+		// instead of starting fading out from 1, we start fading out from whatever opacity the content to fade currently has
+		// if it doesn't have any set, we arbitrarily set it to 1
+		if (content_to_fade.opacity === undefined || content_to_fade.opacity === '') {
+			content_to_fade.opacity = 1;
+		}
+
+		var fade_out_animation = new Animation(content_to_fade, parseFloat(content_to_fade.opacity), 0, 'opacity', 500, callback);
+		var fade_in_animation = new Animation(content_to_fade, 0, 1, 'opacity', 500);
 		this.animation_list = [[fade_out_animation], slide_animations, [fade_in_animation]];
 	}
 	this.calculate_animation_duration = function(next_state) {
@@ -265,7 +273,7 @@ function Animation(object, from, to, target, animation_duration, end_callback) {
 				this.object.current_position = this.from + offset_pixels;
 			} else if (this.target == 'opacity') {
 				var offset_opacity = this.offsetValue();
-				this.object.opacity = (this.from + offset_opacity) * 0.01;
+				this.object.opacity = this.from + offset_opacity;
 			}
 		}
 	}

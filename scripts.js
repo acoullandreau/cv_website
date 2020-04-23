@@ -36,6 +36,7 @@ nav_bar_hover_state = {
 SwitchPage = function(page_reference) {
 	var target_html_file = page_correspondance[page_reference];
 
+	console.log(target_html_file, current_page)
 	// triggers change page logic only if the user wants to acces another page
 	if (target_html_file !== current_page) {
 		var content_language = getLanguage();
@@ -120,28 +121,6 @@ NavBarHover = function(element_reference, action) {
 		elem_to_edit.style.display = "inline-block";
 	} 
 }
-
-// FormSubmit = function() {
-// 	// retrieve the content of the form
-// 	var form = document.getElementById("contact-form");
-// 	var fname = form.elements[0].value;
-// 	var lname = form.elements[1].value;
-// 	var email = form.elements[2].value;
-// 	var message = form.elements[3].value;
-
-// 	// check integrity of email address
-// 	var email_regex = /\S+@\S+\.\S+/;
-// 	if (email_regex.test(email) == true) {
-// 		console.log(fname, lname, email, message)
-// 		// display an acknowledgment message for the form submission
-// 		OpenOverlay('form', 'success');
-// 	} else {
-// 		// display an error message for the form submission
-// 		OpenOverlay('form', 'email_error');
-// 	}
-	
-// }
-
 
 FormSubmit = function() {
 	var target_url = 'index.html';
