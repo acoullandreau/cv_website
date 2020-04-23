@@ -36,7 +36,6 @@ nav_bar_hover_state = {
 SwitchPage = function(page_reference) {
 	var target_html_file = page_correspondance[page_reference];
 
-	console.log(target_html_file, current_page)
 	// triggers change page logic only if the user wants to acces another page
 	if (target_html_file !== current_page) {
 		var content_language = getLanguage();
@@ -51,6 +50,19 @@ SwitchLanguage = function(language) {
 	var content_language = getLanguage();
 	loadTranslatedContent(content_language, current_page);
 }
+
+ScrollAnimation = function() {
+	var scroll_height = document.getElementsByClassName("ScrollSnap")[0].scrollTop;
+	var scroll_total_height = document.getElementsByClassName("ScrollSnap")[0].scrollHeight;
+	var visible_height = document.getElementsByClassName("ScrollSnapChild")[0].scrollHeight;
+
+	if (scroll_height + visible_height  >= scroll_total_height - visible_height) {
+		document.getElementById("scoll-down-img").style.display="none";
+	} else {
+		document.getElementById("scoll-down-img").style.display="block";
+	}
+}
+
 
 OpenOverlay = function(section_reference, element_reference) {
 	var overlay_template = 'overlay_template.html';

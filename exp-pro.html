@@ -2,162 +2,164 @@
 	<h1 class="Source Bold FontSizeHeader PageTitre">{exppro.maintitle}</h1>
 </div>
 <div id="scroll-content">
-	<div class="ProGridWrapper">
-		<div class="ExpBlock ProGridElemOne BackGroundLight">
-			<div class="DatePeriod BackgroundRed">
-				<p class="Bold ColorLight FontSizeParagraph">{exppro.item.seven.date}</p>
+	<div  class="ScrollSnap" onscroll="ScrollAnimation()">
+		<div class="ScrollSnapChild ProGridWrapper ScrollInnerWrapper">
+			<div class="ExpBlock ProGridElemOne BackGroundLight">
+				<div class="DatePeriod BackgroundRed">
+					<p class="Bold ColorLight FontSizeParagraph">{exppro.item.seven.date}</p>
+				</div>
+				<div class="ExpLogo ExpLogoDefault">
+					<img src="./image_library/icon_anonymous.svg">
+				</div>
+				<div class="ExpTitle">
+					<p class="Bold FontSizeSubParagraph">{exppro.item.seven.title}</p>
+				</div>
+				<div class="ProExpGridWrapper FontSizeParagraph">
+					<a href="#" onclick="OpenOverlay('current_activity', 'missions')"><img class="ProExpElemOne" src="./image_library/icon_missions.svg"></a>
+					<a href="#" onclick="OpenOverlay('current_activity', 'missions')"><p class="ProExpElemTwo">{exppro.mission.title}</p></a>
+					<a href="#" onclick="OpenOverlay('current_activity', 'missions')"><img class="ProExpElemThree" src="./image_library/icon_expand.svg"></a>
+					<a href="#" onclick="OpenOverlay('current_activity', 'competences')"><img class="ProExpElemFour" src="./image_library/icon_skills_dark.svg"></a>
+					<a href="#" onclick="OpenOverlay('current_activity', 'competences')"><p class="ProExpElemFive">{exppro.skill.title}</p></a>
+					<a href="#" onclick="OpenOverlay('current_activity', 'competences')"><img class="ProExpElemSix" src="./image_library/icon_expand.svg"></a>
+					<a href="#" onclick="SwitchPage(6)"><img class="ProExpElemSeven" src="./image_library/icon_achivements_dark.svg"></a>
+					<a href="#" class="ProExpElemEight" onclick="SwitchPage(6)"><p>{exppro.achievement.title}</p></a>
+				</div>
 			</div>
-			<div class="ExpLogo ExpLogoDefault">
-				<img src="./image_library/icon_anonymous.svg">
+
+			<div class="ExpBlock ProGridElemThree BackGroundLight">
+				<div class="DatePeriod BackGroundDark">
+					<p class="Bold ColorLight FontSizeParagraph">{exppro.item.six.date}</p>
+				</div>
+				<div class="ExpLogo ExpLogoCompany">
+					<img src="./image_library/icon_paradox.svg">
+				</div>
+				<div class="ExpTitle">
+					<p class="Bold FontSizeSubParagraph">{exppro.item.six.title}</p>
+				</div>
+				<div class="ProExpGridWrapper FontSizeParagraph">
+					<a href="#" onclick="OpenOverlay('paradox', 'missions')"><img class="ProExpElemOne" src="./image_library/icon_missions.svg"></a>
+					<a href="#" onclick="OpenOverlay('paradox', 'missions')"><p class="ProExpElemTwo">{exppro.mission.title}</p></a>
+					<a href="#" onclick="OpenOverlay('paradox', 'missions')"><img class="ProExpElemThree" src="./image_library/icon_expand.svg"></a>
+					<a href="#" onclick="OpenOverlay('paradox', 'competences')"><img class="ProExpElemFour" src="./image_library/icon_skills_dark.svg"></a>
+					<a href="#" onclick="OpenOverlay('paradox', 'competences')"><p class="ProExpElemFive">{exppro.skill.title}</p></a>
+					<a href="#" onclick="OpenOverlay('paradox', 'competences')"><img class="ProExpElemSix" src="./image_library/icon_expand.svg"></a>
+					<a href="#" onclick="SwitchPage(6)"><img class="ProExpElemSeven" src="./image_library/icon_achivements_dark.svg"></a>
+					<a href="#" class="ProExpElemEight" onclick="SwitchPage(6)"><p>{exppro.achievement.title}</p></a>
+				</div>
 			</div>
-			<div class="ExpTitle">
-				<p class="Bold FontSizeSubParagraph">{exppro.item.seven.title}</p>
+
+			<div class="ExpBlock ProGridElemFour BackGroundLight">
+				<div class="DatePeriod BackGroundDark">
+					<p class="Bold ColorLight FontSizeParagraph">{exppro.item.five.date}</p>
+				</div>
+				<div class="ExpLogo ExpLogoCompany">
+					<img src="./image_library/icon_nomosphere.svg">
+				</div>
+				<div class="ExpTitle">
+					<p class="Bold FontSizeSubParagraph">{exppro.item.five.title}</p>
+				</div>
+				<div class="ProExpGridWrapper FontSizeParagraph">
+					<a href="#" onclick="OpenOverlay('nomosphere', 'missions')"><img class="ProExpElemOne" src="./image_library/icon_missions.svg"></a>
+					<a href="#" onclick="OpenOverlay('nomosphere', 'missions')"><p class="ProExpElemTwo">{exppro.mission.title}</p></a>
+					<a href="#" onclick="OpenOverlay('nomosphere', 'missions')"><img class="ProExpElemThree" src="./image_library/icon_expand.svg"></a>
+					<a href="#" onclick="OpenOverlay('nomosphere', 'competences')"><img class="ProExpElemFour" src="./image_library/icon_skills_dark.svg"></a>
+					<a href="#" onclick="OpenOverlay('nomosphere', 'competences')"><p class="ProExpElemFive">{exppro.skill.title}</p></a>
+					<a href="#" onclick="OpenOverlay('nomosphere', 'competences')"><img class="ProExpElemSix" src="./image_library/icon_expand.svg"></a>
+					<a href="#" onclick="SwitchPage(6)"><img class="ProExpElemSeven" src="./image_library/icon_achivements_dark.svg"></a>
+					<a href="#" class="ProExpElemEight" onclick="SwitchPage(6)"><p>{exppro.achievement.title}</p></a>
+				</div>
 			</div>
-			<div class="ProExpGridWrapper FontSizeParagraph">
-				<a href="#" onclick="OpenOverlay('current_activity', 'missions')"><img class="ProExpElemOne" src="./image_library/icon_missions.svg"></a>
-				<a href="#" onclick="OpenOverlay('current_activity', 'missions')"><p class="ProExpElemTwo">{exppro.mission.title}</p></a>
-				<a href="#" onclick="OpenOverlay('current_activity', 'missions')"><img class="ProExpElemThree" src="./image_library/icon_expand.svg"></a>
-				<a href="#" onclick="OpenOverlay('current_activity', 'competences')"><img class="ProExpElemFour" src="./image_library/icon_skills_dark.svg"></a>
-				<a href="#" onclick="OpenOverlay('current_activity', 'competences')"><p class="ProExpElemFive">{exppro.skill.title}</p></a>
-				<a href="#" onclick="OpenOverlay('current_activity', 'competences')"><img class="ProExpElemSix" src="./image_library/icon_expand.svg"></a>
-				<a href="#" onclick="SwitchPage(6)"><img class="ProExpElemSeven" src="./image_library/icon_achivements_dark.svg"></a>
-				<a href="#" class="ProExpElemEight" onclick="SwitchPage(6)"><p>{exppro.achievement.title}</p></a>
+
+			<div class="ExpBlock ProGridElemFive BackGroundLight">
+				<div class="DatePeriod BackGroundDark">
+					<p class="Bold ColorLight FontSizeParagraph">{exppro.item.four.date}</p>
+				</div>
+				<div class="ExpLogo ExpLogoCompany">
+					<img src="./image_library/icon_citelum.svg">
+				</div>
+				<div class="ExpTitle">
+					<p class="Bold FontSizeSubParagraph">{exppro.item.four.title}</p>
+				</div>
+				<div class="ProExpGridWrapper FontSizeParagraph">
+					<a href="#" onclick="OpenOverlay('citelum', 'missions')"><img class="ProExpElemOne" src="./image_library/icon_missions.svg"></a>
+					<a href="#" onclick="OpenOverlay('citelum', 'missions')"><p class="ProExpElemTwo">{exppro.mission.title}</p></a>
+					<a href="#" onclick="OpenOverlay('citelum', 'missions')"><img class="ProExpElemThree" src="./image_library/icon_expand.svg"></a>
+					<a href="#" onclick="OpenOverlay('citelum', 'competences')"><img class="ProExpElemFour" src="./image_library/icon_skills_dark.svg"></a>
+					<a href="#" onclick="OpenOverlay('citelum', 'competences')"><p class="ProExpElemFive">{exppro.skill.title}</p></a>
+					<a href="#" onclick="OpenOverlay('citelum', 'competences')"><img class="ProExpElemSix" src="./image_library/icon_expand.svg"></a>
+					<a href="#" onclick="SwitchPage(6)"><img class="ProExpElemSeven" src="./image_library/icon_achivements_dark.svg"></a>
+					<a href="#" class="ProExpElemEight" onclick="SwitchPage(6)"><p>{exppro.achievement.title}</p></a>
+				</div>
 			</div>
+			<div class="ExpBlock ProGridElemSix BackGroundLight">
+				<div class="DatePeriod BackGroundDark">
+					<p class="Bold ColorLight FontSizeParagraph">{exppro.item.three.date}</p>
+				</div>
+				<div class="ExpLogo ExpLogoCompany">
+					<img src="./image_library/icon_evesa.svg">
+				</div>
+				<div class="ExpTitle">
+					<p class="Bold FontSizeSubParagraph">{exppro.item.three.title}</p>
+				</div>
+				<div class="ProExpGridWrapper FontSizeParagraph">
+					<a href="#" onclick="OpenOverlay('evesa', 'missions')"><img class="ProExpElemOne" src="./image_library/icon_missions.svg"></a>
+					<a href="#" onclick="OpenOverlay('evesa', 'missions')"><p class="ProExpElemTwo">{exppro.mission.title}</p></a>
+					<a href="#" onclick="OpenOverlay('evesa', 'missions')"><img class="ProExpElemThree" src="./image_library/icon_expand.svg"></a>
+					<a href="#" onclick="OpenOverlay('evesa', 'competences')"><img class="ProExpElemFour" src="./image_library/icon_skills_dark.svg"></a>
+					<a href="#" onclick="OpenOverlay('evesa', 'competences')"><p class="ProExpElemFive">{exppro.skill.title}</p></a>
+					<a href="#" onclick="OpenOverlay('evesa', 'competences')"><img class="ProExpElemSix" src="./image_library/icon_expand.svg"></a>
+					<a href="#" onclick="SwitchPage(6)"><img class="ProExpElemSeven" src="./image_library/icon_achivements_dark.svg"></a>
+					<a href="#" class="ProExpElemEight" onclick="SwitchPage(6)"><p>{exppro.achievement.title}</p></a>
+				</div>
+			</div>
+
 		</div>
 
-		<div class="ExpBlock ProGridElemTwo BackGroundLight">
-			<div class="DatePeriod BackGroundDark">
-				<p class="Bold ColorLight FontSizeParagraph">{exppro.item.six.date}</p>
+		<div class="ScrollSnapChild ProGridWrapper ScrollInnerWrapper">
+			<div class="ExpBlock ProGridElemOne BackGroundLight">
+				<div class="DatePeriod BackGroundDark">
+					<p class="Bold ColorLight FontSizeParagraph">{exppro.item.two.date}</p>
+				</div>
+				<div class="ExpLogo ExpLogoCompany">
+					<img src="./image_library/icon_shanghai.svg">
+				</div>
+				<div class="ExpTitle">
+					<p class="Bold FontSizeSubParagraph">{exppro.item.two.title}</p>
+				</div>
+				<div class="ProExpGridWrapper FontSizeParagraph">
+					<a href="#" onclick="OpenOverlay('shanghai', 'missions')"><img class="ProExpElemOne" src="./image_library/icon_missions.svg"></a>
+					<a href="#" onclick="OpenOverlay('shanghai', 'missions')"><p class="ProExpElemTwo">{exppro.mission.title}</p></a>
+					<a href="#" onclick="OpenOverlay('shanghai', 'missions')"><img class="ProExpElemThree" src="./image_library/icon_expand.svg"></a>
+					<a href="#" onclick="OpenOverlay('shanghai', 'competences')"><img class="ProExpElemFour" src="./image_library/icon_skills_dark.svg"></a>
+					<a href="#" onclick="OpenOverlay('shanghai', 'competences')"><p class="ProExpElemFive">{exppro.skill.title}</p></a>
+					<a href="#" onclick="OpenOverlay('shanghai', 'competences')"><img class="ProExpElemSix" src="./image_library/icon_expand.svg"></a>
+					<a href="#" onclick="SwitchPage(6)"><img class="ProExpElemSeven" src="./image_library/icon_achivements_dark.svg"></a>
+					<a href="#" class="ProExpElemEight" onclick="SwitchPage(6)"><p>{exppro.achievement.title}</p></a>
+				</div>
 			</div>
-			<div class="ExpLogo ExpLogoCompany">
-				<img src="./image_library/icon_paradox.svg">
-			</div>
-			<div class="ExpTitle">
-				<p class="Bold FontSizeSubParagraph">{exppro.item.six.title}</p>
-			</div>
-			<div class="ProExpGridWrapper FontSizeParagraph">
-				<a href="#" onclick="OpenOverlay('paradox', 'missions')"><img class="ProExpElemOne" src="./image_library/icon_missions.svg"></a>
-				<a href="#" onclick="OpenOverlay('paradox', 'missions')"><p class="ProExpElemTwo">{exppro.mission.title}</p></a>
-				<a href="#" onclick="OpenOverlay('paradox', 'missions')"><img class="ProExpElemThree" src="./image_library/icon_expand.svg"></a>
-				<a href="#" onclick="OpenOverlay('paradox', 'competences')"><img class="ProExpElemFour" src="./image_library/icon_skills_dark.svg"></a>
-				<a href="#" onclick="OpenOverlay('paradox', 'competences')"><p class="ProExpElemFive">{exppro.skill.title}</p></a>
-				<a href="#" onclick="OpenOverlay('paradox', 'competences')"><img class="ProExpElemSix" src="./image_library/icon_expand.svg"></a>
-				<a href="#" onclick="SwitchPage(6)"><img class="ProExpElemSeven" src="./image_library/icon_achivements_dark.svg"></a>
-				<a href="#" class="ProExpElemEight" onclick="SwitchPage(6)"><p>{exppro.achievement.title}</p></a>
+
+			<div class="ExpBlock ProGridElemTwo BackGroundLight">
+				<div class="DatePeriod BackGroundDark">
+					<p class="Bold ColorLight FontSizeParagraph">{exppro.item.one.date}</p>
+				</div>
+				<div class="ExpLogo ExpLogoCompany">
+					<img src="./image_library/icon_cbc.svg">
+				</div>
+				<div class="ExpTitle">
+					<p class="Bold FontSizeSubParagraph">{exppro.item.one.title}</p>
+				</div>
+				<div class="ProExpGridWrapper FontSizeParagraph">
+					<a href="#" onclick="OpenOverlay('cbc', 'missions')"><img class="ProExpElemOne" src="./image_library/icon_missions.svg"></a>
+					<a href="#" onclick="OpenOverlay('cbc', 'missions')"><p class="ProExpElemTwo">{exppro.mission.title}</p></a>
+					<a href="#" onclick="OpenOverlay('cbc', 'missions')"><img class="ProExpElemThree" src="./image_library/icon_expand.svg"></a>
+					<a href="#" onclick="OpenOverlay('cbc', 'competences')"><img class="ProExpElemFour" src="./image_library/icon_skills_dark.svg"></a>
+					<a href="#" onclick="OpenOverlay('cbc', 'competences')"><p class="ProExpElemFive">{exppro.skill.title}</p></a>
+					<a href="#" onclick="OpenOverlay('cbc', 'competences')"><img class="ProExpElemSix" src="./image_library/icon_expand.svg"></a>
+					<a href="#" onclick="SwitchPage(6)"><img class="ProExpElemSeven" src="./image_library/icon_achivements_dark.svg"></a>
+					<a href="#" class="ProExpElemEight" onclick="SwitchPage(6)"><p>{exppro.achievement.title}</p></a>
+				</div>
 			</div>
 		</div>
-
-		<div class="ExpBlock ProGridElemThree BackGroundLight">
-			<div class="DatePeriod BackGroundDark">
-				<p class="Bold ColorLight FontSizeParagraph">{exppro.item.five.date}</p>
-			</div>
-			<div class="ExpLogo ExpLogoCompany">
-				<img src="./image_library/icon_nomosphere.svg">
-			</div>
-			<div class="ExpTitle">
-				<p class="Bold FontSizeSubParagraph">{exppro.item.five.title}</p>
-			</div>
-			<div class="ProExpGridWrapper FontSizeParagraph">
-				<a href="#" onclick="OpenOverlay('nomosphere', 'missions')"><img class="ProExpElemOne" src="./image_library/icon_missions.svg"></a>
-				<a href="#" onclick="OpenOverlay('nomosphere', 'missions')"><p class="ProExpElemTwo">{exppro.mission.title}</p></a>
-				<a href="#" onclick="OpenOverlay('nomosphere', 'missions')"><img class="ProExpElemThree" src="./image_library/icon_expand.svg"></a>
-				<a href="#" onclick="OpenOverlay('nomosphere', 'competences')"><img class="ProExpElemFour" src="./image_library/icon_skills_dark.svg"></a>
-				<a href="#" onclick="OpenOverlay('nomosphere', 'competences')"><p class="ProExpElemFive">{exppro.skill.title}</p></a>
-				<a href="#" onclick="OpenOverlay('nomosphere', 'competences')"><img class="ProExpElemSix" src="./image_library/icon_expand.svg"></a>
-				<a href="#" onclick="SwitchPage(6)"><img class="ProExpElemSeven" src="./image_library/icon_achivements_dark.svg"></a>
-				<a href="#" class="ProExpElemEight" onclick="SwitchPage(6)"><p>{exppro.achievement.title}</p></a>
-			</div>
-		</div>
-
-		<div class="ExpBlock ProGridElemFour BackGroundLight">
-			<div class="DatePeriod BackGroundDark">
-				<p class="Bold ColorLight FontSizeParagraph">{exppro.item.four.date}</p>
-			</div>
-			<div class="ExpLogo ExpLogoCompany">
-				<img src="./image_library/icon_citelum.svg">
-			</div>
-			<div class="ExpTitle">
-				<p class="Bold FontSizeSubParagraph">{exppro.item.four.title}</p>
-			</div>
-			<div class="ProExpGridWrapper FontSizeParagraph">
-				<a href="#" onclick="OpenOverlay('citelum', 'missions')"><img class="ProExpElemOne" src="./image_library/icon_missions.svg"></a>
-				<a href="#" onclick="OpenOverlay('citelum', 'missions')"><p class="ProExpElemTwo">{exppro.mission.title}</p></a>
-				<a href="#" onclick="OpenOverlay('citelum', 'missions')"><img class="ProExpElemThree" src="./image_library/icon_expand.svg"></a>
-				<a href="#" onclick="OpenOverlay('citelum', 'competences')"><img class="ProExpElemFour" src="./image_library/icon_skills_dark.svg"></a>
-				<a href="#" onclick="OpenOverlay('citelum', 'competences')"><p class="ProExpElemFive">{exppro.skill.title}</p></a>
-				<a href="#" onclick="OpenOverlay('citelum', 'competences')"><img class="ProExpElemSix" src="./image_library/icon_expand.svg"></a>
-				<a href="#" onclick="SwitchPage(6)"><img class="ProExpElemSeven" src="./image_library/icon_achivements_dark.svg"></a>
-				<a href="#" class="ProExpElemEight" onclick="SwitchPage(6)"><p>{exppro.achievement.title}</p></a>
-			</div>
-		</div>
-
-		<div class="ExpBlock ProGridElemFive BackGroundLight">
-			<div class="DatePeriod BackGroundDark">
-				<p class="Bold ColorLight FontSizeParagraph">{exppro.item.three.date}</p>
-			</div>
-			<div class="ExpLogo ExpLogoCompany">
-				<img src="./image_library/icon_evesa.svg">
-			</div>
-			<div class="ExpTitle">
-				<p class="Bold FontSizeSubParagraph">{exppro.item.three.title}</p>
-			</div>
-			<div class="ProExpGridWrapper FontSizeParagraph">
-				<a href="#" onclick="OpenOverlay('evesa', 'missions')"><img class="ProExpElemOne" src="./image_library/icon_missions.svg"></a>
-				<a href="#" onclick="OpenOverlay('evesa', 'missions')"><p class="ProExpElemTwo">{exppro.mission.title}</p></a>
-				<a href="#" onclick="OpenOverlay('evesa', 'missions')"><img class="ProExpElemThree" src="./image_library/icon_expand.svg"></a>
-				<a href="#" onclick="OpenOverlay('evesa', 'competences')"><img class="ProExpElemFour" src="./image_library/icon_skills_dark.svg"></a>
-				<a href="#" onclick="OpenOverlay('evesa', 'competences')"><p class="ProExpElemFive">{exppro.skill.title}</p></a>
-				<a href="#" onclick="OpenOverlay('evesa', 'competences')"><img class="ProExpElemSix" src="./image_library/icon_expand.svg"></a>
-				<a href="#" onclick="SwitchPage(6)"><img class="ProExpElemSeven" src="./image_library/icon_achivements_dark.svg"></a>
-				<a href="#" class="ProExpElemEight" onclick="SwitchPage(6)"><p>{exppro.achievement.title}</p></a>
-			</div>
-		</div>
-
-		<div class="ExpBlock ProGridElemSix BackGroundLight">
-			<div class="DatePeriod BackGroundDark">
-				<p class="Bold ColorLight FontSizeParagraph">{exppro.item.two.date}</p>
-			</div>
-			<div class="ExpLogo ExpLogoCompany">
-				<img src="./image_library/icon_shanghai.svg">
-			</div>
-			<div class="ExpTitle">
-				<p class="Bold FontSizeSubParagraph">{exppro.item.two.title}</p>
-			</div>
-			<div class="ProExpGridWrapper FontSizeParagraph">
-				<a href="#" onclick="OpenOverlay('shanghai', 'missions')"><img class="ProExpElemOne" src="./image_library/icon_missions.svg"></a>
-				<a href="#" onclick="OpenOverlay('shanghai', 'missions')"><p class="ProExpElemTwo">{exppro.mission.title}</p></a>
-				<a href="#" onclick="OpenOverlay('shanghai', 'missions')"><img class="ProExpElemThree" src="./image_library/icon_expand.svg"></a>
-				<a href="#" onclick="OpenOverlay('shanghai', 'competences')"><img class="ProExpElemFour" src="./image_library/icon_skills_dark.svg"></a>
-				<a href="#" onclick="OpenOverlay('shanghai', 'competences')"><p class="ProExpElemFive">{exppro.skill.title}</p></a>
-				<a href="#" onclick="OpenOverlay('shanghai', 'competences')"><img class="ProExpElemSix" src="./image_library/icon_expand.svg"></a>
-				<a href="#" onclick="SwitchPage(6)"><img class="ProExpElemSeven" src="./image_library/icon_achivements_dark.svg"></a>
-				<a href="#" class="ProExpElemEight" onclick="SwitchPage(6)"><p>{exppro.achievement.title}</p></a>
-			</div>
-		</div>
-
-		<div class="ExpBlock ProGridElemSeven BackGroundLight">
-			<div class="DatePeriod BackGroundDark">
-				<p class="Bold ColorLight FontSizeParagraph">{exppro.item.one.date}</p>
-			</div>
-			<div class="ExpLogo ExpLogoCompany">
-				<img src="./image_library/icon_cbc.svg">
-			</div>
-			<div class="ExpTitle">
-				<p class="Bold FontSizeSubParagraph">{exppro.item.one.title}</p>
-			</div>
-			<div class="ProExpGridWrapper FontSizeParagraph">
-				<a href="#" onclick="OpenOverlay('cbc', 'missions')"><img class="ProExpElemOne" src="./image_library/icon_missions.svg"></a>
-				<a href="#" onclick="OpenOverlay('cbc', 'missions')"><p class="ProExpElemTwo">{exppro.mission.title}</p></a>
-				<a href="#" onclick="OpenOverlay('cbc', 'missions')"><img class="ProExpElemThree" src="./image_library/icon_expand.svg"></a>
-				<a href="#" onclick="OpenOverlay('cbc', 'competences')"><img class="ProExpElemFour" src="./image_library/icon_skills_dark.svg"></a>
-				<a href="#" onclick="OpenOverlay('cbc', 'competences')"><p class="ProExpElemFive">{exppro.skill.title}</p></a>
-				<a href="#" onclick="OpenOverlay('cbc', 'competences')"><img class="ProExpElemSix" src="./image_library/icon_expand.svg"></a>
-				<a href="#" onclick="SwitchPage(6)"><img class="ProExpElemSeven" src="./image_library/icon_achivements_dark.svg"></a>
-				<a href="#" class="ProExpElemEight" onclick="SwitchPage(6)"><p>{exppro.achievement.title}</p></a>
-			</div>
-		</div>
-
-
 	</div>
 </div>
-
+<div id="scoll-down-img"><img src="./image_library/icon_scroll_down.svg"></div>

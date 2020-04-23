@@ -59,7 +59,7 @@
 		"{exppro.achievement.title}":"Achievements",
 
 		"{exppro.item.seven.date}":"Since march 2019",
-		"{exppro.item.seven.title}":"Product owner - software design and data analysis",
+		"{exppro.item.seven.title}":"Product owner - software design, data analysis",
 
 		"{exppro.item.six.date}":"May 2018 - March 2019",
 		"{exppro.item.six.title}":"Project manager - Scrum Master",
@@ -264,7 +264,7 @@
 		"{passions.item.two.description}":"Sports : yoga, meditation, walking, fitness <br>Music : violin <br>Manual activities : embroidery, knitting, sewing",
 		"{passions.item.two.why}":"Because it is important for the mood, to evacuate stress, to be healthy, to challenge myself, and for all the known benefits on focus, work preparation (rigor, precision), and patience",
 		
-		"{passions.item.three.title}":"Histoiry et Litterature",
+		"{passions.item.three.title}":"History et Litterature",
 		"{passions.item.three.description}":"Historical novels (naturalists), biographies, historical analysis, French or foreign litterature <br>Historical period from the XVIII-XIX centuries, in France, the West and around the world",
 		"{passions.item.three.why}":"Because it is an immense source of knowledge to explore, a way to see the world and its history, to understand the world we live in"
 	},
