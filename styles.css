@@ -672,7 +672,6 @@ select {
 /*Specific to Professional Experience page*/
 
 .ProGridWrapper {
-	margin-top: 2%;
 	display: grid;
 	grid-template-columns: repeat(2, 45%);
   	grid-template-rows: repeat(3, 19vh); 
@@ -1113,7 +1112,6 @@ select {
 /*Specific to Achievements page*/
 
 .AchieveGridWrapper {
-	margin-top: 2%;
 	display: grid;
 	grid-template-columns: repeat(2, 48%) ;
   	grid-template-rows: 60vh; 
@@ -1350,7 +1348,6 @@ select {
 /*Specific to Temoignages page*/
 
 .TemoignagesGridWrapper {
-	margin-top: 3%;
 	display: grid;
 	grid-template-columns: repeat(2, 48%);
   	grid-template-rows: repeat(2, 29vh);
