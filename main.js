@@ -5,7 +5,7 @@ window.onload = function () {
 	//load the home page in the default browser language	
 	// localStorage.removeItem("language"); // we reset the value stored
 	var target_page = window.location.href.split('#')[1]
-	if (target_page === '') {
+	if (target_page === '' || target_page === undefined) {
 		target_page = 'home';
 	}
 	var browser_default_language = getLanguage();
