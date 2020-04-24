@@ -211,7 +211,7 @@ function Scene() {
 			content_to_fade.opacity = 1;
 		}
 
-		var fade_out_animation = new Animation(content_to_fade, parseFloat(content_to_fade.opacity), 0, 'opacity', 500, callback);
+		var fade_out_animation = new Animation(content_to_fade, parseFloat(content_to_fade.opacity), 0, 'opacity', 500, 'linear', callback);
 		var fade_in_animation = new Animation(content_to_fade, 0, 1, 'opacity', 500);
 		this.animation_list = [[fade_out_animation], slide_animations, [fade_in_animation]];
 	}
@@ -230,7 +230,7 @@ function SceneElements(image, state_dict) {
 	this.current_state = 0
 	this.animation_duration = this.state_dict[this.current_state]['duration']
 	this.current_position = this.state_dict[this.current_state]['position']
-	this.animation = new Animation(this, this.current_position, 0, 'pixel', this.animation_duration)
+	this.animation = new Animation(this, this.current_position, 0, 'pixel', this.animation_duration, 'easeInOutQuart')
 	this.animate = function(delta_time) {
 		if (this.animation.isAnimationOver() == false) {
 			this.animation.animate(delta_time)
@@ -239,7 +239,7 @@ function SceneElements(image, state_dict) {
 	this.updateAnimation = function(state, to_pixel, duration) {
 		this.current_state = state;
 		this.animation_duration = duration;
-		this.animation = new Animation(this, this.current_position, to_pixel, 'pixel', this.animation_duration);
+		this.animation = new Animation(this, this.current_position, to_pixel, 'pixel', this.animation_duration, 'easeInOutQuart');
 	}
 	this.slideTo = function(position) {
 		var scene_ratio = this.scene.ratio;
@@ -258,7 +258,7 @@ function SceneElements(image, state_dict) {
 	}
 }
 
-function Animation(object, from, to, target, animation_duration, end_callback) {
+function Animation(object, from, to, target, animation_duration, easing_function = 'linear', end_callback) {
 	this.object = object
 	this.from = from;
 	this.to = to;
@@ -266,10 +266,22 @@ function Animation(object, from, to, target, animation_duration, end_callback) {
 	this.animation_duration = animation_duration;
 	this.end_callback = end_callback;
 	this.time_elapsed = 0;
+	this.easing_function = easing_function;
+	this.easeInOutQuad = function(x) {
+		// x is between 0 and 1, returned value is also between 0 and 1
+		return x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2;
+	}
+	this.easeInOutQuart = function(x){
+		return x < 0.5 ? 8 * x * x * x * x : 1 - Math.pow(-2 * x + 2, 4) / 2;
+	}
+	this.linear = function(x) {
+		return x;
+	}
 	this.offsetValue = function() {
 		var offset = this.to - this.from;
-		var next_value = (offset / this.animation_duration) * this.time_elapsed
-		return next_value
+		var transform_ratio = this[this.easing_function](this.time_elapsed / this.animation_duration);
+		return offset*transform_ratio;
+
 	};
 	this.animate = function(delta_time) {
 		this.time_elapsed += delta_time
