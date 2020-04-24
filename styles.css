@@ -1358,7 +1358,8 @@ select {
 }
 
 .DescriptionContainer {
-	margin-top: 8%;
+	position: relative;
+	margin-top: 5%;
 	display: grid;
 	grid-template-columns: repeat(2, 49%);
 	grid-gap: 2%;
@@ -1373,6 +1374,12 @@ select {
 
 .DescriptionContainerElemOne div {
 	width: 75%;
+}
+
+.DescriptionContainerElemOneSpan {
+	grid-column:1 / span 2;
+  	justify-self:top;
+  	align-self: top;
 }
 
 .DescriptionContainerElemTwo {

@@ -31,7 +31,7 @@
 		"{introduction.maintitle}":"Introduction",
 
 		"{introduction.block.one.title}":"Briefly",
-		"{introduction.block.one.description}":"Young engineer graduated in <strong>urban engineering</strong>, I am passionate about History, litterature, science and technology in particular.",
+		"{introduction.block.one.description}":"Young engineer graduated in <strong>urban planning</strong>, I am passionate about History, litterature, science and technology in particular.",
 		"{introduction.block.two.title}":"Listener",
 		"{introduction.block.two.description}":"In permanent interaction with several professions, from <strong>juridical</strong> to <strong>financial</strong> through <strong>technical expertise</strong> and supplier relationships, I also interacted a lot with clients. ",
 		"{introduction.block.three.title}":"Analyst",
@@ -107,7 +107,7 @@
 		"{skills.computer.group.yellow.item.two}":"VBA",
 		"{skills.computer.group.yellow.item.three}":"JavaScript",
 
-		"{skills.urban.title}":"Urban engineering",
+		"{skills.urban.title}":"Urban planning",
 		"{skills.urban.group.orange.item.one}":"Analysis of user needs",
 		"{skills.urban.group.yellow.item.one}":"Planning of urban spaces",
 		"{skills.urban.group.green.item.one}":"Civil engineering",
@@ -285,14 +285,14 @@
 		"{education.item.six.diploma}":"CISCO certification(CCNA)",
 
 		"{education.item.five.date}":"Jan - Jun 2013",
-		"{education.item.five.title}":"Southampton University – Civil Engineering faculty",
+		"{education.item.five.title}":"Southampton University – Civil Engineering",
 		"{education.item.five.description}":"ERASMUS civil engineering",
-		"{education.item.five.skill}":"Civil Engineering (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Urban Engineering</a>)",
+		"{education.item.five.skill}":"Civil Engineering (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Urban Planning</a>)",
 
 		"{education.item.four.date}":"Sep 2011 - Aug 2014",
 		"{education.item.four.title}":"École des Ingénieurs de la Ville de Paris (EIVP)",
-		"{education.item.four.description}":"Urban Engineering diploma : urbanism and civil engineering",
-		"{education.item.four.skill}":"Urban Engineering (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Urban Engineering</a>)",
+		"{education.item.four.description}":"Urban Planning diploma : urbanism and civil engineering",
+		"{education.item.four.skill}":"Urban Planning (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Urban Planning</a>)",
 		"{education.item.four.diploma}":"Urban Engineer Diploma",
 
 		"{education.item.three.date}":"Sep 2009 - Jul 2011",
@@ -321,12 +321,12 @@
 		"{passions.item.one.why}":"Because the world is changing and evolving, and because innovation make us question our relationships with others and with our environment",
 
 		"{passions.item.two.title}":"Hobbies",
-		"{passions.item.two.description}":"Sports : yoga, meditation, walking, fitness <br>Music : violin <br>Manual activities : embroidery, knitting, sewing",
+		"{passions.item.two.description}":"Sports : yoga, meditation, walking, fitness <br>Music : violin <br>Manual activities : embroidery, knitting, sewing, gardening",
 		"{passions.item.two.why}":"Because it is important for the mood, to evacuate stress, to be healthy, to challenge myself, and for all the known benefits on focus, work preparation (rigor, precision), and patience",
 		
 		"{passions.item.three.title}":"History et Litterature",
 		"{passions.item.three.description}":"Historical novels (naturalists), biographies, historical analysis, French or foreign litterature <br>Historical period from the XVIII-XIX centuries, in France, the West and around the world",
-		"{passions.item.three.why}":"Because it is an immense source of knowledge to explore, a way to see the world and its history, to understand the world we live in"
+		"{passions.item.three.why}":"Because it is an immense source of knowledge to explore, a way to see the world and its evolution, to understand the world we live in"
 	},
 	"overlay_content": {
 		"current_activity": {
