@@ -1,104 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 	  <meta charset="UTF-8" />
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-	  <title>Professional Blog</title>
+	  <title>Alexina Coullandreau - portfolio</title>
 	  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet">
 	  <link rel="stylesheet" href="styles.css">
+	  <link rel="preload" href="language_dict_fr.json" as="fetch" crossorigin/>
+	  <link rel="preload" href="language_dict_en.json" as="fetch" crossorigin/>
 	  <script src="main.js"></script>
 	  <script src="scripts.js"></script>
 	  <script src="lang_script.js"></script>
 	</head>
 	
 	<body>
-<!-- 		Background images section -->
-		<div id="bg">
-			<img id="bg-img" src="./image_library/background.svg" alt="Background"/>	
-		</div>
-		<div id="bg-train">
-			<img id="bg-train-img" src="./image_library/train.svg" alt="Background-train"/>	
-		</div>
-		<div id="fg-hide-train">
-			<img id="fg-hide-train-img" src="./image_library/foreground_hide_train.svg" alt="Foreground-hide-train"/>	
+		<div id="loading-page">
+			<h1 class="Loading">Loading<span>.</span><span>.</span><span>.</span></h1>
 		</div>
 
-		<div id="container">
-	<!-- 		Content section -->
-			<div id="content-container">
-				<div id="content">
-					
+		<div id="loaded-content">
+	<!-- 		Background images section -->
+			<div id="bg">
+				<img id="bg-img" src="./image_library/background.svg" alt="Background"/>	
+			</div>
+			<div id="bg-train">
+				<img id="bg-train-img" src="./image_library/train.svg" alt="Background-train"/>	
+			</div>
+			<div id="fg-hide-train">
+				<img id="fg-hide-train-img" src="./image_library/foreground_hide_train.svg" alt="Foreground-hide-train"/>	
+			</div>
 
+			<div id="container">
+		<!-- 		Content section -->
+				<div id="content-container">
+					<div id="content">
+						
+
+					</div>
 				</div>
 			</div>
-		</div>
 
-	<!-- 		Navigation bars section -->
-			<div id="nav-menu">
-				<div id="top-nav-bar">
-					<a href="#"><img id="icon_home-img" onclick="SwitchPage(0)" src="./image_library/icon_home.svg" alt="Home"/></a>
-					<div id="contact" onclick="SwitchPage(2)">
-						<a href="#"><img id="icon_contact-img" src="./image_library/icon_contact.svg" alt="Contact"/></a>
-						<div id="contact-text" class="Bold TextWithIcon">
-							<a href="#">{nav-bar.contact}</a>
+		<!-- 		Navigation bars section -->
+				<div id="nav-menu">
+					<div id="top-nav-bar">
+						<a href="#"><img id="icon_home-img" onclick="SwitchPage(0)" src="./image_library/icon_home.svg" alt="Home"/></a>
+						<div id="contact" onclick="SwitchPage(2)">
+							<a href="#"><img id="icon_contact-img" src="./image_library/icon_contact.svg" alt="Contact"/></a>
+							<div id="contact-text" class="Bold TextWithIcon">
+								<a href="#">{nav-bar.contact}</a>
+							</div>
+						</div>
+						<div id="language">
+							<img id="icon_language-img" class="IconWithText" src="./image_library/icon_language.svg" alt="Contact"/>
+							<div id="language-text" class="TextWithIcon">
+								<div id="language-text-dropdown" class="TextWithIcon">
+									<select id="select-lang" class="FontSizeSubParagraph" onchange=SwitchLanguage(value)>
+										<option value="fr" selected>Français</option>
+										<option value="en">English</option>
+										<!-- <option value="pt">Português</option> -->
+									</select>
+								</div>
+							</div>	
 						</div>
 					</div>
-					<div id="language">
-						<img id="icon_language-img" class="IconWithText" src="./image_library/icon_language.svg" alt="Contact"/>
-						<div id="language-text" class="TextWithIcon">
-							<div id="language-text-dropdown" class="TextWithIcon">
-								<select id="select-lang" class="FontSizeSubParagraph" onchange=SwitchLanguage(value)>
-									<option value="fr" selected>Français</option>
-									<option value="en">English</option>
-									<!-- <option value="pt">Português</option> -->
-								</select>
-							</div>
-						</div>	
+
+					<div class="LeftNavBar">
+						<div class="NavMenuIcon" onmouseover="NavBarHover(0, 1)"><a href="#" onclick="SwitchPage(1)"><img id="icon_presentation-img" src="./image_library/icon_presentation_2.svg"/></a></div>
+						<div class="NavMenuIcon" onmouseover="NavBarHover(1, 1)"><a href="#" onclick="SwitchPage(3)"><img id="icon_temoignages-img" src="./image_library/icon_temoignages_2.svg"/></a></div>
+						<div class="NavMenuIcon" onmouseover="NavBarHover(2, 1)"><a href="#" onclick="SwitchPage(4)"><img id="icon_exp_pro-img" src="./image_library/icon_exp_pro_2.svg"/></a></div>
+						<div class="NavMenuIcon" onmouseover="NavBarHover(3, 1)"><a href="#" onclick="SwitchPage(5)"><img id="icon_skills-img" src="./image_library/icon_skills_2.svg"/></a></div>
+						<div class="NavMenuIcon" onmouseover="NavBarHover(4, 1)"><a href="#" onclick="SwitchPage(6)"><img id="icon_achievements-img" src="./image_library/icon_achievements_2.svg"/></a></div>
+						<div class="NavMenuIcon" onmouseover="NavBarHover(5, 1)"><a href="#" onclick="SwitchPage(7)"><img id="icon_exp_pers-img" src="./image_library/icon_exp_pers_2.svg"/></a></div>
+						<div class="NavMenuIcon" onmouseover="NavBarHover(6, 1)"><a href="#" onclick="SwitchPage(8)"><img id="icon_education-img" src="./image_library/icon_education_2.svg"/></a></div>
+						<div class="NavMenuIcon" onmouseover="NavBarHover(7, 1)"><a href="#" onclick="SwitchPage(9)"><img id="icon_passions-img" src="./image_library/icon_passions_2.svg"/></a></div>
+
+					</div>
+					<div id="left-nav-bar-text" class="LeftNavBar">
+						<div class="ExternalFixedHeight"><div id="nav-bar-presentation" class="NavMenuExpand BackGroundPetrol" onmouseout="NavBarHover(0, 0)"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.presentation.title}</p></a></div></div>
+						<div class="ExternalFixedHeight"><div id="nav-bar-temoignages" class="NavMenuExpand BackGroundDark" onmouseout="NavBarHover(1, 0)"><a href="#" onclick="SwitchPage(3)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.temoignages.title}</p></a></div></div>
+						<div class="ExternalFixedHeight"><div id="nav-bar-exp-pro" class="NavMenuExpand CircleRed" onmouseout="NavBarHover(2, 0)"><a href="#" onclick="SwitchPage(4)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.exppro.title}</p></a></div></div>
+						<div class="ExternalFixedHeight"><div id="nav-bar-competences" class="NavMenuExpand BackGroundOrange" onmouseout="NavBarHover(3, 0)"><a href="#" onclick="SwitchPage(5)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.skills.title}</p></a></div></div>
+						<div class="ExternalFixedHeight"><div id="nav-bar-accomplissements" class="NavMenuExpand BackGroundBlue" onmouseout="NavBarHover(4, 0)"><a href="#" onclick="SwitchPage(6)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.achievements.title}</p></a></div></div>
+						<div class="ExternalFixedHeight"><div id="nav-bar-exp-pers" class="NavMenuExpand BackGroundYellow" onmouseout="NavBarHover(5, 0)"><a href="#" onclick="SwitchPage(7)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.exppers.title}</p></a></div></div>
+						<div class="ExternalFixedHeight"><div id="nav-bar-education" class="NavMenuExpand BackGroundGreen" onmouseout="NavBarHover(6, 0)"><a href="#" onclick="SwitchPage(8)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.education.title}</p></a></div></div>
+						<div class="ExternalFixedHeight"><div id="nav-bar-passions" class="NavMenuExpand BackGroundPink" onmouseout="NavBarHover(7, 0)"><a href="#" onclick="SwitchPage(9)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.passions.title}</p></a></div></div>
+					</div>
+
+					<div id="right-nav-bar">
+						<ul>
+							<li id="linkedin-link"><a href="https://www.linkedin.com/in/acoullandreau/" target="_blank"><img id="icon_linkedin-img" src="./image_library/icon_linkedin.svg" alt="LinkedIn"/></a></li>
+							<li><a href="https://github.com/acoullandreau" target="_blank"><img id="icon_github-img" src="./image_library/icon_github.svg" alt="GitHub"/></a></li>
+							<li id="cv-file"><a href="{cv_name}" download><img id="icon_download_pdf-img" src="./image_library/icon_download_pdf.svg" alt="Download-PDF"/></a></li>
+						</ul>
 					</div>
 				</div>
-
-				<div class="LeftNavBar">
-					<div class="NavMenuIcon" onmouseover="NavBarHover(0, 1)"><a href="#" onclick="SwitchPage(1)"><img id="icon_presentation-img" src="./image_library/icon_presentation_2.svg"/></a></div>
-					<div class="NavMenuIcon" onmouseover="NavBarHover(1, 1)"><a href="#" onclick="SwitchPage(3)"><img id="icon_temoignages-img" src="./image_library/icon_temoignages_2.svg"/></a></div>
-					<div class="NavMenuIcon" onmouseover="NavBarHover(2, 1)"><a href="#" onclick="SwitchPage(4)"><img id="icon_exp_pro-img" src="./image_library/icon_exp_pro_2.svg"/></a></div>
-					<div class="NavMenuIcon" onmouseover="NavBarHover(3, 1)"><a href="#" onclick="SwitchPage(5)"><img id="icon_skills-img" src="./image_library/icon_skills_2.svg"/></a></div>
-					<div class="NavMenuIcon" onmouseover="NavBarHover(4, 1)"><a href="#" onclick="SwitchPage(6)"><img id="icon_achievements-img" src="./image_library/icon_achievements_2.svg"/></a></div>
-					<div class="NavMenuIcon" onmouseover="NavBarHover(5, 1)"><a href="#" onclick="SwitchPage(7)"><img id="icon_exp_pers-img" src="./image_library/icon_exp_pers_2.svg"/></a></div>
-					<div class="NavMenuIcon" onmouseover="NavBarHover(6, 1)"><a href="#" onclick="SwitchPage(8)"><img id="icon_education-img" src="./image_library/icon_education_2.svg"/></a></div>
-					<div class="NavMenuIcon" onmouseover="NavBarHover(7, 1)"><a href="#" onclick="SwitchPage(9)"><img id="icon_passions-img" src="./image_library/icon_passions_2.svg"/></a></div>
-
-				</div>
-				<div id="left-nav-bar-text" class="LeftNavBar">
-					<div class="ExternalFixedHeight"><div id="nav-bar-presentation" class="NavMenuExpand BackGroundPetrol" onmouseout="NavBarHover(0, 0)"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.presentation.title}</p></a></div></div>
-					<div class="ExternalFixedHeight"><div id="nav-bar-temoignages" class="NavMenuExpand BackGroundDark" onmouseout="NavBarHover(1, 0)"><a href="#" onclick="SwitchPage(3)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.temoignages.title}</p></a></div></div>
-					<div class="ExternalFixedHeight"><div id="nav-bar-exp-pro" class="NavMenuExpand CircleRed" onmouseout="NavBarHover(2, 0)"><a href="#" onclick="SwitchPage(4)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.exppro.title}</p></a></div></div>
-					<div class="ExternalFixedHeight"><div id="nav-bar-competences" class="NavMenuExpand BackGroundOrange" onmouseout="NavBarHover(3, 0)"><a href="#" onclick="SwitchPage(5)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.skills.title}</p></a></div></div>
-					<div class="ExternalFixedHeight"><div id="nav-bar-accomplissements" class="NavMenuExpand BackGroundBlue" onmouseout="NavBarHover(4, 0)"><a href="#" onclick="SwitchPage(6)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.achievements.title}</p></a></div></div>
-					<div class="ExternalFixedHeight"><div id="nav-bar-exp-pers" class="NavMenuExpand BackGroundYellow" onmouseout="NavBarHover(5, 0)"><a href="#" onclick="SwitchPage(7)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.exppers.title}</p></a></div></div>
-					<div class="ExternalFixedHeight"><div id="nav-bar-education" class="NavMenuExpand BackGroundGreen" onmouseout="NavBarHover(6, 0)"><a href="#" onclick="SwitchPage(8)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.education.title}</p></a></div></div>
-					<div class="ExternalFixedHeight"><div id="nav-bar-passions" class="NavMenuExpand BackGroundPink" onmouseout="NavBarHover(7, 0)"><a href="#" onclick="SwitchPage(9)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.passions.title}</p></a></div></div>
-				</div>
-
-				<div id="right-nav-bar">
-					<ul>
-						<li id="linkedin-link"><a href="https://www.linkedin.com/in/acoullandreau/" target="_blank"><img id="icon_linkedin-img" src="./image_library/icon_linkedin.svg" alt="LinkedIn"/></a></li>
-						<li><a href="https://github.com/acoullandreau" target="_blank"><img id="icon_github-img" src="./image_library/icon_github.svg" alt="GitHub"/></a></li>
-						<li id="cv-file"><a href="{cv_name}" download><img id="icon_download_pdf-img" src="./image_library/icon_download_pdf.svg" alt="Download-PDF"/></a></li>
-					</ul>
-				</div>
 			</div>
-		</div>
 
-<!-- Blur overlay page -->
-		<div id="overlay">
-			<div class="Blur"></div>
-			<div class="OverlayWindow BackGroundLight">
-				<div><a href="#" class="Close" onclick="CloseWindow()">x</a></div>
-				<div id="overlay-content">
-					
+	<!-- Blur overlay page -->
+			<div id="overlay">
+				<div class="Blur"></div>
+				<div class="OverlayWindow BackGroundLight">
+					<div><a href="#" class="Close" onclick="CloseWindow()">x</a></div>
+					<div id="overlay-content">
+						
+					</div>
+					<img id="overlay-quote-left" class="SectionQuoteLeft" src="./image_library/quote_left.svg">
+					<img id="overlay-quote-right" class="SectionQuoteRight" src="./image_library/quote_right.svg">
 				</div>
-				<img id="overlay-quote-left" class="SectionQuoteLeft" src="./image_library/quote_left.svg">
-				<img id="overlay-quote-right" class="SectionQuoteRight" src="./image_library/quote_right.svg">
 			</div>
 		</div>
 

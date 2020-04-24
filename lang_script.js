@@ -30,45 +30,56 @@ getLanguageJson = function(language) {
 }
 
 loadTranslatedContent = function(language, page) {
-	//get the language dict and the target html content to translate and load
-	promise_json = getLanguageJson(language);
-	promise_html_content = fetch(page +'.html').then(function(response) {
-		return response.text();
-	})
 
-	Promise.all([promise_json, promise_html_content]).then(function(values) {
-  		var lang_json = values[0];
-  		var page_html = values[1];
-  		
-  		// updates the content of the html
-  		var page_content = lang_json[page];
-  		for (var i in page_content) {
-  			var page_elem = page_content[i];
-  			page_html = page_html.replace(new RegExp(i, "g"), page_elem);
-  		}
-  		document.getElementById("content").innerHTML = page_html;
+	var p = new Promise(function(resolve, reject){
+		//get the language dict and the target html content to translate and load
+		promise_json = getLanguageJson(language);
+		promise_html_content = fetch(page +'.html').then(function(response) {
+			return response.text();
+		});
 
-  		// update the nav bar
-  		var nav_bar_lang = lang_json['nav-bar'];
-		var nav_menu_contact_translated = nav_menu_contact.repeat(1);
-		nav_menu_contact_translated = nav_menu_contact_translated.replace('{nav-bar.contact}', nav_bar_lang['{nav-bar.contact}'])
-		var nav_menu_pdf_translated = nav_menu_pdf.repeat(1);
-		nav_menu_pdf_translated = nav_menu_pdf_translated.replace('{cv_name}', nav_bar_lang['{cv_name}']);
+		Promise.all([promise_json, promise_html_content]).then(function(values) {
+	  		var lang_json = values[0];
+	  		var page_html = values[1];
+	  		
+	  		// updates the content of the html
+	  		var page_content = lang_json[page];
+	  		for (var i in page_content) {
+	  			var page_elem = page_content[i];
+	  			page_html = page_html.replace(new RegExp(i, "g"), page_elem);
+	  		}
+	  		document.getElementById("content").innerHTML = page_html;
 
-		var nav_menu_left_bar_translated = nav_menu_left_bar.repeat(1);
-  		for (k in nav_bar_lang) {
-  			nav_menu_left_bar_translated = nav_menu_left_bar_translated.replace(k, nav_bar_lang[k]);
-  		}
+	  		// update the nav bar
+	  		var nav_bar_lang = lang_json['nav-bar'];
+			var nav_menu_contact_translated = nav_menu_contact.repeat(1);
+			nav_menu_contact_translated = nav_menu_contact_translated.replace('{nav-bar.contact}', nav_bar_lang['{nav-bar.contact}'])
+			var nav_menu_pdf_translated = nav_menu_pdf.repeat(1);
+			nav_menu_pdf_translated = nav_menu_pdf_translated.replace('{cv_name}', nav_bar_lang['{cv_name}']);
 
-		document.getElementById("contact-text").innerHTML=nav_menu_contact_translated;
-		document.getElementById("left-nav-bar-text").innerHTML=nav_menu_left_bar_translated;
-		document.getElementById("cv-file").innerHTML=nav_menu_pdf_translated;
-		
-		current_page = page;
+			var nav_menu_left_bar_translated = nav_menu_left_bar.repeat(1);
+	  		for (k in nav_bar_lang) {
+	  			nav_menu_left_bar_translated = nav_menu_left_bar_translated.replace(k, nav_bar_lang[k]);
+	  		}
 
-	}).catch(function (err) {
-		console.warn('Something went wrong.', err);
-	})
+			document.getElementById("contact-text").innerHTML=nav_menu_contact_translated;
+			document.getElementById("left-nav-bar-text").innerHTML=nav_menu_left_bar_translated;
+			document.getElementById("cv-file").innerHTML=nav_menu_pdf_translated;
+			
+			current_page = page;
+			resolve(true);
+
+		}).catch(function (err) {
+			console.warn('Something went wrong.', err);
+			reject(err);
+		});
+	});
+
+	// we return a promise to know when everything inside is done being executed
+	// used when loading the page initially
+	return p;
+
+
 }
 
 changeSelectedLanguage = function(language) {

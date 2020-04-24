@@ -1,22 +1,32 @@
 window.onload = function () {
-	// We create the scene instance that will hold the scene elements
-	scene = new Scene();
-	var factory = new ElementFactory(scene);
-	factory.createElement('bg', document.getElementById('bg-img'));
-	factory.createElement('train', document.getElementById('bg-train-img'));
-	factory.createElement('bg', document.getElementById('fg-hide-train-img'))
-	// we add an event that is always listening, not just when the page load
-	window.addEventListener("resize", scene.onResize.bind(scene));
-	// we initialise the requestAnimationFrame function that will handle the animation of the elements
-	window.requestAnimationFrame(scene.animate.bind(scene));
-	//load the home page in the default browser language
-	// localStorage.removeItem("language"); // we reset the value stored
-	var browser_default_language = getLanguage();
-	loadTranslatedContent(browser_default_language, 'home');
-	changeSelectedLanguage(browser_default_language)
+
 	nav_menu_contact = document.getElementById("contact-text").innerHTML;
 	nav_menu_left_bar = document.getElementById("left-nav-bar-text").innerHTML;
 	nav_menu_pdf = document.getElementById("cv-file").innerHTML;
+	//load the home page in the default browser language	
+	// localStorage.removeItem("language"); // we reset the value stored
+	var browser_default_language = getLanguage();
+	var translation_promise = loadTranslatedContent(browser_default_language, 'home');
+	changeSelectedLanguage(browser_default_language)
+
+	translation_promise.then(function(value) {
+		document.getElementById("loading-page").style.display = "none";
+		document.getElementById("loaded-content").style.display = "block";
+
+		// We create the scene instance that will hold the scene elements
+		scene = new Scene();
+		var factory = new ElementFactory(scene);
+		factory.createElement('bg', document.getElementById('bg-img'));
+		factory.createElement('train', document.getElementById('bg-train-img'));
+		factory.createElement('bg', document.getElementById('fg-hide-train-img'))
+
+		// we add an event that is always listening, not just when the page load
+		window.addEventListener("resize", scene.onResize.bind(scene));
+
+		// we initialise the requestAnimationFrame function that will handle the animation of the elements
+		window.requestAnimationFrame(scene.animate.bind(scene));
+	});
+	
 }
 
 var nav_menu_contact;
