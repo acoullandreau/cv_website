@@ -230,6 +230,11 @@ body {
 	scroll-snap-align:start;
 }
 
+.CenterText {
+	text-align: center;
+	margin-top: 5%;
+}
+
 h1 {
 	text-align: center;
 	margin: 0px;

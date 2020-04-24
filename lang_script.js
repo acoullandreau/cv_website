@@ -39,6 +39,7 @@ loadTranslatedContent = function(language, page) {
 				return response.text();
 			} else {
 				return fetch('error.html').then(function(response) {
+					page = 'error';
 					return response.text();
 				});
 			}

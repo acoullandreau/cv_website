@@ -11,6 +11,10 @@
 		"{navbar.navigation.education.title}":"Formations",
 		"{navbar.navigation.passions.title}":"Passions"
 	},
+	"error":{
+		"{error.maintitle}":"Une erreur s'est produite !",
+		"{error.description}":"La page à laquelle vous cherchez à accéder n'existe pas. Merci de sélectionner une autre page depuis la barre de navigation."
+	},
 	"home": {
 		"{home.maintitle}":"Alexina Coullandreau",
 		"{home.subtitle}":"Chef de projets",

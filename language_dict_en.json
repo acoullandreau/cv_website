@@ -11,6 +11,10 @@
 		"{navbar.navigation.education.title}":"Education",
 		"{navbar.navigation.passions.title}":"Passions"
 	},
+	"error":{
+		"{error.maintitle}":"Something went wrong!",
+		"{error.description}":"The page you wish to access does not exist. Please select another page from the navigation menu."
+	},
 	"home":{
 		"{home.maintitle}":"Alexina Coullandreau",
 		"{home.subtitle}":"Project manager",
