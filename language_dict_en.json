@@ -52,7 +52,7 @@
 	"testimony":{
 		"{testimony.maintitle}":"Testimony"
 	},
-	"exp-pro":{
+	"exp_pro":{
 		"{exppro.maintitle}":"Professional experiences",
 		"{exppro.mission.title}":"Missions and activities",
 		"{exppro.skill.title}":"Required and acquired skills",

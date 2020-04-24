@@ -35,7 +35,13 @@ loadTranslatedContent = function(language, page) {
 		//get the language dict and the target html content to translate and load
 		promise_json = getLanguageJson(language);
 		promise_html_content = fetch(page +'.html').then(function(response) {
-			return response.text();
+			if (response.status == 200) {
+				return response.text();
+			} else {
+				return fetch('error.html').then(function(response) {
+					return response.text();
+				});
+			}
 		});
 
 		Promise.all([promise_json, promise_html_content]).then(function(values) {

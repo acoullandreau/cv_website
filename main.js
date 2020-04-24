@@ -214,7 +214,7 @@ function Scene() {
 			content_to_fade.opacity = 1;
 		}
 
-		var fade_out_animation = new Animation(content_to_fade, parseFloat(content_to_fade.opacity), 0, 'opacity', 500, 'linear', callback);
+		var fade_out_animation = new Animation(content_to_fade, parseFloat(content_to_fade.opacity), 0, 'opacity', 250, 'linear', callback);
 		var fade_in_animation = new Animation(content_to_fade, 0, 1, 'opacity', 500);
 		this.animation_list = [[fade_out_animation], slide_animations, [fade_in_animation]];
 	}
