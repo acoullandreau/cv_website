@@ -23,19 +23,19 @@
 		"{home.navigation.education.title}":"Education",
 		"{home.navigation.passions.title}":"Passions"
 	},
-	"presentation":{
-		"{presentation.maintitle}":"Introduction",
+	"introduction":{
+		"{introduction.maintitle}":"Introduction",
 
-		"{presentation.block.one.title}":"Briefly",
-		"{presentation.block.one.description}":"Young engineer graduated in <strong>urban engineering</strong>, I am passionate about History, litterature, science and technology in particular.",
-		"{presentation.block.two.title}":"Listener",
-		"{presentation.block.two.description}":"In permanent interaction with several professions, from <strong>juridical</strong> to <strong>financial</strong> through <strong>technical expertise</strong> and supplier relationships, I also interacted a lot with clients. ",
-		"{presentation.block.three.title}":"Analyst",
-		"{presentation.block.three.description}":"My degree in urban planning allows me to stay vigilant to the needs of the users, who remain the target for any <strong>development or deployment of a solution</strong>.",
-		"{presentation.block.four.title}":"Good relations",
-		"{presentation.block.four.description}":"I am curious and voluntary, and I had the opportunity to work on diverse projects related to urban life. Dynamic and smiling, I have <strong>good interactions</strong> with clients, suppliers and co-workers whom I get to work with.",
-		"{presentation.block.five.title}":"Multidisciplinary",
-		"{presentation.block.five.description}":"The new needs that are born with digital technologies force us to question what we consider as granted, and a new world is being created!  My professional experiences led me to work with domains related to <strong>street lighting</strong>, but the innovation part always allowed me to get out of this frame and explore new areas. I built a strong understanding and acquired skills in computer science, with several trainings related to <strong>data analysis</strong>, several <strong>programming languages</strong> and more generally to <strong>software design</strong>."
+		"{introduction.block.one.title}":"Briefly",
+		"{introduction.block.one.description}":"Young engineer graduated in <strong>urban engineering</strong>, I am passionate about History, litterature, science and technology in particular.",
+		"{introduction.block.two.title}":"Listener",
+		"{introduction.block.two.description}":"In permanent interaction with several professions, from <strong>juridical</strong> to <strong>financial</strong> through <strong>technical expertise</strong> and supplier relationships, I also interacted a lot with clients. ",
+		"{introduction.block.three.title}":"Analyst",
+		"{introduction.block.three.description}":"My degree in urban planning allows me to stay vigilant to the needs of the users, who remain the target for any <strong>development or deployment of a solution</strong>.",
+		"{introduction.block.four.title}":"Good relations",
+		"{introduction.block.four.description}":"I am curious and voluntary, and I had the opportunity to work on diverse projects related to urban life. Dynamic and smiling, I have <strong>good interactions</strong> with clients, suppliers and co-workers whom I get to work with.",
+		"{introduction.block.five.title}":"Multidisciplinary",
+		"{introduction.block.five.description}":"The new needs that are born with digital technologies force us to question what we consider as granted, and a new world is being created!  My professional experiences led me to work with domains related to <strong>street lighting</strong>, but the innovation part always allowed me to get out of this frame and explore new areas. I built a strong understanding and acquired skills in computer science, with several trainings related to <strong>data analysis</strong>, several <strong>programming languages</strong> and more generally to <strong>software design</strong>."
 
 	},
 	"contact_form":{
@@ -49,7 +49,7 @@
 		"{form.send.button}":"<input type=\"button\" id=\"send-button\" class=\"ColorLight FontSizeFormIntro\" value=\"Send\"/>"
 
 	},
-	"temoignages":{
+	"testimony":{
 		"{testimony.maintitle}":"Testimony"
 	},
 	"exp-pro":{
@@ -80,7 +80,7 @@
 		"{exppro.item.one.title}":"Site manager internship"
 
 	},
-	"competences":{
+	"skills":{
 		"{skills.maintitle}":"Skills",
 		"{skills.scale.notions}":"Notions",
 		"{skills.scale.theoretical}":"Theoretical",
@@ -136,7 +136,7 @@
 		"{skills.personality.item.six}":"Demanding",
 		"{skills.personality.item.seven}":"Learn fast, react fast and get impatient quickly"
 	},
-	"accomplissements":{
+	"achievements":{
 		"{achievements.maintitle}":"Achievements",
 		"{achievements.keyword.title}":"Keywords",
 		"{achievements.link.title}":"Links",
@@ -147,7 +147,7 @@
 		"{achievements.item.seven.description.item.two}":"the design : website prototype, visual design (UI/UX)",
 		"{achievements.item.seven.description.item.three}":"the implementation",
 		"{achievements.item.seven.description.item.four}":"the deployment",
-		"{achievements.item.seven.description.item.five}":"Note : the background graphism was made by <strong>Michelli Buzogany Eboli</strong> (see her <a class=\"Underline\" href=\"Behance.net/chellbuzogany\">Behance</a> profile)",
+		"{achievements.item.seven.description.item.five}":"Note : the background graphism was made by Michelli Buzogany Eboli (see her <a class=\"Underline\" href=\"Behance.net/chellbuzogany\">Behance</a> profile)",
 		"{achievements.item.seven.keyword}":"UI/UX, communication, JavaScript, HTML/CSS",
 		"{achievements.item.seven.link}":"Source code: <a class=\"Underline\" href=\"https://github.com/acoullandreau/cv_website\">https://github.com/acoullandreau/cv_website</a><br><br><br>",
 

@@ -1,12 +1,15 @@
 window.onload = function () {
-
 	nav_menu_contact = document.getElementById("contact-text").innerHTML;
 	nav_menu_left_bar = document.getElementById("left-nav-bar-text").innerHTML;
 	nav_menu_pdf = document.getElementById("cv-file").innerHTML;
 	//load the home page in the default browser language	
 	// localStorage.removeItem("language"); // we reset the value stored
+	var target_page = window.location.href.split('#')[1]
+	if (target_page === '') {
+		target_page = 'home';
+	}
 	var browser_default_language = getLanguage();
-	var translation_promise = loadTranslatedContent(browser_default_language, 'home');
+	var translation_promise = loadTranslatedContent(browser_default_language, target_page);
 	changeSelectedLanguage(browser_default_language)
 
 	translation_promise.then(function(value) {

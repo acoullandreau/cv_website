@@ -2,7 +2,7 @@
 <html>
 	<head>
 	  <meta charset="UTF-8" />
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" description="Alexina Coullandreau's portfolio, or online equivalent and more detailed CV">
 	  <title>Alexina Coullandreau - portfolio</title>
 	  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet">
 	  <link rel="stylesheet" href="styles.css">
@@ -45,9 +45,9 @@
 					<div id="top-nav-bar">
 						<a href="#"><img id="icon_home-img" onclick="SwitchPage(0)" src="./image_library/icon_home.svg" alt="Home"/></a>
 						<div id="contact" onclick="SwitchPage(2)">
-							<a href="#"><img id="icon_contact-img" src="./image_library/icon_contact.svg" alt="Contact"/></a>
+							<a href="#contact_form"><img id="icon_contact-img" src="./image_library/icon_contact.svg" alt="Contact"/></a>
 							<div id="contact-text" class="Bold TextWithIcon">
-								<a href="#">{nav-bar.contact}</a>
+								<a href="#contact_form">{nav-bar.contact}</a>
 							</div>
 						</div>
 						<div id="language">
@@ -65,25 +65,25 @@
 					</div>
 
 					<div class="LeftNavBar">
-						<div class="NavMenuIcon" onmouseover="NavBarHover(0, 1)"><a href="#" onclick="SwitchPage(1)"><img id="icon_presentation-img" src="./image_library/icon_presentation_2.svg"/></a></div>
-						<div class="NavMenuIcon" onmouseover="NavBarHover(1, 1)"><a href="#" onclick="SwitchPage(3)"><img id="icon_temoignages-img" src="./image_library/icon_temoignages_2.svg"/></a></div>
-						<div class="NavMenuIcon" onmouseover="NavBarHover(2, 1)"><a href="#" onclick="SwitchPage(4)"><img id="icon_exp_pro-img" src="./image_library/icon_exp_pro_2.svg"/></a></div>
-						<div class="NavMenuIcon" onmouseover="NavBarHover(3, 1)"><a href="#" onclick="SwitchPage(5)"><img id="icon_skills-img" src="./image_library/icon_skills_2.svg"/></a></div>
-						<div class="NavMenuIcon" onmouseover="NavBarHover(4, 1)"><a href="#" onclick="SwitchPage(6)"><img id="icon_achievements-img" src="./image_library/icon_achievements_2.svg"/></a></div>
-						<div class="NavMenuIcon" onmouseover="NavBarHover(5, 1)"><a href="#" onclick="SwitchPage(7)"><img id="icon_exp_pers-img" src="./image_library/icon_exp_pers_2.svg"/></a></div>
-						<div class="NavMenuIcon" onmouseover="NavBarHover(6, 1)"><a href="#" onclick="SwitchPage(8)"><img id="icon_education-img" src="./image_library/icon_education_2.svg"/></a></div>
-						<div class="NavMenuIcon" onmouseover="NavBarHover(7, 1)"><a href="#" onclick="SwitchPage(9)"><img id="icon_passions-img" src="./image_library/icon_passions_2.svg"/></a></div>
+						<div class="NavMenuIcon" onmouseover="NavBarHover(0, 1)"><a href="#introduction" onclick="SwitchPage(1)"><img id="icon_presentation-img" src="./image_library/icon_presentation_2.svg"/></a></div>
+						<div class="NavMenuIcon" onmouseover="NavBarHover(1, 1)"><a href="#testimony" onclick="SwitchPage(3)"><img id="icon_temoignages-img" src="./image_library/icon_temoignages_2.svg"/></a></div>
+						<div class="NavMenuIcon" onmouseover="NavBarHover(2, 1)"><a href="#exp_pro" onclick="SwitchPage(4)"><img id="icon_exp_pro-img" src="./image_library/icon_exp_pro_2.svg"/></a></div>
+						<div class="NavMenuIcon" onmouseover="NavBarHover(3, 1)"><a href="#skills" onclick="SwitchPage(5)"><img id="icon_skills-img" src="./image_library/icon_skills_2.svg"/></a></div>
+						<div class="NavMenuIcon" onmouseover="NavBarHover(4, 1)"><a href="#achievements" onclick="SwitchPage(6)"><img id="icon_achievements-img" src="./image_library/icon_achievements_2.svg"/></a></div>
+						<div class="NavMenuIcon" onmouseover="NavBarHover(5, 1)"><a href="#exp_pers" onclick="SwitchPage(7)"><img id="icon_exp_pers-img" src="./image_library/icon_exp_pers_2.svg"/></a></div>
+						<div class="NavMenuIcon" onmouseover="NavBarHover(6, 1)"><a href="#education" onclick="SwitchPage(8)"><img id="icon_education-img" src="./image_library/icon_education_2.svg"/></a></div>
+						<div class="NavMenuIcon" onmouseover="NavBarHover(7, 1)"><a href="#passions" onclick="SwitchPage(9)"><img id="icon_passions-img" src="./image_library/icon_passions_2.svg"/></a></div>
 
 					</div>
 					<div id="left-nav-bar-text" class="LeftNavBar">
-						<div class="ExternalFixedHeight"><div id="nav-bar-presentation" class="NavMenuExpand BackGroundPetrol" onmouseout="NavBarHover(0, 0)"><a href="#" onclick="SwitchPage(1)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.presentation.title}</p></a></div></div>
-						<div class="ExternalFixedHeight"><div id="nav-bar-temoignages" class="NavMenuExpand BackGroundDark" onmouseout="NavBarHover(1, 0)"><a href="#" onclick="SwitchPage(3)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.temoignages.title}</p></a></div></div>
-						<div class="ExternalFixedHeight"><div id="nav-bar-exp-pro" class="NavMenuExpand CircleRed" onmouseout="NavBarHover(2, 0)"><a href="#" onclick="SwitchPage(4)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.exppro.title}</p></a></div></div>
-						<div class="ExternalFixedHeight"><div id="nav-bar-competences" class="NavMenuExpand BackGroundOrange" onmouseout="NavBarHover(3, 0)"><a href="#" onclick="SwitchPage(5)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.skills.title}</p></a></div></div>
-						<div class="ExternalFixedHeight"><div id="nav-bar-accomplissements" class="NavMenuExpand BackGroundBlue" onmouseout="NavBarHover(4, 0)"><a href="#" onclick="SwitchPage(6)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.achievements.title}</p></a></div></div>
-						<div class="ExternalFixedHeight"><div id="nav-bar-exp-pers" class="NavMenuExpand BackGroundYellow" onmouseout="NavBarHover(5, 0)"><a href="#" onclick="SwitchPage(7)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.exppers.title}</p></a></div></div>
-						<div class="ExternalFixedHeight"><div id="nav-bar-education" class="NavMenuExpand BackGroundGreen" onmouseout="NavBarHover(6, 0)"><a href="#" onclick="SwitchPage(8)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.education.title}</p></a></div></div>
-						<div class="ExternalFixedHeight"><div id="nav-bar-passions" class="NavMenuExpand BackGroundPink" onmouseout="NavBarHover(7, 0)"><a href="#" onclick="SwitchPage(9)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.passions.title}</p></a></div></div>
+						<div class="ExternalFixedHeight"><div id="nav-bar-presentation" class="NavMenuExpand BackGroundPetrol" onmouseout="NavBarHover(0, 0)"><a href="#introduction" onclick="SwitchPage(1)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.presentation.title}</p></a></div></div>
+						<div class="ExternalFixedHeight"><div id="nav-bar-temoignages" class="NavMenuExpand BackGroundDark" onmouseout="NavBarHover(1, 0)"><a href="#testimony" onclick="SwitchPage(3)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.temoignages.title}</p></a></div></div>
+						<div class="ExternalFixedHeight"><div id="nav-bar-exp-pro" class="NavMenuExpand CircleRed" onmouseout="NavBarHover(2, 0)"><a href="#exp_pro" onclick="SwitchPage(4)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.exppro.title}</p></a></div></div>
+						<div class="ExternalFixedHeight"><div id="nav-bar-competences" class="NavMenuExpand BackGroundOrange" onmouseout="NavBarHover(3, 0)"><a href="#skills" onclick="SwitchPage(5)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.skills.title}</p></a></div></div>
+						<div class="ExternalFixedHeight"><div id="nav-bar-accomplissements" class="NavMenuExpand BackGroundBlue" onmouseout="NavBarHover(4, 0)"><a href="#achievements" onclick="SwitchPage(6)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.achievements.title}</p></a></div></div>
+						<div class="ExternalFixedHeight"><div id="nav-bar-exp-pers" class="NavMenuExpand BackGroundYellow" onmouseout="NavBarHover(5, 0)"><a href="#exp_pers" onclick="SwitchPage(7)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.exppers.title}</p></a></div></div>
+						<div class="ExternalFixedHeight"><div id="nav-bar-education" class="NavMenuExpand BackGroundGreen" onmouseout="NavBarHover(6, 0)"><a href="#education" onclick="SwitchPage(8)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.education.title}</p></a></div></div>
+						<div class="ExternalFixedHeight"><div id="nav-bar-passions" class="NavMenuExpand BackGroundPink" onmouseout="NavBarHover(7, 0)"><a href="#passions" onclick="SwitchPage(9)"><p class="FontSizeNavBar ColorLight">{navbar.navigation.passions.title}</p></a></div></div>
 					</div>
 
 					<div id="right-nav-bar">

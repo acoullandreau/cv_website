@@ -1,11 +1,11 @@
 page_correspondance = {
 	0:'home',
-	1:'presentation',
+	1:'introduction',
 	2:'contact_form',
-	3:'temoignages',
-	4:'exp-pro',
-	5:'competences',
-	6:'accomplissements',
+	3:'testimony',
+	4:'exp_pro',
+	5:'skills',
+	6:'achievements',
 	7:'exp_pers',
 	8:'education',
 	9:'passions'
