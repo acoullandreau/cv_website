@@ -46,15 +46,26 @@
 		"{form.maintitle}":"Contact form",
 		"{form.description.one}":"Please fill in this form to contact me.",
 		"{form.description.two}":"I will do my very best to get back in touch with you as soon as possible. ",
-		"{form.fname.label}":"First Name",
-		"{form.lname.label}":"Last Name",
+		"{form.name.label}":"Name",
 		"{form.email.label}":"Email address",
+		"{form.message.label}":"Your message:",
 		"{form.attachment.label}":"Add an attachment",
 		"{form.send.button}":"<input type=\"button\" id=\"send-button\" class=\"ColorLight FontSizeFormIntro\" value=\"Send\"/>"
 
 	},
 	"testimony":{
-		"{testimony.maintitle}":"Testimony"
+		"{testimony.maintitle}":"Testimony",
+
+		"{testimony.item.one.title}":"Sharp professional",
+		"{testimony.item.one.description}":"My team and I worked with Alexina while she was in charge of the Smart Streetlight project for the city of Paris. What a sharp Professional she is ! In that large, complex and stressful project, she had to manage multiple suppliers, both hardware, network and software, as well as contractors and installers, to enable the deployment of thousands of IoT devices and make this project a success. And that was a success... mainly driven by her ability to drive people, her willingness to understand even complex solutions and her passion for perfection.",
+		"{testimony.item.one.owner}":"Christophe Orceau",
+		"{testimony.item.one.context}":"See <a href=\"#exp_pro\" class=\"Underline\">EVESA</a>",
+
+		"{testimony.item.two.title}":"Curious, rigorous, and takes initiatives",
+		"{testimony.item.two.description}":"I was fortunate to have Alexina on my team as part of a project to deploy a solution that required IT skills (which was not at the core of her engineering training). During all the phases of the project, she was able to be curious, rigorous and take initiatives to get to the bottom of things. In terms of relationships, Alexina is a pleasant and smiling person. She is demanding with herself and can sometimes be a little too demanding with people under her responsibility who do not have the same energy or involvement. This youth defect remains for me an asset for the success of the project. Alexina will most certainly be part of your shortlist of collaborators or colleagues who mark your professional journey.",
+		"{testimony.item.two.owner}":"Denis Perrot",
+		"{testimony.item.two.context}":"See <a href=\"#exp_pro\" class=\"Underline\">EVESA</a>"
+
 	},
 	"exp_pro":{
 		"{exppro.maintitle}":"Professional experiences",
@@ -234,7 +245,7 @@
 	},
 	"exp_pers":{
 		"{exppers.maintitle}":"Personal experiences",
-		"{exppers.skills.title}":"Acquired knowledge",
+		"{exppers.skills.title}":"Takeaways",
 
 		"{exppers.item.one.date}":"May 2018 - Mar 2019",
 		"{exppers.item.one.title}":"Expatriation in Italy",
@@ -492,6 +503,18 @@
 				{
 					"title":"Oops !",
 					"text": "Your email address doesn't seem to have the right format, and I will not be able to get back in touch with you. Please enter a valid address."
+				}
+			],
+			"pending":[
+				{
+					"title":"Sending !",
+					"text": "Your message is being sent."
+				}
+			],
+			"error":[
+				{
+					"title":"Oops !",
+					"text": "Your message could not be sent. Please try again!"
 				}
 			]
 		}

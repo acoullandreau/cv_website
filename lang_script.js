@@ -30,7 +30,6 @@ getLanguageJson = function(language) {
 }
 
 loadTranslatedContent = function(language, page) {
-
 	var p = new Promise(function(resolve, reject){
 		//get the language dict and the target html content to translate and load
 		promise_json = getLanguageJson(language);

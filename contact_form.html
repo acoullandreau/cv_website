@@ -9,19 +9,20 @@
 	<form id="contact-form" class="Form Bold FontSizeFormFields">
 		<div id="form-fields">
 			<div class="FormField">
-				<p>{form.fname.label}</p>
-				<input type="text" class="FontSizeParagraph" name="fname"/>
+				<p>{form.name.label}</p>
+				<input type="text" class="FontSizeParagraph" name="name"/>
 			</div>
-			<div class="FormField">
+<!-- 			<div class="FormField">
 				<p>{form.lname.label}</p>
 				<input type="text" class="FontSizeParagraph" name="lname"/>
-			</div>
+			</div> -->
 			<div class="FormField">
 				<p>{form.email.label}</p>
 				<input type="email" class="FontSizeParagraph" name="email"/>
 			</div>
 		</div>
-		<div>
+		<div class="FormFieldMessage">
+			<p>{form.message.label}</p>
 			<textarea class="FontSizeParagraph" name="message"></textarea>
 		</div>
 <!-- 		<div id="form-attachment" class="FontSizeParagraph">

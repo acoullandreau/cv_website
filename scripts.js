@@ -135,36 +135,39 @@ NavBarHover = function(element_reference, action) {
 }
 
 FormSubmit = function() {
-	var target_url = 'index.html';
+	var target_url = 'mail/mail.php';
 	// retrieve the content of the form
 	var form = document.getElementById("contact-form");
 	var form_content = {
-		'fname':form.elements[0].value,
-		'lname':form.elements[1].value,
-		'email':form.elements[2].value,
-		'message':form.elements[3].value
+		'name':form.elements[0].value,
+		'email':form.elements[1].value,
+		'message':form.elements[2].value
 	}
 
 	// check integrity of email address
 	var email_regex = /\S+@\S+\.\S+/;
 	if (email_regex.test(form_content['email']) == true) {
+		var formData  = new FormData();
+		for(var elem in form_content) {
+			formData.append(elem, form_content[elem]);
+		}
+
 		var post_request = new Request(target_url, {
 			method: 'POST',
-			body: JSON.stringify(form_content),
-			headers: new Headers({
-			    'Content-Type': 'application/json'
-			})
+			body: formData,
 		});
 
 		// post form content
 		fetch(post_request).then(function(response) {
-			return response.json();
+			OpenOverlay('form', 'success');
 		}).catch(function (err) {
 			console.warn('Something went wrong.', err);
+			OpenOverlay('form', 'error');
 		})
 
 		// display an acknowledgment message for the form submission
-		OpenOverlay('form', 'success');
+		OpenOverlay('form', 'pending');
+
 	} else {
 		// display an error message for the form submission
 		OpenOverlay('form', 'email_error');

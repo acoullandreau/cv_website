@@ -25,11 +25,13 @@ window.onload = function () {
 
 		// we add an event that is always listening, not just when the page load
 		window.addEventListener("resize", scene.onResize.bind(scene));
+		window.addEventListener("hashchange", scene.onHashChange.bind(scene));
 
 		// we initialise the requestAnimationFrame function that will handle the animation of the elements
 		window.requestAnimationFrame(scene.animate.bind(scene));
 	});
-	
+
+
 }
 
 var nav_menu_contact;
@@ -200,6 +202,21 @@ function Scene() {
 		for (var index in this.elements_list) {
 			this.elements_list[index].updateOnResize();
 		}
+	}
+	this.onHashChange = function(event) {
+		var target_page = event.newURL.split('#')[1]
+
+		if (target_page === '' || target_page === undefined) {
+			target_page = 'home';
+		}
+
+		var target_index = 0;
+		for (var index in page_correspondance) {
+			if (page_correspondance[index] == target_page) {
+				target_index = parseInt(index);
+			}
+		}
+		SwitchPage(target_index);
 	}
 	this.requestAnimationFrame = function () {
 		if (this.animating == false) {

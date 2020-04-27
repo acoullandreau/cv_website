@@ -2,27 +2,33 @@
 	<h1 class="Source Bold FontSizeHeader PageTitre">{testimony.maintitle}</h1>
 </div>
 <div id="scroll-content">
-	<div  class="ScrollSnap">
+	<div  class="ScrollSnap" onscroll="ScrollAnimation()">
 		<div class="ScrollSnapChild TemoignagesGridWrapper ScrollInnerWrapper">
 			<div class="TemoignagesGridElemOne BackGroundLight">
 				<div class="ContentBlock">
-					<div class="Bold FontSizeTitle SectionTitle Source"><p>Lorem Ipsum</p></div>
-					<div class="Temoignage Italic FontSizeParagraph"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo</p></div>
-					<div class="TemoignageReference Bold FontSizeParagraph"><p>Lorem ipsum - Lorem ipsum dolor sit met</p></div>
+					<div class="Bold FontSizeTitle SectionTitle Source"><p>{testimony.item.one.title}</p></div>
+					<div class="Temoignage Italic FontSizeParagraph"><p>{testimony.item.one.description}</p></div>
+					<div class="TemoignageReference AlignRight FontSizeParagraph">
+						<p class="Bold">{testimony.item.one.owner}<p/>
+						<p>{testimony.item.one.context}</p>
+					</div>
 					<img class="SectionQuoteLeft" src="./image_library/quote_left.svg">
 					<img class="SectionQuoteRight" src="./image_library/quote_right.svg">
 				</div>
 			</div>
 			<div class="TemoignagesGridElemTwo BackGroundLight">
 				<div class="ContentBlock">
-					<div class="Bold FontSizeTitle SectionTitle Source"><p>Lorem Ipsum</p></div>
-					<div class="Temoignage Italic FontSizeParagraph"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo</p></div>
-					<div class="TemoignageReference Bold FontSizeParagraph"><p>Lorem ipsum - Lorem ipsum dolor sit met</p></div>
+					<div class="Bold FontSizeTitle SectionTitle Source"><p>{testimony.item.two.title}</p></div>
+					<div class="Temoignage Italic FontSizeParagraph"><p>{testimony.item.two.description}</p></div>
+					<div class="TemoignageReference AlignRight FontSizeParagraph">
+						<p class="Bold">{testimony.item.two.owner}<p/>
+						<p>{testimony.item.two.context}</p>
+					</div>
 					<img class="SectionQuoteLeft" src="./image_library/quote_left.svg">
 					<img class="SectionQuoteRight" src="./image_library/quote_right.svg">
 				</div>
 			</div>
-			<div class="TemoignagesGridElemThree BackGroundLight">
+<!-- 			<div class="TemoignagesGridElemThree BackGroundLight">
 				<div class="ContentBlock">
 					<div class="Bold FontSizeTitle SectionTitle Source"><p>Lorem Ipsum</p></div>
 					<div class="Temoignage Italic FontSizeParagraph"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo</p></div>
@@ -39,9 +45,9 @@
 					<img class="SectionQuoteLeft" src="./image_library/quote_left.svg">
 					<img class="SectionQuoteRight" src="./image_library/quote_right.svg">
 				</div>
-			</div>
+			</div> -->
 		</div>
-		<div class="ScrollSnapChild TemoignagesGridWrapper ScrollInnerWrapper">
+		<!-- <div class="ScrollSnapChild TemoignagesGridWrapper ScrollInnerWrapper">
 			<div class="TemoignagesGridElemOne BackGroundLight">
 				<div class="ContentBlock">
 					<div class="Bold FontSizeTitle SectionTitle Source"><p>Lorem Ipsum</p></div>
@@ -78,7 +84,8 @@
 					<img class="SectionQuoteRight" src="./image_library/quote_right.svg">
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </div>
+<!-- <div id="scoll-down-img"><img src="./image_library/icon_scroll_down.svg"></div> -->
 

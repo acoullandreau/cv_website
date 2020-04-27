@@ -46,16 +46,27 @@
 		"{form.maintitle}":"Formulaire de contact",
 		"{form.description.one}":"Merci de renseigner le formulaire ci-dessous pour toute prise de contact ou correspondance.",
 		"{form.description.two}":"Je ne manquerai pas de vous recontacter dans les plus brefs délais. ",
-		"{form.fname.label}":"Prénom",
-		"{form.lname.label}":"Nom",
+		"{form.name.label}":"Nom",
 		"{form.email.label}":"Adresse email",
+		"{form.message.label}":"Votre message :",
 		"{form.attachment.label}":"Ajouter une pièce jointe",
 		"{form.send.button}":"<input type=\"button\" id=\"send-button\" class=\"ColorLight FontSizeFormIntro\" value=\"Envoyer\"/>"
 
 
 	},
 	"testimony":{
-		"{testimony.maintitle}":"Témoignages"
+		"{testimony.maintitle}":"Témoignages",
+
+		"{testimony.item.one.title}":"Professionelle pointue",
+		"{testimony.item.one.description}":"Mon équipe et moi avons travaillé avec Alexina alors qu'elle était en charge du projet Smart Streetlight pour la ville de Paris. Quelle professionnelle pointue elle est ! Dans ce projet vaste, complexe et stressant, elle a dû gérer plusieurs fournisseurs, matériels, réseaux et logiciels, ainsi que des sous-traitants et installateurs, pour permettre le déploiement de milliers d'appareils IoT et faire de ce projet un succès. Et ce fut un succès... Principalement grâce à sa capacité à conduire les gens, sa volonté de comprendre même des solutions complexes et sa passion pour la perfection.",
+		"{testimony.item.one.owner}":"Christophe Orceau",
+		"{testimony.item.one.context}":"Voir <a href=\"#exp_pro\" class=\"Underline\">EVESA</a>",
+
+		"{testimony.item.two.title}":"Curieuse, rigoureuse, et prend des initiatives",
+		"{testimony.item.two.description}":"J'ai eu la chance d'avoir Alexina dans mon équipe dans le cadre d'un projet de déploiement d'une solution qui nécessitait des compétences IT (qui n'était pas le cœur de sa formation d'ingénieur). Pendant toutes les phases du projet, elle a su se montrer curieuse, rigoureuse et prendre des initiatives pour aller au fond des choses. Sur le plan relationnel, Alexina est une personne agréable et souriante. Elle est exigeante avec elle-même et peut parfois l'être un peu trop avec les personnes sous sa responsabilité qui n'ont pas la même énergie ou implication. Ce défaut de jeunesse reste pour moi un atout pour la réussite de projet. Alexina fera très certainement partie de votre liste restreinte de collaborateurs ou collègues qui  marquent nos parcours professionnels.",
+		"{testimony.item.two.owner}":"Denis Perrot",
+		"{testimony.item.two.context}":"Voir <a href=\"#exp_pro\" class=\"Underline\">EVESA</a>"
+
 	},
 	"exp_pro":{
 		"{exppro.maintitle}":"Expériences professionnelles",
@@ -158,14 +169,14 @@
 
 		"{achievements.item.six.date}":"Oct - Nov 2019",
 		"{achievements.item.six.title}":"Data science - prédiction du départ d’un client",
-		"{achievements.item.six.description.item.one}":"Projet réalisé dans le cadre du Nanodegree Data Scientist (voir <a href=\"#\" onclick=\"SwitchPage(8)\" class=\"Underline\">Formations</a>). Modèle d’apprentissage supervisé de classification de données temporelles.<br><br>L’objectif du projet était de démontrer ma capacité à analyser un grand volume de données à l’aide du framework Spark, et de construire un modèle pour prédire le départ d’un utilisateur d’un service de diffusion de musique nommé Sparkify.",
+		"{achievements.item.six.description.item.one}":"Projet réalisé dans le cadre du Nanodegree Data Scientist (voir <a href=\"#education\" class=\"Underline\">Formations</a>). Modèle d’apprentissage supervisé de classification de données temporelles.<br><br>L’objectif du projet était de démontrer ma capacité à analyser un grand volume de données à l’aide du framework Spark, et de construire un modèle pour prédire le départ d’un utilisateur d’un service de diffusion de musique nommé Sparkify.",
 		"{achievements.item.six.keyword}":"big data, analyse de données, visualisation, python, Spark, prédiction, classification, apprentissage supervisé",
 		"{achievements.item.six.link.one}":"Publication des résultats : <a class=\"Underline\" href=\"https://medium.com/@mozart38\">https://medium.com/@mozart38</a>",
 		"{achievements.item.six.link.two}":"Code source : <a class=\"Underline\" href=\"https://github.com/acoullandreau/capstone_sparkify\">https://github.com/acoullandreau/capstone_sparkify</a><br><br>",
 
 		"{achievements.item.five.date}":"Août 2019",
 		"{achievements.item.five.title}":"Data science - analyse des courses de taxi à New York en 2018",
-		"{achievements.item.five.description.item.one}":"Projet réalisé dans le cadre du Nanodegree Data Scientist (voir <a href=\"#\" onclick=\"SwitchPage(8)\" class=\"Underline\">Formations</a>). Analyse de données et restitution des observations à l’aide d’outils de visualisation appropriés.<br>L’objectif du projet était de démontrer ma capacité à observer, manipuler et transformer les données d’une série de mon choix. <br><br>J’ai choisi d’analyser une portion des courses des taxis jaunes de New York sur l’année 2018 (environ 99 millions de points).<br>Mon analyse s’est articulée autour de quatre axes principaux :",
+		"{achievements.item.five.description.item.one}":"Projet réalisé dans le cadre du Nanodegree Data Scientist (voir <a href=\"#education\" class=\"Underline\">Formations</a>). Analyse de données et restitution des observations à l’aide d’outils de visualisation appropriés.<br>L’objectif du projet était de démontrer ma capacité à observer, manipuler et transformer les données d’une série de mon choix. <br><br>J’ai choisi d’analyser une portion des courses des taxis jaunes de New York sur l’année 2018 (environ 99 millions de points).<br>Mon analyse s’est articulée autour de quatre axes principaux :",
 		"{achievements.item.five.description.item.two}":"Y a-t-il des tendances dans les déplacements des passagers en 2018 ?",
 		"{achievements.item.five.description.item.three}":"Y a-t-il une différence les jours fériés, le jour le plus chaud et le jour le plus froid de l’année ?",
 		"{achievements.item.five.description.item.four}":"Y a-t-il une différence entre la semaine et le weekend ?",
@@ -235,7 +246,7 @@
 	},
 	"exp_pers":{
 		"{exppers.maintitle}":"Expériences personnelles",
-		"{exppers.skills.title}":"Savoirs acquis",
+		"{exppers.skills.title}":"Points positifs",
 
 		"{exppers.item.one.date}":"Mai 2018 - Mar 2019",
 		"{exppers.item.one.title}":"Expatriation en Italie",
@@ -256,7 +267,7 @@
 
 		"{exppers.item.three.date}":"Oct 2006 - Juil 2008 / Juin - Sept 2013",
 		"{exppers.item.three.title}":"Expatriation en Chine",
-		"{exppers.item.three.description}":"Expatriation familiale à Wuhan (Hubei) <br>Stage étude et recherche (Voir <a href=\"#\" onclick=\"SwitchPage(4)\" class=\"Underline\">expériences professionnelles</a>)",
+		"{exppers.item.three.description}":"Expatriation familiale à Wuhan (Hubei) <br>Stage étude et recherche (Voir <a href=\"#exp_pro\" class=\"Underline\">expériences professionnelles</a>)",
 		"{exppers.item.three.skills.list.item.one}":"Sortir de sa zone de confort",
 		"{exppers.item.three.skills.list.item.two}":"Ouverture d’esprit  - découverture d’une autre culture",
 		"{exppers.item.three.skills.list.item.three}":"Niveau débutant en chinois",
@@ -277,24 +288,24 @@
 		"{education.item.seven.date}":"Mar 2019 - Nov 2019",
 		"{education.item.seven.title}":"Data Science Nanodegree",
 		"{education.item.seven.description}":"Formation certifiante couvrant les concepts de base de l’analyse des données (visualisation, librairies python, algèbre linéaire, statistiques, ….)",
-		"{education.item.seven.skill}":"Analyse de données (Voir <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Informatique et réseaux</a>)",
+		"{education.item.seven.skill}":"Analyse de données (Voir <a href=\"#skills\" class=\"Underline\">Compétences - Informatique et réseaux</a>)",
 		"{education.item.seven.diploma}":"Nanodegree Udacity",
 
 		"{education.item.six.date}":"Juil 2015",
 		"{education.item.six.title}":"CISCO CCNA Routing & Switching",
 		"{education.item.six.description}":"Certification CISCO premier niveau, domaine Routing & Switching<br><br>",
-		"{education.item.six.skill}":"Réseaux (Voir <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Informatique et réseaux</a>)",
+		"{education.item.six.skill}":"Réseaux (Voir <a href=\"#skills\" class=\"Underline\">Compétences - Informatique et réseaux</a>)",
 		"{education.item.six.diploma}":"Certification CISCO (CCNA)",
 
 		"{education.item.five.date}":"Jan - Juin 2013",
 		"{education.item.five.title}":"Université de Southampton – Génie civil",
 		"{education.item.five.description}":"ERASMUS génie civil<br><br>",
-		"{education.item.five.skill}":"Génie civil (Voir <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Génie urbain</a>)",
+		"{education.item.five.skill}":"Génie civil (Voir <a href=\"#skills\" class=\"Underline\">Compétences - Génie urbain</a>)",
 
 		"{education.item.four.date}":"Sept 2011 - Août 2014",
 		"{education.item.four.title}":"École des Ingénieurs de la Ville de Paris (EIVP)",
 		"{education.item.four.description}":"Cursus en génie urbain : urbanisme et génie civil<br><br>",
-		"{education.item.four.skill}":"Génie urbain (Voir <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Génie urbain</a>)",
+		"{education.item.four.skill}":"Génie urbain (Voir <a href=\"#skills\" class=\"Underline\">Compétences - Génie urbain</a>)",
 		"{education.item.four.diploma}":"Diplôme d’Ingénieur en Génie Urbain",
 
 		"{education.item.three.date}":"Sept 2009 - Juil 2011",
@@ -311,7 +322,7 @@
 		"{education.item.one.title}":"Massive Online Open Course (MOOC)",
 		"{education.item.one.description.one}":"Perfectionnement professionnel (16 MOOC)",
 		"{education.item.one.description.two}":"Perfectionnement personnel (13 MOOC)",
-		"{education.item.one.skill}":"Voir <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Informatique et réseaux</a> et <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Compétences - Gestion de projets</a>",
+		"{education.item.one.skill}":"Voir <a href=\"#skills\" class=\"Underline\">Compétences - Informatique et réseaux</a> et <a href=\"#skills\" class=\"Underline\">Compétences - Gestion de projets</a>",
 		"{education.item.one.diploma}":"Attestations de suivi avec succès (validation des acquis)"
 	},
 	"passions":{
@@ -494,6 +505,18 @@
 				{
 					"title":"Oups !",
 					"text": "Votre adresse email ne semble pas avoir le bon format, et je ne serai pas en mesure de vous recontacter. Merci de renseigner une adresse valide."
+				}
+			],
+			"pending":[
+				{
+					"title":"En cours d'envoi !",
+					"text": "Votre message est en cours d'envoi."
+				}
+			],
+			"error":[
+				{
+					"title":"Oups !",
+					"text": "Votre message n'a pu être envoyé. Merci de réessayer !"
 				}
 			]
 		}
