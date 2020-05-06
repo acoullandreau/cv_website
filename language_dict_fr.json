@@ -65,7 +65,12 @@
 		"{testimony.item.two.title}":"Curieuse, rigoureuse, et prend des initiatives",
 		"{testimony.item.two.description}":"J'ai eu la chance d'avoir Alexina dans mon équipe dans le cadre d'un projet de déploiement d'une solution qui nécessitait des compétences IT (qui n'était pas le cœur de sa formation d'ingénieur). Pendant toutes les phases du projet, elle a su se montrer curieuse, rigoureuse et prendre des initiatives pour aller au fond des choses. Sur le plan relationnel, Alexina est une personne agréable et souriante. Elle est exigeante avec elle-même et peut parfois l'être un peu trop avec les personnes sous sa responsabilité qui n'ont pas la même énergie ou implication. Ce défaut de jeunesse reste pour moi un atout pour la réussite de projet. Alexina fera très certainement partie de votre liste restreinte de collaborateurs ou collègues qui  marquent nos parcours professionnels.",
 		"{testimony.item.two.owner}":"Denis Perrot",
-		"{testimony.item.two.context}":"Voir <a href=\"#exp_pro\" class=\"Underline\">EVESA</a>"
+		"{testimony.item.two.context}":"Voir <a href=\"#exp_pro\" class=\"Underline\">EVESA</a>",
+
+		"{testimony.item.two.title}":"Rigoureuse, esprit de synthèse",
+		"{testimony.item.two.description}":"J'ai appris à connaître Alexina quand elle est arrivée chez CITELUM pour être chef de projet de la réponse à l'appel d'offre pour la rénovation des éclairages de l'ensemble des usines RENAULT.<br/>J'ai tout d'abord était surpris par sa jeunesse sereine pour diriger un tel projet.<br/>Alexina possède une capacité à diriger les personnes pour faire aboutir un projet. Elle est dotée d'un esprit de synthèse remarquable nécessaire pour manager différents profils dans une réponse globale à un appel d'offre.<br/>Le client a lui apprécié les réponses à ses questions qui ont toujours été précises et argumentées.<br/>Et pour finir, une collègue très agréable à côtoyer.",
+		"{testimony.item.two.owner}":"Michel Chauvin",
+		"{testimony.item.two.context}":"Voir <a href=\"#exp_pro\" class=\"Underline\">Citelum</a>"
 
 	},
 	"exp_pro":{

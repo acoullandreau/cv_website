@@ -64,7 +64,12 @@
 		"{testimony.item.two.title}":"Curious, rigorous, and takes initiatives",
 		"{testimony.item.two.description}":"I was fortunate to have Alexina on my team as part of a project to deploy a solution that required IT skills (which was not at the core of her engineering training). During all the phases of the project, she was able to be curious, rigorous and take initiatives to get to the bottom of things. In terms of relationships, Alexina is a pleasant and smiling person. She is demanding with herself and can sometimes be a little too demanding with people under her responsibility who do not have the same energy or involvement. This youth defect remains for me an asset for the success of the project. Alexina will most certainly be part of your shortlist of collaborators or colleagues who mark your professional journey.",
 		"{testimony.item.two.owner}":"Denis Perrot",
-		"{testimony.item.two.context}":"See <a href=\"#exp_pro\" class=\"Underline\">EVESA</a>"
+		"{testimony.item.two.context}":"See <a href=\"#exp_pro\" class=\"Underline\">EVESA</a>",
+
+		"{testimony.item.two.title}":"Rigourous, analytical mind",
+		"{testimony.item.two.description}":"I got to know Alexina when whe joined Citelum to be the project manager of the response to the tender for the renovation of the lighting of all Renault's factories. <br/>I was at first surprised by her serene youth to lead such a project.<br/>Alexina has the ability to lead people to complete a project. She has a remarkable capacity to synthesing necessary to manage different profiles part of the global response to the tender. <br/>The client appreciated the answers to his questions, which were always precise and argued.<br/>And finally, she is a colleague very pleasant to work with.",
+		"{testimony.item.two.owner}":"Michel Chauvin",
+		"{testimony.item.two.context}":"Voir <a href=\"#exp_pro\" class=\"Underline\">Citelum</a>"
 
 	},
 	"exp_pro":{
