@@ -194,8 +194,16 @@ body {
 	background-color:#EA5E48;
 }
 
+.BackgroundShadeRed {
+	background-color:#EC5541;
+}
+
 .BackGroundBlue {
 	background-color: #5E72DD;
+}
+
+.BackgroundShadeBlue {
+	background-color:#1E3DB5;
 }
 
 .BackGroundPink {
@@ -955,7 +963,7 @@ select {
 
 .SkillGridElemOne {
 	width: 100%;
-	height: 80%;
+	height: 90%;
 	border-radius: 15px;
 	grid-column: 1;
   	grid-row: 1 / span 2;
