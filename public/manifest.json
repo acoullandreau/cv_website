@@ -1,0 +1,41 @@
+{
+  "short_name": "Alexina Coullandreau",
+  "name": "Alexina Coullandreau - portfolio",
+  "description":"Alexina Coullandreau's online equivalent and more detailed CV, or portfolio. I am a smart city project manager, interested in IoT, data science, and software design.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#CBFBFF",
+  "background_color": "#CBFBFF"
+}
