@@ -135,7 +135,7 @@ NavBarHover = function(element_reference, action) {
 }
 
 FormSubmit = function() {
-	var target_url = 'mail/mail.php';
+	var target_url = '../mail/mail.php';
 	// retrieve the content of the form
 	var form = document.getElementById("contact-form");
 	var form_content = {
