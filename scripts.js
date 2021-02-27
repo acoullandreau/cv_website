@@ -160,6 +160,7 @@ FormSubmit = function() {
 		// post form content
 		fetch(post_request).then(function(response) {
 			OpenOverlay('form', 'success');
+			form.reset();
 		}).catch(function (err) {
 			console.warn('Something went wrong.', err);
 			OpenOverlay('form', 'error');
