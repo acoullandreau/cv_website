@@ -199,14 +199,14 @@
 
 		"{achievements.item.six.date}":"Oct - Nov 2019",
 		"{achievements.item.six.title}":"Data science - churn prediction",
-		"{achievements.item.six.description.item.one}":"Project part of the Data Scientist Nanodegree (See <a href=\"#\" onclick=\"SwitchPage(8)\" class=\"Underline\">Education</a>). Supervised learning classification model of time series data. <br><br> The objective of the project was to demonstrate my ability to analyse a large volume of data usnig the Spark framework, and build a model to predict user churn for a music streaming platform called Sparkify.",
+		"{achievements.item.six.description.item.one}":"Project part of the Data Scientist Nanodegree (See <a href=\"#education\" onclick=\"SwitchPage(8)\" class=\"Underline\">Education</a>). Supervised learning classification model of time series data. <br><br> The objective of the project was to demonstrate my ability to analyse a large volume of data usnig the Spark framework, and build a model to predict user churn for a music streaming platform called Sparkify.",
 		"{achievements.item.six.keyword}":"big data, data analysis, vizualisation, python, Spark, prediction, classification, supervised learning",
 		"{achievements.item.six.link.one}":"Publication of the results:<a class=\"Underline\" href=\"https://medium.com/@mozart38\">https://medium.com/@mozart38</a>",
 		"{achievements.item.six.link.two}":"Source code: <a class=\"Underline\" href=\"https://github.com/acoullandreau/capstone_sparkify\">https://github.com/acoullandreau/capstone_sparkify</a><br><br>",
 
 		"{achievements.item.five.date}":"Aug 2019",
 		"{achievements.item.five.title}":"Data science - Taxi rides in New York in 2018 analysis",
-		"{achievements.item.five.description.item.one}":"Project part of the Data Scientist Nanodegree (See <a href=\"#\" onclick=\"SwitchPage(8)\" class=\"Underline\">Education</a>). Data analysis and observation restitution using appropriate visualisation tools.<br>The objective of the project was to demonstrate my ability to observe, manipulate and transform data from the dataset of my choice. <br><br>I chose to analyse part of the dataset of the New York taxi trips for the year 2018 (about 99 millions de points).<br>My analysis focused on four main axes:",
+		"{achievements.item.five.description.item.one}":"Project part of the Data Scientist Nanodegree (See <a href=\"#education\" onclick=\"SwitchPage(8)\" class=\"Underline\">Education</a>). Data analysis and observation restitution using appropriate visualisation tools.<br>The objective of the project was to demonstrate my ability to observe, manipulate and transform data from the dataset of my choice. <br><br>I chose to analyse part of the dataset of the New York taxi trips for the year 2018 (about 99 millions de points).<br>My analysis focused on four main axes:",
 		"{achievements.item.five.description.item.two}":"Can we see trends in the flow of passengers in 2018?",
 		"{achievements.item.five.description.item.three}":"Is there a difference on holidays, hottest or coldest day of the year?",
 		"{achievements.item.five.description.item.four}":"Is there a difference between weekdays and weekends?",
@@ -297,7 +297,7 @@
 
 		"{exppers.item.three.date}":"Oct 2006 - Jul 2008 / Jun - Sep 2013",
 		"{exppers.item.three.title}":"Expatriation in China",
-		"{exppers.item.three.description}":"Family expatriation in Wuhan (Hubei) <br>Research internship (See <a href=\"#\" onclick=\"SwitchPage(4)\" class=\"Underline\">professional experiences</a>)",
+		"{exppers.item.three.description}":"Family expatriation in Wuhan (Hubei) <br>Research internship (See <a href=\"#exp_pro\" onclick=\"SwitchPage(4)\" class=\"Underline\">professional experiences</a>)",
 		"{exppers.item.three.skills.list.item.one}":"Getting out of your comfort zone",
 		"{exppers.item.three.skills.list.item.two}":"Open-mindedness  - discovery of a new culture",
 		"{exppers.item.three.skills.list.item.three}":"Beginner level in chinese",
@@ -317,24 +317,24 @@
 		"{education.item.seven.date}":"Mar 2019 - Nov 2019",
 		"{education.item.seven.title}":"Data Science Nanodegree",
 		"{education.item.seven.description}":"Nanodegree covering basic concepts of data analysis (vizualisation, python librairies, linear algrebra, statistics, ….)",
-		"{education.item.seven.skill}":"Data analysis (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Software development</a>)",
+		"{education.item.seven.skill}":"Data analysis (See <a href=\"#skills\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Software development</a>)",
 		"{education.item.seven.diploma}":"Nanodegree Udacity",
 
 		"{education.item.six.date}":"Jul 2015",
 		"{education.item.six.title}":"CISCO CCNA Routing & Switching",
 		"{education.item.six.description}":"CISCO certification entry level, Routing & Switching path",
-		"{education.item.six.skill}":"Networks (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Software development</a>)",
+		"{education.item.six.skill}":"Networks (See <a href=\"#skills\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Software development</a>)",
 		"{education.item.six.diploma}":"CISCO certification(CCNA)",
 
 		"{education.item.five.date}":"Jan - Jun 2013",
 		"{education.item.five.title}":"Southampton University – Civil Engineering",
 		"{education.item.five.description}":"ERASMUS civil engineering",
-		"{education.item.five.skill}":"Civil Engineering (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Urban Planning</a>)",
+		"{education.item.five.skill}":"Civil Engineering (See <a href=\"#skills\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Urban Planning</a>)",
 
 		"{education.item.four.date}":"Sep 2011 - Aug 2014",
 		"{education.item.four.title}":"École des Ingénieurs de la Ville de Paris (EIVP)",
 		"{education.item.four.description}":"Urban Planning diploma : urbanism and civil engineering",
-		"{education.item.four.skill}":"Urban Planning (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Urban Planning</a>)",
+		"{education.item.four.skill}":"Urban Planning (See <a href=\"#skills\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Urban Planning</a>)",
 		"{education.item.four.diploma}":"Urban Engineer Diploma",
 
 		"{education.item.three.date}":"Sep 2009 - Jul 2011",
@@ -351,7 +351,7 @@
 		"{education.item.one.title}":"Massive Online Open Course (MOOC)",
 		"{education.item.one.description.one}":"Professional improvement (16 MOOC)",
 		"{education.item.one.description.two}":"Personal improvement (13 MOOC)",
-		"{education.item.one.skill}":"See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Software development</a> and <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Project/Product Management</a>",
+		"{education.item.one.skill}":"See <a href=\"#skills\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Software development</a> and <a href=\"#skills\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Project/Product Management</a>",
 		"{education.item.one.diploma}":"Certificate of attendance"
 	},
 	"passions":{

@@ -6,6 +6,12 @@ body {
 	color:#535353;
 }
 
+a {
+	cursor: pointer;
+	color:#535353;
+}
+
+
 #bg img {
 	position: fixed;
 	height:100%;
