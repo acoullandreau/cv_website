@@ -973,7 +973,7 @@ select {
 
 .SkillGridElemTwo {
 	width: 100%;
-	height: 100%;
+	height: 115%;
 	position: relative;
 	border-radius: 15px;
 	grid-column: 2;
@@ -984,13 +984,13 @@ select {
 
 .SkillGridElemThree {
 	width: 100%;
-	height: 100%;
+	height: 85%;
 	position: relative;
 	border-radius: 15px;
 	grid-column: 2;
   	grid-row-start: 2;
   	justify-self:start;
-  	align-self: start;
+  	align-self: end;
 }
 
 .SkillGridElemFour {
