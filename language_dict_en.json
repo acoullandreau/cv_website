@@ -317,13 +317,13 @@
 		"{education.item.seven.date}":"Mar 2019 - Nov 2019",
 		"{education.item.seven.title}":"Data Science Nanodegree",
 		"{education.item.seven.description}":"Nanodegree covering basic concepts of data analysis (vizualisation, python librairies, linear algrebra, statistics, ….)",
-		"{education.item.seven.skill}":"Data analysis (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Computer science and networks</a>)",
+		"{education.item.seven.skill}":"Data analysis (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Software development</a>)",
 		"{education.item.seven.diploma}":"Nanodegree Udacity",
 
 		"{education.item.six.date}":"Jul 2015",
 		"{education.item.six.title}":"CISCO CCNA Routing & Switching",
 		"{education.item.six.description}":"CISCO certification entry level, Routing & Switching path",
-		"{education.item.six.skill}":"Networks (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Computer science and networks</a>)",
+		"{education.item.six.skill}":"Networks (See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Software development</a>)",
 		"{education.item.six.diploma}":"CISCO certification(CCNA)",
 
 		"{education.item.five.date}":"Jan - Jun 2013",
@@ -351,7 +351,7 @@
 		"{education.item.one.title}":"Massive Online Open Course (MOOC)",
 		"{education.item.one.description.one}":"Professional improvement (16 MOOC)",
 		"{education.item.one.description.two}":"Personal improvement (13 MOOC)",
-		"{education.item.one.skill}":"See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Computer science and networks</a> et <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Project Management</a>",
+		"{education.item.one.skill}":"See <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Software development</a> and <a href=\"#\" onclick=\"SwitchPage(5)\" class=\"Underline\">Skills - Project/Product Management</a>",
 		"{education.item.one.diploma}":"Certificate of attendance"
 	},
 	"passions":{
@@ -516,10 +516,10 @@
 			"perfectionnement_professionnel": [
 				{
 					"title":"Professional improvement",
-					"list":["Villes intelligentes : défis technologiques et sociétaux (INRIA)", "Web sémantique et Web de données (INRIA)", "Du manager au leader agile (CNAM)", 
-				"Systèmes embarqués et objets connectés (Univ Toulouse)", "Routage et qualité de service dans l’Internet (Mines Telecom)", "Comprendre la 4G (Mines Telecom)", 
-				"Objectif IPv6 (Mines Telecom)", "L’essentiel pour maîtriser Linux (UCarthage)", "Python (codecademy, Udacity)", "Programming foundations with Python (Udacity)", "HTML & CSS (codecademy)", 
-				"Make a website (codecademy)", "JavaScript (codecademy, Udacity)", "Big Data (Udacity)", "UI/UX (Udacity)"]
+					"list":["Villes intelligentes : défis technologiques et sociétaux (INRIA)", "Du manager au leader agile (CNAM)", 
+				"Systèmes embarqués et objets connectés (Univ Toulouse)", "Routage et qualité de service dans l’Internet (Mines Telecom)",
+				"Objectif IPv6 (Mines Telecom)", "Big Data (Udacity)", "UI/UX (Udacity)", "Modern React with Redux (UDEMY)", 
+				"iOS & Swift development (UDEMY)", "Product Management (UDEMY)", "Customer Development, Lean Startup (UDACITY)"]
 				}
 			]
 		},
